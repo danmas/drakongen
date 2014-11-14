@@ -24,7 +24,7 @@ not_vis_in_user_mode="true"
 >
 <properties>
 <vars>
-<var name="BASE_DIR">c:/YandexDisk/FLASH/WRK/</var></vars>
+<var name="BASE_DIR">..\..\</var><var name="SCHEMES_DIR">..\Schemes\</var></vars>
 </properties>
 </VarsNode>
 <FolderNode
@@ -33,7 +33,7 @@ name="папка с кодограммами"
 >
 <properties>
 <path>
-#{BASE_DIR}/Schemes/
+#{SCHEMES_DIR}
 </path>
 </properties>
 </FolderNode>
@@ -43,7 +43,7 @@ name="папка с тестами"
 >
 <properties>
 <path>
-#{BASE_DIR}\DG2J\DragonGen2J\src\ru\erv\drakongen\test
+#{BASE_DIR}\develop\DG2J\DragonGen2J\src\ru\erv\drakongen\test
 </path>
 </properties>
 </FolderNode>

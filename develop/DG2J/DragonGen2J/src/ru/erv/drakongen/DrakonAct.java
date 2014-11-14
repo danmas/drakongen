@@ -300,9 +300,9 @@ public class DrakonAct {
 		Settings.setDebug(true);
 		
 		// -- устанавливаем BASE_DIR
-		Settings.setProperty("BASE_DIR", "C:/YandexDisk/FLASH/WRK/ConfexDG2J/../DG2J/DragonGen2J/");
+		Settings.setProperty("BASE_DIR", "c:/ERV/WRK/drakongen/develop/DG2J/DragonGen2J/");
 		String MAIN_DG_FILE = "Main.graphml";
-		MAIN_DG_FILE = Settings.getProperty("BASE_DIR") + "../../Schemes/" + MAIN_DG_FILE;
+		MAIN_DG_FILE = Settings.getProperty("BASE_DIR") + "../../../work/Schemes/" + MAIN_DG_FILE;
 		// -- переменная da
 		DrakonAct da
 		// -- экземпляр класса DrakonAct

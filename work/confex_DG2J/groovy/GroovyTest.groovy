@@ -11,14 +11,15 @@ import com.tinkerpop.blueprints.pgm.impls.tg.TinkerGraph;
 class GroovyTest {
 
 	public void run() {
-		//String MAIN_DG_FILE = "../../Schemes/Main.graphml";
 		String MAIN_DG_FILE = "Main.graphml";
 		
 		// -- устанавливаем BASE_DIR
-		Settings.setProperty("BASE_DIR", "#{CONFEX_DIR}/../DG2J/DragonGen2J/");
+		//Settings.setProperty("BASE_DIR", "#{CONFEX_DIR}/../../develop/DG2J/DragonGen2J/");
+		Settings.setProperty("BASE_DIR", "c:/ERV/WRK/drakongen/develop/DG2J/DragonGen2J/");
+		
 		System.out.println(" <--- BASE_DIR: " + Settings.getProperty("BASE_DIR")); 
 		
-		MAIN_DG_FILE = Settings.getProperty("BASE_DIR") + "../../Schemes/" + MAIN_DG_FILE;
+		MAIN_DG_FILE = Settings.getProperty("BASE_DIR") + "../../../work/Schemes/" + MAIN_DG_FILE;
 		System.out.println(" <--- Main drakon file: " + MAIN_DG_FILE);
 		
 		// -- переменная da
