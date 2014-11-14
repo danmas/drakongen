@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="29" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
 <window height="768" width="1024" x="90" y="90">
 <fastViewData fastViewLocation="1024"/>
@@ -13,11 +13,13 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="141" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="80" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="103" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -26,10 +28,21 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrakonAct.java" partName="DrakonAct.java" path="C:/ERV/WRK/drakongen/develop/DG2J/DragonGen2J/src/ru/erv/drakongen/DrakonAct.java" title="DrakonAct.java" tooltip="DragonGen2J/src/ru/erv/drakongen/DrakonAct.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DragonGen2J/src/ru/erv/drakongen/DrakonAct.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8754" selectionTopPixel="5539"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass2-1.java" partName="TestClass2-1.java" path="C:/ERV/WRK/drakongen/develop/DG2J/DragonGen2J/src/ru/erv/drakongen/test/TestClass2-1.java" title="TestClass2-1.java" tooltip="DragonGen2J/src/ru/erv/drakongen/test/TestClass2-1.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DragonGen2J/src/ru/erv/drakongen/test/TestClass2-1.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="372" selectionTopPixel="1099"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
@@ -41,6 +54,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -82,8 +98,8 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.pde.runtime.LogView" activePerspective="org.eclipse.pde.ui.PDEPerspective">
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.pde.ui.PDEPerspective">
+<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.pde.internal.ui.PDEPerspective" id="org.eclipse.pde.ui.PDEPerspective" label="Plug-in Development"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
@@ -126,26 +142,37 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.pde.ui.PluginsView"/>
-<view id="org.eclipse.pde.runtime.LogView"/>
-<view id="org.eclipse.ui.views.TaskList"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@183a1bd" orientation="512" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.6408898"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="bottomRight" orientation="256" selectedTabId="org.eclipse.pde.runtime.LogView" style="1">
+<fastViews>
+<view id="org.eclipse.pde.runtime.LogView" ratio="0.3"/>
+<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="topLeft" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
+<fastViews>
+<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.46504238"/>
+<view id="org.eclipse.pde.ui.PluginsView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
-<page content="org.eclipse.pde.ui.PluginsView" label="Plug-ins"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.pde.ui.PluginsView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1bc03b6" ratio="0.749499" ratioLeft="748" ratioRight="250" relationship="2" relative="topLeft">
@@ -156,27 +183,21 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.249499" ratioLeft="249" ratioRight="749" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.7496063" ratioLeft="476" ratioRight="159" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.pde.runtime.LogView" appearance="2" expanded="2">
-<page content="org.eclipse.pde.runtime.LogView" label="Error Log"/>
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
+<info part="org.eclipse.ui.editorss" ratio="0.32160804" ratioLeft="320" ratioRight="675" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.5923567" ratioLeft="372" ratioRight="256" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@183a1bd" ratio="0.74899864" ratioLeft="561" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.egit.ui.RepositoriesView" ratio="0.6" ratioLeft="381" ratioRight="254" relationship="4" relative="topLeft"/>
@@ -185,12 +206,57 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DragonGen2J/src/ru/erv/drakongen/DrakonAct.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DragonGen2J/src/ru/erv/drakongen/test/TestClass2-1.java"/>
+</editors>
+<item historyLabel="DrakonAct.java" index="0">
+<position info="not_deleted" x="8639" y="0"/>
+</item>
+<item historyLabel="TestClass2-1.java" index="1">
+<position info="not_deleted" x="1616" y="0"/>
+</item>
+<item historyLabel="TestClass2-1.java" index="1">
+<position info="not_deleted" x="686" y="0"/>
+</item>
+<item historyLabel="DrakonAct.java" index="0">
+<position info="not_deleted" x="8576" y="0"/>
+</item>
+<item historyLabel="TestClass2-1.java" index="1">
+<position info="not_deleted" x="170" y="0"/>
+</item>
+<item historyLabel="DrakonAct.java" index="0">
+<position info="not_deleted" x="8617" y="0"/>
+</item>
+<item historyLabel="TestClass2-1.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DrakonAct.java" index="0">
+<position info="not_deleted" x="8561" y="0"/>
+</item>
+<item historyLabel="TestClass2-1.java" index="1">
+<position info="not_deleted" x="429" y="0"/>
+</item>
+<item historyLabel="TestClass2-1.java" index="1">
+<position info="not_deleted" x="372" y="0"/>
+</item>
+<item active="true" historyLabel="DrakonAct.java" index="0">
+<position info="not_deleted" x="8561" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="bottomRight"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@183a1bd"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -202,5 +268,12 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass2-1.java" tooltip="DragonGen2J/src/ru/erv/drakongen/test/TestClass2-1.java">
+<persistable path="/DragonGen2J/src/ru/erv/drakongen/test/TestClass2-1.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrakonAct.java" tooltip="DragonGen2J/src/ru/erv/drakongen/DrakonAct.java">
+<persistable path="/DragonGen2J/src/ru/erv/drakongen/DrakonAct.java"/>
+</file>
+</mruList>
 </workbench>
