@@ -15,11 +15,12 @@ class GroovyTest {
 		
 		// -- устанавливаем BASE_DIR
 		//Settings.setProperty("BASE_DIR", "#{CONFEX_DIR}/../../develop/DG2J/DragonGen2J/");
-		Settings.setProperty("BASE_DIR", "c:/ERV/WRK/drakongen/develop/DG2J/DragonGen2J/");
+		//Settings.setProperty("BASE_DIR", "c:/ERV/WRK/drakongen/work/");
+		Settings.setProperty("BASE_DIR", "#{BASE_DIR}");
 		
 		System.out.println(" <--- BASE_DIR: " + Settings.getProperty("BASE_DIR")); 
 		
-		MAIN_DG_FILE = Settings.getProperty("BASE_DIR") + "../../../work/Schemes/" + MAIN_DG_FILE;
+		MAIN_DG_FILE = Settings.getProperty("BASE_DIR") + "/Schemes/" + MAIN_DG_FILE;
 		System.out.println(" <--- Main drakon file: " + MAIN_DG_FILE);
 		
 		// -- переменная da

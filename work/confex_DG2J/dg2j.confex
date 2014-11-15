@@ -24,7 +24,7 @@ not_vis_in_user_mode="true"
 >
 <properties>
 <vars>
-<var name="BASE_DIR">..\..\</var><var name="SCHEMES_DIR">..\Schemes\</var></vars>
+<var name="BASE_DIR">c:/ERV/WRK/drakongen/work/</var><var name="SCHEMES_DIR">..\Schemes\</var></vars>
 </properties>
 </VarsNode>
 <FolderNode
@@ -96,6 +96,9 @@ not_vis_in_user_mode="true"
 <src_file_name>
 /groovy/easy_form.groovy
 </src_file_name>
+<groovy>
+
+</groovy>
 </properties>
 </GroovyNode>
 <GroovyNode
@@ -106,6 +109,9 @@ name="Тест"
 <src_file_name>
 /groovy/test.groovy
 </src_file_name>
+<groovy>
+
+</groovy>
 </properties>
 </GroovyNode>
 </CompositeFormViewNode>
@@ -116,6 +122,16 @@ not_vis_in_user_mode="true"
 >
 <properties>
 </properties>
+<VarsNode
+id="-1"
+name="настройки"
+not_vis_in_user_mode="true"
+>
+<properties>
+<vars>
+<var name="BASE_DIR">..\..\</var><var name="SCHEMES_DIR">..\Schemes\</var></vars>
+</properties>
+</VarsNode>
 <JavaNode
 id="-1"
 name="JavaTest.java"
@@ -178,7 +194,7 @@ name="ConfexDG2J"
 >
 <properties>
 <path>
-C:\YandexDisk\FLASH\WRK\ConfexDG2J
+#{CONFEX_DIR}
 </path>
 </properties>
 </FolderNode>
@@ -460,6 +476,16 @@ public class Snippet023TreeViewerCustomTooltips {
 </properties>
 </JavaNode>
 </TreeNode>
+<FolderNode
+id="-1"
+name=""
+>
+<properties>
+<path>
+c:/ERV/WRK/drakongen/work/../develop/DG2J/DragonGen2J/src/ru/erv/drakongen/reserv/
+</path>
+</properties>
+</FolderNode>
 </TreeNode>
 <TreeNode
 id="-1"

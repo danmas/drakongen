@@ -187,7 +187,7 @@
     </node>
     <node id="n8">
       <data key="d4"><![CDATA[FILE]]></data>
-      <data key="d5"><![CDATA[../../Schemes/DrakonGen2.graphml]]></data>
+      <data key="d5"><![CDATA[/Schemes/DrakonGen2.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="85.96799999999996" width="118.84160000000008" x="342.37544122960173" y="642.9912596227731"/>
@@ -572,7 +572,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="34.76306471856299" width="45.0" x="2254.5887422729584" y="651.4489360230998"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -598,7 +598,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2217.6679422729585" y="511.4670949861769"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="154.2060546875" x="-17.6822273437499" y="-2.5916835937500764">test\test21_gen.graphml<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="154.2060546875" x="-17.682227343750128" y="-2.5916835937499627">test\test21_gen.graphml<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -658,7 +658,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="34.76306471856299" width="45.0" x="2531.6301231420284" y="651.4489360230999"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -830,7 +830,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="34.76306471856299" width="45.0" x="2864.314202923253" y="651.4489360231"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -856,7 +856,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2827.3934029232532" y="511.46709498617713"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.31640625" x="-33.23740312500013" y="-2.5916835937500764">test\testswitch1_gen.graphml<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.31640625" x="-33.23740312500013" y="-2.5916835937499627">test\testswitch1_gen.graphml<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1084,7 +1084,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="34.76306471856299" width="45.0" x="3126.2079520238385" y="651.4489360231"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -1110,7 +1110,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="85.96799999999996" width="118.84160000000008" x="3089.2871520238386" y="511.46709498617713"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="163.5166015625" x="-22.337500781250128" y="-2.5916835937500764">test\javafx\Main3.graphml<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="163.5166015625" x="-22.337500781250128" y="-2.5916835937499627">test\javafx\Main3.graphml<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1425,7 +1425,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="34.76306471856299" width="45.0" x="759.8237196507179" y="796.3607842168675"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -1451,7 +1451,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="85.96799999999996" width="118.84160000000008" x="722.9029196507178" y="659.4596712716807"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="195.447265625" x="-38.302832812500014" y="-2.5916835937499627">test\DrakonGen2_gen.graphml<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="195.447265625" x="-38.302832812500014" y="-2.5916835937500764">test\DrakonGen2_gen.graphml<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1471,7 +1471,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="122.0" width="100.0" x="732.3237196507177" y="905.1056899723536"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.951171875" x="-6.4755859375" y="-1.57568359375">DrakonGen2.java<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.951171875" x="-6.4755859375" y="-1.5756835937501137">DrakonGen2.java<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -1852,7 +1852,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2164.0575937459116" y="-8.567730690274345"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.6236335937499" y="-2.5916835937500196">test\TestClass1_gen.graphml<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.62363359375013" y="-2.5916835937500196">test\TestClass1_gen.graphml<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2107,7 +2107,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2121.8867483763443" y="-542.0532242750921"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.6236335937499" y="-2.5916835937500196">test\TestClass1_gen.graphml<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.62363359375013" y="-2.5916835937500764">test\TestClass1_gen.graphml<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2126,7 +2126,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="65.0" width="55.0" x="2043.4906292454145" y="-417.18985087888785"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="144.0" x="-44.5" y="69.0">генерим TestClass1-1<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="144.0" x="-44.50000000000023" y="69.0">генерим TestClass1-1<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -2213,7 +2213,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
           <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2441.098974614981" y="-542.0532242750921"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.62363359375013" y="-2.5916835937500196">test\TestClass2_gen.graphml<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.62363359375013" y="-2.5916835937500764">test\TestClass2_gen.graphml<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>

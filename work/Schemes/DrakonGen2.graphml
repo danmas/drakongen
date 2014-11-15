@@ -14912,7 +14912,7 @@ res_str += spaces + code +"\n";]]></data>
     <node id="n809">
       <data key="d4"/>
       <data key="d5"><![CDATA[CODE_JAVA]]></data>
-      <data key="d6"><![CDATA[src\ru\erv\drakongen\DrakonGen2.java]]></data>
+      <data key="d6"><![CDATA[../develop/DG2J/DragonGen2J/src/ru/erv/drakongen/DrakonGen2.java]]></data>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="54.890433133348026" width="125.20491038994999" x="-2682.369950508735" y="-3362.9524858928003"/>
@@ -24029,7 +24029,7 @@ DrakonUtils.getIconType(node).equals(DI_FOR_END)]]></data>
     <node id="n1302">
       <data key="d4"/>
       <data key="d5"><![CDATA[CODE_JAVA]]></data>
-      <data key="d6"><![CDATA[src\ru\erv\drakongen\reserv\DrakonGen23.java]]></data>
+      <data key="d6"><![CDATA[../develop/DG2J/DragonGen2J/src/ru/erv/drakongen/DrakonGen23.java]]></data>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="54.890433133348026" width="125.20491038994999" x="-2736.7351591327533" y="-3296.4344708277076"/>
@@ -24051,7 +24051,7 @@ DrakonGen23.java<y:LabelModel>
     <node id="n1303">
       <data key="d4"/>
       <data key="d5"><![CDATA[CODE_JAVA]]></data>
-      <data key="d6"><![CDATA[src\ru\erv\drakongen\reserv\DrakonGenGood.java]]></data>
+      <data key="d6"><![CDATA[../develop/DG2J/DragonGen2J/src/ru/erv/drakongen/reserv/DrakonGenGood.java]]></data>
       <data key="d7">
         <y:ShapeNode>
           <y:Geometry height="54.890433133348026" width="125.20491038994999" x="-2614.6788671184186" y="-3433.7693534331916"/>

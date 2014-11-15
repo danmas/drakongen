@@ -10,6 +10,13 @@ import net.confex.tree.ITreeNode
 import net.confex.tree.ICompositeProvider
 import org.eclipse.ui.part.ViewPart
 
+import ru.erv.drakongen.DrakonAct;
+import ru.erv.drakongen.Settings;
+import ru.erv.drakongen.parser.*;
+
+import com.tinkerpop.blueprints.pgm.Graph;
+import com.tinkerpop.blueprints.pgm.Vertex;
+import com.tinkerpop.blueprints.pgm.impls.tg.TinkerGraph;
 
 // \groovy\easy_form.groovy
 
@@ -49,28 +56,45 @@ class FormTest {
 			gridData( style:"fill_both" )
 	      	gridLayout(numColumns:1)
 	      	
+	      	def MAIN_DG_FILE = "Main.graphml";
+			
 	 		def tab = tabFolder( style:"none" ) {
 				gridData( style:"fill_horizontal" )
 				tabItem( style:"none", text:"Run drakon act" ) {
 					 composite {
 						gridData( style:"fill_both" )
 			         	gridLayout(numColumns:3) 
- 			        	label( style:"none", text:"Main.graphml" )
-			        	def v_testVar11 = text( style:"border" ) {  
+ 			        	label( style:"none", text:"Enter name of the main graphml file of DrakonAct " )
+			        	def v_ManiDrakonActFN = text( style:"border", text:MAIN_DG_FILE  ) {  
 				        	gridData( style:"fill_horizontal", grabExcessHorizontalSpace:true )
 			        	}
-//						text( editable:false, enabled:true, style:"none", text:"произвольный текст 11" )
-//			        	
-//			        	label( style:"none", text:"Поле 12" )
-//			        	def v_testVar12 = text( style:"border" ) {  
-//				        	gridData( style:"fill_horizontal", grabExcessHorizontalSpace:true )
-//			        	}
-//						text( editable:false, enabled:true, style:"none", text:"произвольный текст 12" )
 						button( style:"push",text:"Execute", background:[0, 255, 255] )  {
 							onEvent(type:"Selection", closure:{
-								println "You have pressed the button 11"
-								println "Value of field 11="+v_testVar11.text
-								println "Value of field 12="+v_testVar12.text
+								// -- устанавливаем BASE_DIR
+								Settings.setProperty("BASE_DIR", "#{BASE_DIR}");
+								
+								System.out.println(" <--- BASE_DIR: " + Settings.getProperty("BASE_DIR")); 
+								
+								MAIN_DG_FILE = Settings.getProperty("BASE_DIR") + "/Schemes/" + MAIN_DG_FILE;
+								System.out.println(" <--- Main drakon file: " + v_ManiDrakonActFN.text); //MAIN_DG_FILE);
+								
+								// -- переменная da
+								DrakonAct da = new DrakonAct();
+								// -- строим Graph из файла Маin
+								Graph graph = new TinkerGraph();
+
+								GraphMLReader reader = new GraphMLReader(MAIN_DG_FILE, graph);
+
+								try {
+									reader.read();
+									System.out.println(" <--- Прочитали файл " + MAIN_DG_FILE);
+								} catch (Exception e) {
+									System.err.println(" err " + e.getMessage());
+									e.printStackTrace();
+								}
+								// -- выполнение активностей
+								da.activate_drakon(graph);
+								dq = null;
 								})  
 						}
 					} //-- composite
