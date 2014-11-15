@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="22" version="2.0">
 <workbenchAdvisor/>
-<window height="780" width="1036" x="174" y="97">
+<window height="780" maximized="true" width="1036" x="70" y="4">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar/>
 <coolbarLayout>
 <coolItem id="main" itemType="typeToolBarContribution" x="61" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="57" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.annotationNavigation" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.annotationNavigation" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.navigation" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="80" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1415671430032" focus="true" label="&lt;Unknown Label&gt; - confex Perspective">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GroovyTest.groovy" partName="GroovyTest.groovy" path="C:/ERV/WRK/drakongen/work/confex_DG2J/groovy/GroovyTest.groovy" title="GroovyTest.groovy" tooltip="Confex Project/GroovyTest.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Confex Project/GroovyTest.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="net.confex.view.folderView:#{BASE_DIR}_develop_DG2J_DragonGen2J_src_ru_erv_drakongen_test" partName="..\..\\develop\DG2J\DragonGen2J\src\ru\erv\drakongen\test">
 <viewState path="..\..\\develop\DG2J\DragonGen2J\src\ru\erv\drakongen\test"/>
 </view>
-<view id="net.confex.view.navigationView:1415971053912" partName="dg2j.confex">
+<view id="net.confex.view.navigationView:1415971053912" partName="*C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex">
 <viewState file_name="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex">
 <expanded>
 <element path="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex~…~dg2j_0"/>
@@ -55,9 +61,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
@@ -83,16 +87,16 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
-<view id="net.confex.view.folderView:#{SCHEMES_DIR}" partName="..\Schemes\">
-<viewState path="..\Schemes\"/>
-</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="net.confex.view.folderView:#{SCHEMES_DIR}" partName="..\Schemes\">
+<viewState path="..\Schemes\"/>
+</view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="net.confex.application.perspective">
+<perspectives activePart="net.confex.view.navigationView:1415971053912" activePerspective="net.confex.application.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="net.confex.application.Perspective" id="net.confex.application.perspective" label="confex Perspective"/>
 <alwaysOnActionSet id="net.sourceforge.sqlexplorer.about"/>
@@ -115,7 +119,7 @@
 <mainWindow>
 <info folder="true" part="left">
 <folder activePageID="net.confex.view.navigationView:1415971053912" appearance="2" expanded="2">
-<page content="net.confex.view.navigationView:1415971053912" label="dg2j.confex"/>
+<page content="net.confex.view.navigationView:1415971053912" label="*C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex"/>
 <page content="net.confex.view.navigationView:1415942719685" label="LabelNotFound"/>
 <page content="net.confex.view.navigationView:1415669756505" label="LabelNotFound"/>
 <page content="net.confex.view.navigationView:*" label="LabelNotFound"/>
@@ -134,7 +138,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@fa3ebb" ratio="0.795432" ratioLeft="801" ratioRight="206" relationship="2" relative="org.eclipse.ui.internal.ViewStack@11f347a">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@fa3ebb" ratio="0.6416584" ratioLeft="650" ratioRight="363" relationship="2" relative="org.eclipse.ui.internal.ViewStack@11f347a">
 <folder activePageID="net.confex.view.folderView:#{BASE_DIR}_develop_DG2J_DragonGen2J_src_ru_erv_drakongen_test" appearance="2" expanded="2">
 <page content="net.confex.view.folderView:#{BASE_DIR}_develop_DG2J_DragonGen2J_src_ru_erv_drakongen_test" label="..\..\\develop\DG2J\DragonGen2J\src\ru\erv\drakongen\test"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -147,7 +151,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="messages" ratio="0.2827907" ratioLeft="304" ratioRight="771" relationship="2" relative="left">
+<info folder="true" part="messages" ratio="0.3662389" ratioLeft="371" ratioRight="642" relationship="2" relative="left">
 <folder activePageID="net.confex.view.formView:Форма для запуска DrakonAct" appearance="2" expanded="2">
 <page content="net.confex.view.formView:Форма для запуска DrakonAct" label="Confex Form"/>
 <page content="net.confex.view.formView:*" label="LabelNotFound"/>
@@ -224,47 +228,34 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.75" ratioLeft="477" ratioRight="159" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info folder="true" part="bottom" ratio="0.75" ratioLeft="477" ratioRight="159" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="right" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -273,7 +264,14 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Confex Project/GroovyTest.groovy"/>
+</editors>
+<item active="true" historyLabel="GroovyTest.groovy" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
@@ -285,7 +283,7 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="GroovyTest.groovy" tooltip="Confex Project/GroovyTest.groovy">
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GroovyTest.groovy" tooltip="Confex Project/GroovyTest.groovy">
 <persistable path="/Confex Project/GroovyTest.groovy"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="test.groovy" tooltip="Confex Project/test.groovy">

@@ -357,7 +357,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestDumpVisitorGml.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="1020.4670612414332" y="1171.8484367647627"/>
+          <y:Geometry height="122.0" width="100.0" x="1057.3878612414328" y="1295.4803281080524"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="159.5859375" x="-29.79296875" y="-1.57568359375">test.TestDumpVisitorGml<y:LabelModel>
@@ -376,7 +376,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="942.0709421105032" y="1047.9850633685583"/>
+          <y:Geometry height="65.0" width="55.0" x="978.9917421105029" y="1171.616954711848"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="200.0478515625" x="-72.52392578125" y="69.0">реверсим TestDumpVisitorGml<y:LabelModel>
@@ -397,7 +397,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="1047.9670612414332" y="1063.1035310092766"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="1084.8878612414328" y="1186.7354223525663"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
@@ -423,7 +423,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestDumpVisitorGml.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1011.0462612414331" y="923.1216899723538"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1047.9670612414327" y="1046.7535813156435"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="214.0546875" x="-47.6065437499999" y="-2.5916835937500764">test\TestDumpVisitorGml.graphml<y:LabelModel>
@@ -443,7 +443,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\j2dg\japa\DumpVisitorGml.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="1528.6949558468962" y="1171.8484367647627"/>
+          <y:Geometry height="122.0" width="100.0" x="1565.6157558468958" y="1295.4803281080524"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.6201171875" x="-33.31005859375" y="-1.57568359375">j2dg.japa.DumpVisitorGml<y:LabelModel>
@@ -462,7 +462,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="1450.298836715966" y="1047.9850633685583"/>
+          <y:Geometry height="65.0" width="55.0" x="1487.2196367159656" y="1171.616954711848"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="172.8203125" x="-58.91015625" y="69.0">реверсим DumpVisitorGml<y:LabelModel>
@@ -483,7 +483,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="1556.1949558468962" y="1063.1035310092766"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="1593.1157558468958" y="1186.7354223525663"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
@@ -509,7 +509,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\DumpVisitorGml.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1519.2741558468958" y="923.1216899723538"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1556.1949558468955" y="1046.7535813156435"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.8271484375" x="-33.9927742187499" y="-2.5916835937500764">test\DumpVisitorGml.graphml<y:LabelModel>
@@ -529,7 +529,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\Test21.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="1922.5473614038883" y="680.5809481667677"/>
+          <y:Geometry height="122.0" width="100.0" x="2227.0887422729584" y="760.1938417785858"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="102.8271484375" x="-1.41357421875" y="-1.57568359375">test\Test21.java<y:LabelModel>
@@ -548,7 +548,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="1844.1512422729584" y="556.7175747705631"/>
+          <y:Geometry height="65.0" width="55.0" x="2148.6926231420284" y="636.3304683823812"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="113.716796875" x="-29.3583984375" y="69.0">реверсим Test21<y:LabelModel>
@@ -569,7 +569,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="1950.0473614038883" y="571.8360424112817"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="2254.5887422729584" y="651.4489360230998"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
@@ -595,7 +595,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\test21_gen.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1913.1265614038884" y="431.8542013743588"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2217.6679422729585" y="511.4670949861769"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="154.2060546875" x="-17.6822273437499" y="-2.5916835937500764">test\test21_gen.graphml<y:LabelModel>
@@ -615,7 +615,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\Test22.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="2199.5887422729584" y="680.5809481667677"/>
+          <y:Geometry height="122.0" width="100.0" x="2504.1301231420284" y="760.1938417785858"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="102.8271484375" x="-1.41357421875" y="-1.57568359375">test\Test22.java<y:LabelModel>
@@ -634,7 +634,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="2121.1926231420284" y="556.7175747705633"/>
+          <y:Geometry height="65.0" width="55.0" x="2425.7340040110985" y="636.3304683823814"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="113.716796875" x="-29.3583984375" y="69.0">реверсим Test22<y:LabelModel>
@@ -655,7 +655,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="2227.0887422729584" y="571.8360424112818"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="2531.6301231420284" y="651.4489360230999"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
@@ -681,7 +681,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\test22_gen.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2190.1679422729585" y="431.85420137435887"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2494.7093231420286" y="511.46709498617696"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="154.2060546875" x="-17.682227343750128" y="-2.5916835937500196">test\test22_gen.graphml<y:LabelModel>
@@ -787,7 +787,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestSwitch1.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="2532.272822054183" y="680.5809481667678"/>
+          <y:Geometry height="122.0" width="100.0" x="2836.814202923253" y="760.1938417785859"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.275390625" x="-18.1376953125" y="-1.57568359375">test\TestSwitch1.java<y:LabelModel>
@@ -806,7 +806,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="2453.876702923253" y="556.7175747705634"/>
+          <y:Geometry height="65.0" width="55.0" x="2758.418083792323" y="636.3304683823815"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="147.1650390625" x="-46.08251953125" y="69.0">реверсим TestSwitch1<y:LabelModel>
@@ -827,7 +827,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="2559.772822054183" y="571.8360424112819"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="2864.314202923253" y="651.4489360231"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
@@ -853,7 +853,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestSwitch1_gen.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2522.852022054183" y="431.85420137435904"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2827.3934029232532" y="511.46709498617713"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.31640625" x="-33.23740312500013" y="-2.5916835937500764">test\testswitch1_gen.graphml<y:LabelModel>
@@ -1041,7 +1041,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\javafx\Main3.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="2794.1665711547685" y="680.5809481667678"/>
+          <y:Geometry height="122.0" width="100.0" x="3098.7079520238385" y="760.1938417785859"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="138.6201171875" x="-19.31005859375" y="-1.57568359375">test\javafx\Main3.java<y:LabelModel>
@@ -1060,7 +1060,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="2715.7704520238385" y="556.7175747705634"/>
+          <y:Geometry height="65.0" width="55.0" x="3020.3118328929086" y="636.3304683823815"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="179.08203125" x="-62.041015625" y="69.0">реверсим javafx\Main3.java<y:LabelModel>
@@ -1081,7 +1081,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="2821.6665711547685" y="571.8360424112819"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="3126.2079520238385" y="651.4489360231"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
@@ -1107,7 +1107,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\javafx\Main3.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2784.7457711547686" y="431.85420137435904"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="3089.2871520238386" y="511.46709498617713"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="163.5166015625" x="-22.337500781250128" y="-2.5916835937500764">test\javafx\Main3.graphml<y:LabelModel>
@@ -1295,7 +1295,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\japa\parser\JavaParser.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="1289.097057220315" y="1171.8484367647627"/>
+          <y:Geometry height="122.0" width="100.0" x="1326.0178572203147" y="1295.4803281080524"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.37890625" x="-2.189453125" y="-1.57568359375">JavaParser.java<y:LabelModel>
@@ -1314,7 +1314,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="1210.700938089385" y="1047.9850633685583"/>
+          <y:Geometry height="65.0" width="55.0" x="1247.6217380893847" y="1171.616954711848"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="141.7236328125" x="-43.36181640625" y="69.0">реверсим JavaParser<y:LabelModel>
@@ -1335,7 +1335,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="1316.597057220315" y="1063.1035310092766"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="1353.5178572203147" y="1186.7354223525663"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
@@ -1361,7 +1361,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\JavaParser.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1279.676257220315" y="923.1216899723538"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1316.5970572203146" y="1046.7535813156435"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="155.73046875" x="-18.4444343749999" y="-2.5916835937500764">test\JavaParser.graphml<y:LabelModel>
@@ -1401,7 +1401,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="646.8952261564904" y="794.0484747975634"/>
+          <y:Geometry height="65.0" width="55.0" x="653.9276005197879" y="781.2423165761492"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="150.2958984375" x="-47.64794921875" y="69.0">реверсим DrakonGen2<y:LabelModel>
@@ -1422,7 +1422,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="752.7913452874203" y="809.1669424382817"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="759.8237196507179" y="796.3607842168675"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
@@ -1448,7 +1448,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\DrakonGen2_gen.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="715.8705452874202" y="672.2658294930949"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="722.9029196507178" y="659.4596712716807"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="195.447265625" x="-38.302832812500014" y="-2.5916835937499627">test\DrakonGen2_gen.graphml<y:LabelModel>
@@ -1468,7 +1468,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[src\ru\erv\drakongen\DrakonGen2.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="725.2913452874202" y="917.9118481937678"/>
+          <y:Geometry height="122.0" width="100.0" x="732.3237196507177" y="905.1056899723536"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.951171875" x="-6.4755859375" y="-1.57568359375">DrakonGen2.java<y:LabelModel>
@@ -1676,7 +1676,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[..\org.eclipse.swt.examples\src\org\eclipse\swt\examples\fileviewer\FileViewer.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="1816.6512422729584" y="1171.8484367647625"/>
+          <y:Geometry height="122.0" width="100.0" x="1853.572042272958" y="1295.4803281080522"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="98.923828125" x="0.5380859375" y="-1.57568359375">FileViewer.java<y:LabelModel>
@@ -1695,7 +1695,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="1738.2551231420282" y="1047.985063368558"/>
+          <y:Geometry height="65.0" width="55.0" x="1775.1759231420278" y="1171.6169547118477"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="136.2685546875" x="-40.63427734375" y="69.0">реверсим FileViewer<y:LabelModel>
@@ -1716,7 +1716,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="1844.1512422729584" y="1063.1035310092764"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="1881.072042272958" y="1186.735422352566"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856287">
@@ -1742,7 +1742,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\FileViewer.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1807.230442272958" y="923.1216899723536"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1844.1512422729577" y="1046.7535813156433"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.37890625" x="-3.2686531249999007" y="-2.5916835937500764">test\FileViewer.java<y:LabelModel>
@@ -1783,7 +1783,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass1.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="1922.5473614038885" y="226.70834819376796"/>
+          <y:Geometry height="122.0" width="100.0" x="2173.4783937459115" y="240.15901610213456"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="130.0478515625" x="-15.02392578125" y="-1.57568359375">test\TestClass1.java<y:LabelModel>
@@ -1802,7 +1802,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="1844.1512422729586" y="102.8449747975634"/>
+          <y:Geometry height="65.0" width="55.0" x="2095.0822746149815" y="116.29564270592999"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="140.9375" x="-42.96875" y="69.0">реверсим TestClass1<y:LabelModel>
@@ -1823,7 +1823,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="1950.0473614038885" y="117.96344243828196"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="2200.9783937459115" y="131.41411034664856"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
@@ -1849,7 +1849,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass1_gen.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1913.1265614038887" y="-22.018398598640943"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2164.0575937459116" y="-8.567730690274345"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.6236335937499" y="-2.5916835937500196">test\TestClass1_gen.graphml<y:LabelModel>
@@ -1890,7 +1890,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass2.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="2199.5887422729584" y="226.70834819376796"/>
+          <y:Geometry height="122.0" width="100.0" x="2450.5197746149815" y="240.15901610213456"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="130.0478515625" x="-15.02392578125" y="-1.57568359375">test\TestClass2.java<y:LabelModel>
@@ -1909,7 +1909,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="2121.1926231420284" y="102.8449747975634"/>
+          <y:Geometry height="65.0" width="55.0" x="2372.1236554840516" y="116.29564270592999"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="140.9375" x="-42.96875" y="69.0">реверсим TestClass2<y:LabelModel>
@@ -1930,7 +1930,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="2227.0887422729584" y="117.96344243828196"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="2478.0197746149815" y="131.41411034664856"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
@@ -1956,7 +1956,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass2_gen.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2190.1679422729585" y="-22.018398598640943"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2441.0989746149817" y="-8.567730690274345"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.62363359375013" y="-2.5916835937500196">test\TestClass2_gen.graphml<y:LabelModel>
@@ -1997,7 +1997,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass3.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="2484.9870514503" y="226.70834819376802"/>
+          <y:Geometry height="122.0" width="100.0" x="2735.918083792323" y="240.15901610213461"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="130.0478515625" x="-15.02392578125" y="-1.57568359375">test\TestClass3.java<y:LabelModel>
@@ -2016,7 +2016,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="2406.59093231937" y="102.84497479756345"/>
+          <y:Geometry height="65.0" width="55.0" x="2657.521964661393" y="116.29564270593005"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="140.9375" x="-42.96875" y="69.0">реверсим TestClass3<y:LabelModel>
@@ -2037,7 +2037,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_UP]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-          <y:Geometry height="34.76306471856299" width="45.0" x="2512.4870514503" y="117.96344243828202"/>
+          <y:Geometry height="34.76306471856299" width="45.0" x="2763.418083792323" y="131.4141103466486"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="20.5" y="38.76306471856299">
@@ -2063,7 +2063,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass3_gen.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2475.5662514503" y="-22.018398598640886"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2726.4972837923233" y="-8.567730690274288"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.62363359375013" y="-2.5916835937500196">test\TestClass3_gen.graphml<y:LabelModel>
@@ -2104,7 +2104,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass1_gen.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="1937.3304098856959" y="-489.5105704796289"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2121.8867483763443" y="-542.0532242750921"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.6236335937499" y="-2.5916835937500196">test\TestClass1_gen.graphml<y:LabelModel>
@@ -2123,7 +2123,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="1858.934290754766" y="-364.64719708342454"/>
+          <y:Geometry height="65.0" width="55.0" x="2043.4906292454145" y="-417.18985087888785"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="144.0" x="-44.5" y="69.0">генерим TestClass1-1<y:LabelModel>
@@ -2144,7 +2144,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_DOWN]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Gateway.withShadow">
-          <y:Geometry height="45.0" width="45.0" x="1974.251209885696" y="-354.64719708342454"/>
+          <y:Geometry height="45.0" width="45.0" x="2158.8075483763446" y="-407.18985087888785"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#E38B00" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="49.0" y="-8.0">
@@ -2169,7 +2169,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass1-1.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="1946.7512098856957" y="-240.78382368721998"/>
+          <y:Geometry height="122.0" width="100.0" x="2131.307548376344" y="-293.3264774826833"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="142.49609375" x="-21.248046875" y="-1.57568359375">test\TestClass1-1.java<y:LabelModel>
@@ -2210,7 +2210,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass2_gen.graphml]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2256.5426361243326" y="-489.5105704796289"/>
+          <y:Geometry height="85.96799999999996" width="118.84160000000008" x="2441.098974614981" y="-542.0532242750921"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="91.1513671875" horizontalTextPosition="center" iconData="1" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="186.0888671875" x="-33.62363359375013" y="-2.5916835937500196">test\TestClass2_gen.graphml<y:LabelModel>
@@ -2229,7 +2229,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_BEG]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="2178.1465169934027" y="-364.64719708342454"/>
+          <y:Geometry height="65.0" width="55.0" x="2362.7028554840513" y="-417.18985087888785"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" modelName="custom" textColor="#000000" visible="true" width="144.0" x="-44.5" y="69.0">генерим TestClass2-1<y:LabelModel>
@@ -2250,7 +2250,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d4"><![CDATA[DG_LIFT_DOWN]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Gateway.withShadow">
-          <y:Geometry height="45.0" width="45.0" x="2293.4634361243325" y="-354.64719708342454"/>
+          <y:Geometry height="45.0" width="45.0" x="2478.019774614981" y="-407.18985087888785"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#E38B00" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="49.0" y="-8.0">
@@ -2275,7 +2275,7 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
       <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\TestClass2-1.java]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="2265.9634361243325" y="-240.78382368721998"/>
+          <y:Geometry height="122.0" width="100.0" x="2450.519774614981" y="-293.3264774826833"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="125.1513671875" horizontalTextPosition="center" iconData="3" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="142.49609375" x="-21.248046875" y="-1.57568359375">test\TestClass2-1.java<y:LabelModel>
@@ -2941,10 +2941,10 @@ DrakonGen2,DrakonAct,DrakonUtils,ReverseCoding<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e63" source="n40" target="n106">
+    <edge id="e63" source="n40" target="n43">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.32758254262245146" ty="12.314894732109622"/>
+          <y:Path sx="0.0" sy="0.0" tx="10.792848322953773" ty="21.027577385914583"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
