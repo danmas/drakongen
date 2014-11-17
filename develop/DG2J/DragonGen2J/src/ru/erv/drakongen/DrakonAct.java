@@ -237,6 +237,12 @@ public class DrakonAct {
 
 			// -- break
 			break;
+			
+		case DrakonUtils.DI_SI_BEG:
+			DrakonGen2 dg2 = new DrakonGen2();
+			//dg.setGraph(graph);
+			dg2.parseSiluet(node);
+			break;
 		// -- неизвестный тип
 		default:
 			// -- Неизвестный тип активности ...

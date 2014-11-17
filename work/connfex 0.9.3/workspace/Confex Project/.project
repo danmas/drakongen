@@ -9,5 +9,10 @@
 	<natures>
 	</natures>
 	<linkedResources>
+		<link>
+			<name>DA2SRS.groovy</name>
+			<type>1</type>
+			<location>C:/ERV/WRK/drakongen/work/confex_DG2J/groovy/DA2SRS.groovy</location>
+		</link>
 	</linkedResources>
 </projectDescription>
