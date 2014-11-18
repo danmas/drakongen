@@ -28,9 +28,14 @@ import ru.erv.drakongen.utils.FileUtils;
 	}
 } 
 	//-- константы
-	></data>";
-public static final String PREF_NODE_ID = "<node id=\"";
-public static final String POST_NODE_ID = "\"";
+	public static final boolean RET_OK  = true;
+	public static final boolean RET_ERROR  = false;
+	public static final String PREF_MARKER_CDATA = "<data key=\"d4\"><![CDATA[";
+	public static final String PREF_MARKER_DG2J = "<DG2J code_mark=\"";
+	public static final String PREF_CODE_CDATA = "<data key=\"d6\"><![CDATA[";
+	public static final String POST_CODE_CDATA = "]]></data>";
+	public static final String PREF_NODE_ID = "<node id=\"";
+	public static final String POST_NODE_ID = "\"";
  
 	//-- перменные
 	List<String> files = new ArrayList<String>();

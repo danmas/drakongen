@@ -69,9 +69,9 @@ class FormTest {
 						gridData( style:"fill_both" )
 			         	gridLayout(numColumns:3) 
  			        	label( style:"none", text:"#{TEXT_ENTER_DRAKON_FILE_NAME}")
-						combo_values = ["DrakonGen2.graphml", "Main.graphml"];
+						combo_values = ["#{DRAKON_FILE1}","#{DRAKON_FILE2}","#{DRAKON_FILE3}","#{DRAKON_FILE4}","#{DRAKON_FILE5}"];
 						def garphml_file = combo(text:"DrakonGen2.graphml", items:combo_values );
-						garphml_file.text = "DrakonGen2.graphml";
+						garphml_file.text = "#{DRAKON_FILE1}";
 						
 						button( style:"push",text:"#{BTN_EXECUTE}", background:[0, 255, 255] )  {
 							onEvent(type:"Selection", closure:{
@@ -84,8 +84,8 @@ class FormTest {
 								System.out.println(" --- WORK_DIR: #{WORK_DIR}"); 
 								System.out.println(" --- BASE_DIR: " + Settings.getProperty("BASE_DIR")); 
 								
-								MAIN_DG_FILE = "#{WORK_DIR}/Schemes/" + garphml_file.text;
-								System.out.println(" --- Main drakon file: " + MAIN_DG_FILE);
+								MAIN_DG_FILE = "#{SCHEMES_DIR}/" + garphml_file.text;
+								System.out.println(" --- Main drakon file: '" + MAIN_DG_FILE+"'");
 								
 								// -- переменная da
 								DrakonAct da = new DrakonAct();

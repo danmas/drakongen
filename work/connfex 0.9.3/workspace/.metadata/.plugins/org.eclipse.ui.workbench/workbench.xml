@@ -6,13 +6,13 @@
 <perspectiveBar/>
 <coolbarLayout>
 <coolItem id="main" itemType="typeToolBarContribution" x="61" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="80" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="57" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.annotationNavigation" itemType="typeToolBarContribution" x="99" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.navigation" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
 </coolbarLayout>
@@ -20,7 +20,7 @@
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
-<folder appearance="1" expanded="2">
+<folder appearance="1" expanded="0">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -29,55 +29,51 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="easy_form.groovy" partName="easy_form.groovy" path="C:/ERV/WRK/drakongen/work/confex_DG2J/groovy/easy_form.groovy" title="easy_form.groovy" tooltip="Confex Project/easy_form.groovy" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Confex Project/easy_form.groovy"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GroovyTest.groovy" partName="GroovyTest.groovy" path="C:/ERV/WRK/drakongen/work/connfex 0.9.3/workspace/Confex Project/GroovyTest.groovy" title="GroovyTest.groovy" tooltip="Confex Project/GroovyTest.groovy" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Confex Project/GroovyTest.groovy"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DA2SRS.groovy" partName="DA2SRS.groovy" path="C:/ERV/WRK/drakongen/work/confex_DG2J/groovy/DA2SRS.groovy" title="DA2SRS.groovy" tooltip="Confex Project/DA2SRS.groovy" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DA2SRS.groovy" partName="DA2SRS.groovy" path="C:/ERV/WRK/drakongen/work/confex_DG2J/groovy/DA2SRS.groovy" title="DA2SRS.groovy" tooltip="Confex Project/DA2SRS.groovy" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Confex Project/DA2SRS.groovy"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1270" selectionTopPixel="430"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="674" selectionTopPixel="0"/>
+</editor>
+<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="easy_form.groovy" partName="easy_form.groovy" path="C:/ERV/WRK/drakongen/work/confex_DG2J/groovy/easy_form.groovy" title="easy_form.groovy" tooltip="Confex Project/easy_form.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Confex Project/easy_form.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="net.confex.view.folderView:#{BASE_DIR}_develop_DG2J_DragonGen2J_src_ru_erv_drakongen_test" partName="..\..\\develop\DG2J\DragonGen2J\src\ru\erv\drakongen\test">
 <viewState path="..\..\\develop\DG2J\DragonGen2J\src\ru\erv\drakongen\test"/>
 </view>
-<view id="net.confex.view.folderView:c__ERV_WRK_drakongen_work_.._develop_DG2J_DragonGen2J_src_ru_erv_drakongen_reserv_" partName="c:/ERV/WRK/drakongen/work/../develop/DG2J/DragonGen2J/src/ru/erv/drakongen/reserv/">
-<viewState path="c:/ERV/WRK/drakongen/work/../develop/DG2J/DragonGen2J/src/ru/erv/drakongen/reserv/"/>
-</view>
-<view id="net.confex.view.folderView:c__ERV_WRK_drakongen_work__.._develop_DG2J_DragonGen2_src_ru_erv_drakongen_reserv_" partName="">
-<viewState path="c:\ERV\WRK\drakongen\work\..\develop\DG2J\DragonGen2\src\ru"/>
+<view id="net.confex.view.formView:Форма для запуска drakongen" partName="Форма для запуска drakongen">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
-<view id="net.confex.view.folderView:#{SCHEMES_DIR}" partName="..\Schemes\">
-<viewState path="..\Schemes\"/>
+<view id="net.confex.view.folderView:#{SCHEMES_DIR}" partName="C:\ERV\WRK">
+<viewState path="C:\ERV\WRK"/>
 </view>
-<view id="net.confex.view.folderView:C__YandexDisk_FLASH_WRK_ConfexDG2J" partName="ConfexDG2J">
-<viewState path="C:\YandexDisk\FLASH\WRK\ConfexDG2J"/>
-</view>
-<view id="net.confex.view.folderView:c__ERV_WRK_drakongen_work_.._develop_DG2J_DragonGen2_src_ru_erv_drakongen_reserv_" partName="">
-<viewState path="c:/ERV/WRK/drakongen/work/../develop/DG2J/DragonGen2/src/ru/erv/drakongen/reserv/"/>
-</view>
-<view id="net.confex.view.navigationView:1415971053912" partName="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex">
+<view id="net.confex.view.navigationView:1415971053912" partName="*C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex">
 <viewState file_name="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex">
 <expanded>
 <element path="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex~…~dg2j_0"/>
-<element path="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex~…~J2EE_1"/>
+<element path="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex~…~dg2j_0~…~настройки WORK_DIR_1"/>
+<element path="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex~…~dg2j_0~…~Запуск indigo-eclipse_6"/>
+<element path="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex~…~dg2j_0~…~#{DRAKON_RUN_FORM_NAME}_7"/>
 <element path="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex~…~SRS_2"/>
 </expanded>
 <selection>
-<element path="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex~…~SRS_2~…~Запуск DrakonAct из скрипта_3"/>
+<element path="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex~…~SRS_2~…~#{DRAKON_RUN_FORM_NAME}_4"/>
 </selection>
 </viewState>
 </view>
-<view id="net.confex.view.folderView:#{BASE_DIR}" partName="c:/ERV/WRK/srs/develop/">
-<viewState path="c:/ERV/WRK/srs/develop/"/>
+<view id="net.confex.view.folderView:#{BASE_DIR}" partName="c:/ERV/WRK/srs/work/../develop/">
+<viewState path="c:/ERV/WRK/srs/work/../develop/"/>
+</view>
+<view id="net.confex.view.formView:Форма для запуска DrakonAct SRS" partName="Форма для запуска DrakonAct SRS">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
@@ -89,11 +85,8 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="net.confex.view.formView:Форма для запуска DrakonAct" partName="Confex Form">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
+<view id="net.confex.view.WebBrowserView:3494144" partName="Имена форм в закладках">
+<viewState url="about:blank"/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -120,20 +113,42 @@
 </customFilters>
 </viewState>
 </view>
-<view id="net.confex.app.view" partName="Explorer">
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
-<view id="net.confex.view.folderView:C__YandexDisk_FLASH_WRK_SRS_v.09" partName="C:\YandexDisk\FLASH\WRK\SRS_v.09">
-<viewState path="C:\YandexDisk\FLASH\WRK\SRS_v.09"/>
+<view id="net.confex.view.navigationView:1416315868641" partName="Examples.confex">
+<viewState file_name="C:\ERV\WRK\confex\examples\ru\Examples.confex">
+<expanded>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6~…~1.4) Использование Groovy скрипта_4"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6~…~1.4) Использование Groovy скрипта_4~…~1.4.4) Пользовательские формы SWT_4"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6~…~1.4) Использование Groovy скрипта_4~…~1.4.4) Пользовательские формы SWT_4~…~Форма без groovy-swt связь по &quot;parent&quot;_0"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6~…~1.4) Использование Groovy скрипта_4~…~1.4.4) Пользовательские формы SWT_4~…~примеры закладок (TabItem и cTabItem)_1"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6~…~1.4) Использование Groovy скрипта_4~…~1.4.4) Пользовательские формы SWT_4~…~&quot;Улучшенная форма с вкладками&quot;_3"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6~…~1.4) Использование Groovy скрипта_4~…~1.4.4) Пользовательские формы SWT_4~…~&quot;Улучшенная форма с вкладками&quot;_3~…~/groovy/improved_form.groovy_1"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6~…~1.4) Использование Groovy скрипта_4~…~1.4.4) Пользовательские формы SWT_4~…~Modal window_5"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~2) Примеры использования_7"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~2) Примеры использования_7~…~2.1) Построение пользовательских интерфейсов_1"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~2) Примеры использования_7~…~2.2) Инсталляция пользовательских приложений использующих базу данных_2"/>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~2) Примеры использования_7~…~2.3) Тестирование пользовательских приложений_3"/>
+</expanded>
+<selection>
+<element path="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6~…~1.4) Использование Groovy скрипта_4~…~1.4.4) Пользовательские формы SWT_4~…~Modal window_5~…~пример Модальное окно_0"/>
+</selection>
+<running>
+<element run_object_key="C:\ERV\WRK\confex\examples\ru\Examples.confex~…~+Examples ver 0.9.11_0~…~1) Примеры_6~…~New features_6~…~+  Нормальные имена форм в закладках_6~…~Имена форм в закладках_0"/>
+</running>
+</viewState>
 </view>
-<view id="net.confex.view.folderView:#{CONFEX_DIR}" partName="C:/ERV/WRK/drakongen/work/confex_DG2J/">
-<viewState path="C:/ERV/WRK/drakongen/work/confex_DG2J/"/>
+<view id="net.confex.app.view" partName="Explorer">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="net.confex.view.navigationView:1415971053912" activePerspective="net.confex.application.perspective">
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="net.confex.application.perspective">
+<perspective editorAreaTrimState="0" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="net.confex.application.Perspective" id="net.confex.application.perspective" label="confex Perspective"/>
 <alwaysOnActionSet id="net.sourceforge.sqlexplorer.about"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
@@ -145,61 +160,56 @@
 <show_view_action id="net.confex.view.navigationView"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="net.confex.view.formView:Форма для запуска DrakonAct"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="net.confex.view.folderView:#{SCHEMES_DIR}"/>
 <view id="net.confex.view.navigationView:1415971053912"/>
+<view id="net.confex.view.navigationView:1416315868641"/>
 <view id="net.confex.view.folderView:#{BASE_DIR}_develop_DG2J_DragonGen2J_src_ru_erv_drakongen_test"/>
-<view id="net.confex.view.folderView:C__YandexDisk_FLASH_WRK_ConfexDG2J"/>
-<view id="net.confex.view.folderView:#{CONFEX_DIR}"/>
-<view id="net.confex.view.folderView:c__ERV_WRK_drakongen_work__.._develop_DG2J_DragonGen2_src_ru_erv_drakongen_reserv_"/>
-<view id="net.confex.view.folderView:c__ERV_WRK_drakongen_work_.._develop_DG2J_DragonGen2_src_ru_erv_drakongen_reserv_"/>
-<view id="net.confex.view.folderView:c__ERV_WRK_drakongen_work_.._develop_DG2J_DragonGen2J_src_ru_erv_drakongen_reserv_"/>
-<view id="net.confex.view.folderView:C__YandexDisk_FLASH_WRK_SRS_v.09"/>
 <view id="net.confex.view.folderView:#{BASE_DIR}"/>
+<view id="net.confex.view.WebBrowserView:3494144"/>
+<view id="net.confex.view.formView:Форма для запуска DrakonAct SRS"/>
+<view id="net.confex.view.formView:Форма для запуска drakongen"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
 <folder activePageID="net.confex.view.navigationView:1415971053912" appearance="2" expanded="2">
-<page content="net.confex.view.navigationView:1415971053912" label="C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex"/>
+<page content="net.confex.view.navigationView:1415971053912" label="*C:\ERV\WRK\drakongen\work\confex_DG2J\dg2j.confex"/>
+<page content="net.confex.view.navigationView:1416315868641" label="Examples.confex"/>
 <page content="net.confex.view.navigationView:1415942719685" label="LabelNotFound"/>
 <page content="net.confex.view.navigationView:1415669756505" label="LabelNotFound"/>
 <page content="net.confex.view.navigationView:*" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@11f347a" ratio="0.75648254" ratioLeft="671" ratioRight="216" relationship="4" relative="left">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="net.confex.view.folderView:#{SCHEMES_DIR}" label="..\Schemes\"/>
+<page content="net.confex.view.navigationView:1416296721242" label="LabelNotFound"/>
+<page content="net.confex.view.navigationView:1416315713329" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@fa3ebb" ratio="0.73346496" ratioLeft="743" ratioRight="270" relationship="2" relative="org.eclipse.ui.internal.ViewStack@11f347a">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@11f347a" ratio="0.65163475" ratioLeft="578" ratioRight="309" relationship="4" relative="left">
+<folder activePageID="net.confex.view.folderView:#{SCHEMES_DIR}" appearance="2" expanded="2">
+<page content="net.confex.view.folderView:#{SCHEMES_DIR}" label="C:\ERV\WRK"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@fa3ebb" ratio="0.43558776" ratioLeft="541" ratioRight="701" relationship="2" relative="org.eclipse.ui.internal.ViewStack@11f347a">
 <folder activePageID="net.confex.view.folderView:#{BASE_DIR}" appearance="2" expanded="2">
 <page content="net.confex.view.folderView:#{BASE_DIR}_develop_DG2J_DragonGen2J_src_ru_erv_drakongen_test" label="..\..\\develop\DG2J\DragonGen2J\src\ru\erv\drakongen\test"/>
-<page content="net.confex.view.folderView:C__YandexDisk_FLASH_WRK_ConfexDG2J" label="ConfexDG2J"/>
-<page content="net.confex.view.folderView:#{CONFEX_DIR}" label="C:/ERV/WRK/drakongen/work/confex_DG2J/"/>
-<page content="net.confex.view.folderView:c__ERV_WRK_drakongen_work__.._develop_DG2J_DragonGen2_src_ru_erv_drakongen_reserv_" label=""/>
-<page content="net.confex.view.folderView:c__ERV_WRK_drakongen_work_.._develop_DG2J_DragonGen2_src_ru_erv_drakongen_reserv_" label=""/>
-<page content="net.confex.view.folderView:c__ERV_WRK_drakongen_work_.._develop_DG2J_DragonGen2J_src_ru_erv_drakongen_reserv_" label="c:/ERV/WRK/drakongen/work/../develop/DG2J/DragonGen2J/src/ru/erv/drakongen/reserv/"/>
-<page content="net.confex.view.folderView:C__YandexDisk_FLASH_WRK_SRS_v.09" label="C:\YandexDisk\FLASH\WRK\SRS_v.09"/>
-<page content="net.confex.view.folderView:#{BASE_DIR}" label="c:/ERV/WRK/srs/develop/"/>
+<page content="net.confex.view.folderView:#{BASE_DIR}" label="c:/ERV/WRK/srs/work/../develop/"/>
+<page content="net.confex.view.WebBrowserView:3494144" label="Имена форм в закладках"/>
+<page content="net.confex.view.folderView:C__YandexDisk_FLASH_WRK_ConfexDG2J" label="LabelNotFound"/>
+<page content="net.confex.view.folderView:#{CONFEX_DIR}" label="LabelNotFound"/>
+<page content="net.confex.view.folderView:c__ERV_WRK_drakongen_work__.._develop_DG2J_DragonGen2_src_ru_erv_drakongen_reserv_" label="LabelNotFound"/>
+<page content="net.confex.view.folderView:c__ERV_WRK_drakongen_work_.._develop_DG2J_DragonGen2_src_ru_erv_drakongen_reserv_" label="LabelNotFound"/>
+<page content="net.confex.view.folderView:c__ERV_WRK_drakongen_work_.._develop_DG2J_DragonGen2J_src_ru_erv_drakongen_reserv_" label="LabelNotFound"/>
+<page content="net.confex.view.folderView:C__YandexDisk_FLASH_WRK_SRS_v.09" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
 </presentation>
 </folder>
 </info>
@@ -208,17 +218,30 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="messages" ratio="0.21828212" ratioLeft="277" ratioRight="992" relationship="2" relative="left">
-<folder activePageID="net.confex.view.formView:Форма для запуска DrakonAct" appearance="2" expanded="2">
-<page content="net.confex.view.formView:Форма для запуска DrakonAct" label="Confex Form"/>
+<info folder="true" part="messages" ratio="0.32230103" ratioLeft="409" ratioRight="860" relationship="2" relative="left">
+<folder activePageID="net.confex.view.formView:Форма для запуска DrakonAct SRS" appearance="2" expanded="2">
+<page content="net.confex.view.formView:Форма для запуска DrakonAct SRS" label="Форма для запуска DrakonAct SRS"/>
+<page content="net.confex.view.formView:Форма для запуска drakongen" label="Форма для запуска drakongen"/>
+<page content="net.confex.view.formView:Форма для запуска DrakonAct" label="LabelNotFound"/>
 <page content="net.confex.view.formView:*" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView:*" label="LabelNotFound"/>
+<page content="net.confex.view.formView:(run) Example SWT Form.  Groovy script as property" label="LabelNotFound"/>
+<page content="net.confex.view.formView:(run) Example SWT Form_ Groovy script in external file." label="LabelNotFound"/>
+<page content="net.confex.view.formView:Просто форма" label="LabelNotFound"/>
+<page content="net.confex.view.formView:Календарь - диалог" label="LabelNotFound"/>
+<page content="net.confex.view.formView:Календарь - комбо" label="LabelNotFound"/>
+<page content="net.confex.view.formView:Форма без groovy-swt связь по &quot;parent&quot;" label="LabelNotFound"/>
+<page content="net.confex.view.formView:примеры закладок (TabItem и cTabItem)" label="LabelNotFound"/>
+<page content="net.confex.view.formView:&quot;Простая форма с вкладками&quot;" label="LabelNotFound"/>
+<page content="net.confex.view.formView:&quot;Улучшенная форма с вкладками&quot;" label="LabelNotFound"/>
+<page content="net.confex.view.formView:SWT Древо" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="1"/>
 <part id="0"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.30409357" ratioLeft="208" ratioRight="476" relationship="4" relative="messages"/>
+<info part="org.eclipse.ui.editorss" ratio="0.3283082" ratioLeft="196" ratioRight="401" relationship="4" relative="messages"/>
 <info folder="true" part="bottom" ratio="0.48031497" ratioLeft="305" ratioRight="330" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="net.confex.view.folderView:#{BASE_DIR}_Schemes_" label="LabelNotFound"/>
@@ -231,6 +254,14 @@
 <page content="net.confex.view.folderView:#{BASE_DIR}_DG2J_DragonGen2J_src_ru_erv_drakongen_test" label="LabelNotFound"/>
 <page content="net.confex.view.folderView:C__Java_JavaSE7_Cert" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@185b1bc" ratio="0.33913043" ratioLeft="195" ratioRight="380" relationship="4" relative="messages">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -353,6 +384,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Confex Project/GroovyTest.groovy"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Confex Project/GroovyTest.groovy"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Confex Project/DA2SRS.groovy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Confex Project/easy_form.groovy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Confex Project/calendar_combo.groovy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Confex Project/TabExamples.groovy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Confex Project/improved_form.groovy"/>
 </editors>
 <item historyLabel="easy_form.groovy" index="0">
 <position info="not_deleted" x="4061" y="0"/>
@@ -372,14 +407,89 @@
 <item historyLabel="GroovyTest.groovy" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="DA2SRS.groovy" index="3">
+<item historyLabel="DA2SRS.groovy" index="3">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="calendar_combo.groovy" index="5">
+<position info="not_deleted" x="1963" y="0"/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="TabExamples.groovy" index="6">
+<position info="not_deleted" x="487" y="0"/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="improved_form.groovy" index="7">
+<position info="not_deleted" x="835" y="21"/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="improved_form.groovy" index="7">
+<position info="not_deleted" x="834" y="24"/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="improved_form.groovy" index="7">
+<position info="not_deleted" x="1796" y="12"/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="improved_form.groovy" index="7">
+<position info="not_deleted" x="1796" y="12"/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="improved_form.groovy" index="7">
+<position info="not_deleted" x="1853" y="75"/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="calendar_combo.groovy" index="5">
+<position info="not_deleted" x="1963" y="0"/>
+</item>
+<item historyLabel="easy_form.groovy" index="4">
+<position/>
+</item>
+<item historyLabel="DA2SRS.groovy" index="3">
+<position info="not_deleted" x="1270" y="0"/>
+</item>
+<item historyLabel="improved_form.groovy" index="7">
+<position info="not_deleted" x="1853" y="75"/>
+</item>
+<item historyLabel="DA2SRS.groovy" index="3">
+<position info="not_deleted" x="674" y="0"/>
+</item>
+<item active="true" historyLabel="easy_form.groovy" index="4">
+<position/>
 </item>
 </navigationHistory>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@11f347a"/>
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@fa3ebb"/>
+<trimItem IMemento.internal.id="messages"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="1024">
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
@@ -387,6 +497,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="improved_form.groovy" tooltip="Confex Project/improved_form.groovy">
+<persistable path="/Confex Project/improved_form.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TabExamples.groovy" tooltip="Confex Project/TabExamples.groovy">
+<persistable path="/Confex Project/TabExamples.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="calendar_combo.groovy" tooltip="Confex Project/calendar_combo.groovy">
+<persistable path="/Confex Project/calendar_combo.groovy"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DA2SRS.groovy" tooltip="Confex Project/DA2SRS.groovy">
 <persistable path="/Confex Project/DA2SRS.groovy"/>
 </file>

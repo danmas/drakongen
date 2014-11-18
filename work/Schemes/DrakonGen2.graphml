@@ -19,7 +19,7 @@
       <data key="d4"/>
       <data key="d7">
         <y:ShapeNode>
-          <y:Geometry height="2260.0" width="4268.563402309722" x="-1690.6404383642828" y="-6584.691514324948"/>
+          <y:Geometry height="2260.0" width="4268.563402309722" x="-1628.8634525074704" y="-6584.691514324948"/>
           <y:Fill color="#FFFF000C" color2="#FFFF001E" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="node_size" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="2260.0" modelName="custom" textColor="#000000" visible="true" width="4268.563402309722" x="0.0" y="0.0">Дракон-Арт<y:LabelModel>
