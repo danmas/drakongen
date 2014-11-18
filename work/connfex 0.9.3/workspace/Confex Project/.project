@@ -14,5 +14,25 @@
 			<type>1</type>
 			<location>C:/ERV/WRK/drakongen/work/confex_DG2J/groovy/DA2SRS.groovy</location>
 		</link>
+		<link>
+			<name>TabExamples.groovy</name>
+			<type>1</type>
+			<location>C:/ERV/WRK/confex/examples/ru/groovy/TabExamples.groovy</location>
+		</link>
+		<link>
+			<name>calendar_combo.groovy</name>
+			<type>1</type>
+			<location>C:/ERV/WRK/confex/examples/ru/groovy/calendar_combo.groovy</location>
+		</link>
+		<link>
+			<name>easy_form.groovy</name>
+			<type>1</type>
+			<location>C:/ERV/WRK/drakongen/work/confex_DG2J/groovy/easy_form.groovy</location>
+		</link>
+		<link>
+			<name>improved_form.groovy</name>
+			<type>1</type>
+			<location>C:/ERV/WRK/confex/examples/ru/groovy/improved_form.groovy</location>
+		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,4 +1,5 @@
 import groovy.jface.JFaceBuilder
+import org.eclipse.swt.widgets.*
 import groovy.swt.SwtBuilder
 import groovy.swt.CustomSwingBuilder
 import groovy.sql.Sql
@@ -32,6 +33,8 @@ class FormTest {
 	def ViewPart  runViewPart
 	def swt = new SwtBuilder() 
 
+	def combo_values = []
+	
 	FormTest(Composite p_parent, ITreeNode p_thisGroovyNode, ViewPart p_runViewPart) {
 		parent = p_parent
 		thisGroovyNode = p_thisGroovyNode
@@ -56,27 +59,33 @@ class FormTest {
 			gridData( style:"fill_both" )
 	      	gridLayout(numColumns:1)
 	      	
-	      	def MAIN_DG_FILE = "Main.graphml";
+	      	//def MAIN_DG_FILE = "Main.graphml";
+			def MAIN_DG_FILE = "DrakonGen2.graphml";
 			
 	 		def tab = tabFolder( style:"none" ) {
 				gridData( style:"fill_horizontal" )
-				tabItem( style:"none", text:"Run drakon act" ) {
+				tabItem( style:"none", text:"#{TAB_RUN_DRAKON}" ) {
 					 composite {
 						gridData( style:"fill_both" )
 			         	gridLayout(numColumns:3) 
- 			        	label( style:"none", text:"Enter name of the main graphml file of DrakonAct " )
-			        	def v_ManiDrakonActFN = text( style:"border", text:MAIN_DG_FILE  ) {  
-				        	gridData( style:"fill_horizontal", grabExcessHorizontalSpace:true )
-			        	}
-						button( style:"push",text:"Execute", background:[0, 255, 255] )  {
+ 			        	label( style:"none", text:"#{TEXT_ENTER_DRAKON_FILE_NAME}")
+						combo_values = ["DrakonGen2.graphml", "Main.graphml"];
+						def garphml_file = combo(text:"DrakonGen2.graphml", items:combo_values );
+						garphml_file.text = "DrakonGen2.graphml";
+						
+						button( style:"push",text:"#{BTN_EXECUTE}", background:[0, 255, 255] )  {
 							onEvent(type:"Selection", closure:{
+								
+								//System.out.println(" garphml_file = " + garphml_file.text);
+								
 								// -- устанавливаем BASE_DIR
 								Settings.setProperty("BASE_DIR", "#{BASE_DIR}");
+								 
+								System.out.println(" --- WORK_DIR: #{WORK_DIR}"); 
+								System.out.println(" --- BASE_DIR: " + Settings.getProperty("BASE_DIR")); 
 								
-								System.out.println(" <--- BASE_DIR: " + Settings.getProperty("BASE_DIR")); 
-								
-								MAIN_DG_FILE = Settings.getProperty("BASE_DIR") + "/Schemes/" + MAIN_DG_FILE;
-								System.out.println(" <--- Main drakon file: " + v_ManiDrakonActFN.text); //MAIN_DG_FILE);
+								MAIN_DG_FILE = "#{WORK_DIR}/Schemes/" + garphml_file.text;
+								System.out.println(" --- Main drakon file: " + MAIN_DG_FILE);
 								
 								// -- переменная da
 								DrakonAct da = new DrakonAct();
@@ -99,7 +108,7 @@ class FormTest {
 						}
 					} //-- composite
 				} //-- tabItem
-				tabItem( style:"none", text:"Результаты" ) {
+				tabItem( style:"none", text:"#{TAB_RESULT}" ) {
 					 composite {
 						gridData( style:"fill_both" )
 			         	gridLayout(numColumns:3) 

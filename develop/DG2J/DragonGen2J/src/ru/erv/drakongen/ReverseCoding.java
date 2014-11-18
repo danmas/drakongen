@@ -28,14 +28,9 @@ import ru.erv.drakongen.utils.FileUtils;
 	}
 } 
 	//-- константы
-	public static final boolean RET_OK  = true;
-	public static final boolean RET_ERROR  = false;
-	public static final String PREF_MARKER_CDATA = "<data key=\"d4\"><![CDATA[";
-	public static final String PREF_MARKER_DG2J = "<DG2J code_mark=\"";
-	public static final String PREF_CODE_CDATA = "<data key=\"d6\"><![CDATA[";
-	public static final String POST_CODE_CDATA = "]]></data>";
-	public static final String PREF_NODE_ID = "<node id=\"";
-	public static final String POST_NODE_ID = "\"";
+	></data>";
+public static final String PREF_NODE_ID = "<node id=\"";
+public static final String POST_NODE_ID = "\"";
  
 	//-- перменные
 	List<String> files = new ArrayList<String>();
@@ -58,10 +53,8 @@ String gml_tgt_file = "../Schemes/test2.graphml";
 		//-- список файлов
 		files.add("/src/ru/erv/drakongen/test/Test.java"); 
 		//-- //--             
-		
+		}
 
-
-	} 
 
 	//-- reverseCode()
 	public String reverseCode() { 
@@ -92,8 +85,7 @@ while (itf.hasNext()) {
 		out_text = replaseMarkedCode(gml_text); 
 		//-- новый текст gml
 		return out_text;
-	} 
-
+}
 	//-- перенос кода с заменой по маркерам
 	public String replaseMarkedCode(String src_text) { 
 		//-- инициируем позиции поиска в начало pos1=0 pos2=0
@@ -146,8 +138,7 @@ pos2 = pos1;
 		}
 		//-- результат
 		return out_text;
-	} 
-
+}
 	//-- Формирование карты подстановок для одного файла
 	protected boolean geReleaseCode(String full_file_name) { 
 		//-- try
@@ -192,8 +183,7 @@ while(true) {
 } 
 		//-- Ok
 		return RET_OK;
-	} 
-
+}
 	//-- Выделение текста между префиксом и постфиксом начиная с позиции pos
 	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
 		//-- ищем фразу префикса
@@ -216,9 +206,7 @@ return text.substring(i1+prefix.length(),i2);
 			return null; 
 		}
 		//-- //--         
-		
-
-	} 
+		}
 
 	//-- main
 	public static void main(String[] args) { 
@@ -255,8 +243,7 @@ System.out.println(pos.getValue());
 FileUtils.fileWrite(Settings.getProperty("BASE_DIR") + gml_tgt_file, out_text);
  
 		//-- //--             
-	} 
-
+		}
 	//-- 
             
 	} //-- конец класса
