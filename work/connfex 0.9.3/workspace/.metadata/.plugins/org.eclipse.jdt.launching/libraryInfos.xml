@@ -38,7 +38,7 @@
 <entry path="C:\YandexDisk\FLASH\CONFEX\tmp\connfex 0.9.3\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="C:\ERV\WRK\drakongen\work\connfex 0.9.3" version="1.7.0_25">
+<libraryInfo home="C:\ERV\WRK\drakongen\work\connfex 0.9.3\jre" version="1.7.0_25">
 <bootpath>
 <entry path="C:\ERV\WRK\drakongen\work\connfex 0.9.3\jre\lib\resources.jar"/>
 <entry path="C:\ERV\WRK\drakongen\work\connfex 0.9.3\jre\lib\rt.jar"/>
@@ -57,7 +57,7 @@
 <entry path="C:\ERV\WRK\drakongen\work\connfex 0.9.3\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="C:\ERV\WRK\drakongen\work\connfex 0.9.3\jre" version="1.7.0_25">
+<libraryInfo home="C:\ERV\WRK\drakongen\work\connfex 0.9.3" version="1.7.0_25">
 <bootpath>
 <entry path="C:\ERV\WRK\drakongen\work\connfex 0.9.3\jre\lib\resources.jar"/>
 <entry path="C:\ERV\WRK\drakongen\work\connfex 0.9.3\jre\lib\rt.jar"/>
