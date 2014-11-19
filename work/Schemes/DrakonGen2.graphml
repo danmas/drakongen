@@ -1134,7 +1134,6 @@ return text.substring(i1+prefix.length(),i2);]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="4"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -1173,7 +1172,6 @@ return text.substring(i1+prefix.length(),i2);]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="4"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -2805,7 +2803,6 @@ String out_text = "";]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="2"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -2880,7 +2877,6 @@ String out_text = "";]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="1"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -2901,7 +2897,6 @@ String out_text = "";]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="1"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -2922,7 +2917,6 @@ String out_text = "";]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="1"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -6142,7 +6136,6 @@ for (Vertex v : graph.getVertices()) {
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="4"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -6705,7 +6698,6 @@ protected var CURRENT_RELEASE:String = RELEASE_TYPE_CODE_AS; ]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="4"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -7126,7 +7118,6 @@ next_node = null;
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="0"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -7743,7 +7734,6 @@ if (code != null)
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="2"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -8182,7 +8172,6 @@ res_str += spaces + str;
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="2"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -8265,7 +8254,6 @@ i = 1;]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="2"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -8322,7 +8310,6 @@ var term_no = parceNext(cur_node_d, _level+1);
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="2"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -9799,7 +9786,6 @@ CURRENT_RELEASE = data["description"];]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="4"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -14117,7 +14103,6 @@ res_str += spaces + code +"\n";]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="2"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -16906,7 +16891,6 @@ graph.removeEdge();<y:LabelModel>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="4"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -17256,7 +17240,6 @@ comment = data["NodeLabel"];
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="2"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -17309,7 +17292,6 @@ comment = data["NodeLabel"];
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="4"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -20880,7 +20862,7 @@ res_str += str;]]></data>
       <data key="d6"><![CDATA[code = node.data["description"];]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="7508.760858842994" y="-2528.8442512052607"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="7508.760858842994" y="-2582.743352938549"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.1875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="166.7513148999774" x="0.0" y="2.955136089050029">получаем код из текущего узла</y:NodeLabel>
@@ -21030,7 +21012,7 @@ res_str += str;]]></data>
       <data key="d6"><![CDATA[code = DrakonUtils.getCode(node);]]></data>
       <data key="d7">
         <y:ShapeNode>
-          <y:Geometry height="8.01812872948328" width="8.486003978115491" x="7659.24696049004" y="-2490.736881847799"/>
+          <y:Geometry height="8.01812872948328" width="8.486003978115491" x="7659.24696049004" y="-2544.635983581087"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="2.2430019890580297" y="2.009064364741789">
@@ -21226,7 +21208,7 @@ res_str += str;]]></data>
       <data key="d6"><![CDATA[DrakonUtils.message("----> Записываем файл " + code + "\n");]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.userMessage">
-          <y:Geometry height="25.01270418050717" width="143.61648691822393" x="7422.434122777555" y="-2592.5661008874904"/>
+          <y:Geometry height="25.01270418050717" width="143.61648691822393" x="7625.622085966362" y="-2642.591134798302"/>
           <y:Fill color="#FFFFD0" color2="#FFFFD0" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="143.61648691822393" x="0.0" y="1.9594770902535856">-11-</y:NodeLabel>
@@ -21239,7 +21221,7 @@ res_str += str;]]></data>
       <data key="d6"><![CDATA[DrakonUtils.message("--11--  "+DrakonUtils.getIconType(out_1) + "икона:" + DrakonUtils.getComment(out_1) + "\n");]]></data>
       <data key="d7">
         <y:ShapeNode>
-          <y:Geometry height="8.01812872948328" width="8.486003978115491" x="7540.291802725744" y="-2570.91603430173"/>
+          <y:Geometry height="8.01812872948328" width="8.486003978115491" x="7743.479765914551" y="-2620.9410682125417"/>
           <y:Fill color="#FFFFD0" color2="#FFFFD0" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="2.2430019890580297" y="2.009064364741789">
@@ -22029,7 +22011,6 @@ DrakonUtils.error(str);]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="4"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -22954,7 +22935,6 @@ DrakonUtils.error(str);]]></data>
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="4"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -26010,7 +25990,6 @@ if (code != null)
           </y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Byte" name="com.yworks.flowchart.style.orientation" value="2"/>
-            <y:Property class="java.lang.Byte" name="LAYER_STYLE_PROPERTY_KEY" value="1"/>
           </y:StyleProperties>
         </y:GenericNode>
       </data>
@@ -44724,7 +44703,6 @@ comment = DrakonUtils.getComment(cur_node);]]></data>
       </data>
     </edge>
     <edge id="e1462" source="n2" target="n3">
-      <data key="d10"/>
       <data key="d11">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
