@@ -103,9 +103,6 @@ not_vis_in_user_mode="true"
 <src_file_name>
 /groovy/easy_form.groovy
 </src_file_name>
-<groovy>
-
-</groovy>
 </properties>
 </GroovyNode>
 </CompositeFormViewNode>
@@ -534,7 +531,7 @@ not_vis_in_user_mode="true"
 >
 <properties>
 <vars>
-<var name="TAB_RUN_DRAKON">Исполнение дракон файла</var><var name="TAB_RESULT">Результаты</var><var name="BASE_DIR">#{WORK_DIR}../develop/</var><var name="SCHEMES_DIR">#{WORK_DIR}../develop/Schemes</var><var name="DRAKON_RUN_FORM_NAME">Форма для запуска DrakonAct SRS</var><var name="DRAKON_FILE1">SRS_v.0.9.8.graphml</var><var name="DRAKON_FILE3">--</var><var name="TEXT_ENTER_DRAKON_FILE_NAME">Выберите название дракон файла для выполнения</var><var name="BTN_EXECUTE">Выполнить</var><var name="DRAKON_FILE2">--</var><var name="DRAKON_FILE4">--</var><var name="DRAKON_FILE5">--</var></vars>
+<var name="TAB_RESULT">Результаты</var><var name="TAB_RUN_DRAKON">Исполнение дракон файла</var><var name="BASE_DIR">#{WORK_DIR}../develop/</var><var name="DRAKON_FILE1">SRS_v.0.9.81.graphml</var><var name="DRAKON_RUN_FORM_NAME">Форма для запуска DrakonAct SRS</var><var name="SCHEMES_DIR">#{WORK_DIR}../develop/Schemes</var><var name="DRAKON_FILE3">--</var><var name="DRAKON_FILE2">--</var><var name="BTN_EXECUTE">Выполнить</var><var name="TEXT_ENTER_DRAKON_FILE_NAME">Выберите название дракон файла для выполнения</var><var name="DRAKON_FILE4">--</var><var name="DRAKON_FILE5">--</var></vars>
 </properties>
 </VarsNode>
 <FolderNode
@@ -597,9 +594,6 @@ not_vis_in_user_mode="true"
 <src_file_name>
 /groovy/DA2SRS.groovy
 </src_file_name>
-<groovy>
-
-</groovy>
 </properties>
 </GroovyNode>
 </TreeNode>

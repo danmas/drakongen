@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<libraryInfo home="C:\YandexDisk\FLASH\CONFEX\indigo\eclipse" version="1.7.0_25">
+<libraryInfo home="C:\YandexDisk\FLASH\CONFEX\indigo\eclipse\jre" version="1.7.0_25">
 <bootpath>
 <entry path="C:\YandexDisk\FLASH\CONFEX\indigo\eclipse\jre\lib\resources.jar"/>
 <entry path="C:\YandexDisk\FLASH\CONFEX\indigo\eclipse\jre\lib\rt.jar"/>
@@ -19,7 +19,7 @@
 <entry path="C:\YandexDisk\FLASH\CONFEX\indigo\eclipse\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="C:\YandexDisk\FLASH\CONFEX\indigo\eclipse\jre" version="1.7.0_25">
+<libraryInfo home="C:\YandexDisk\FLASH\CONFEX\indigo\eclipse" version="1.7.0_25">
 <bootpath>
 <entry path="C:\YandexDisk\FLASH\CONFEX\indigo\eclipse\jre\lib\resources.jar"/>
 <entry path="C:\YandexDisk\FLASH\CONFEX\indigo\eclipse\jre\lib\rt.jar"/>

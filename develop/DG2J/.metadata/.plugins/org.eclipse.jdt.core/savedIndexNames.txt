@@ -1,19 +1,3 @@
 INDEX VERSION 1.126+C:\ERV\WRK\drakongen\develop\DG2J\.metadata\.plugins\org.eclipse.jdt.core
-2615985169.index
-273251354.index
-3296315086.index
-2632879387.index
-2455459406.index
-525940182.index
-1897719552.index
-1458629415.index
 3617855988.index
-1996869316.index
-462401719.index
-3429501015.index
-518215482.index
-1652751876.index
-1319481457.index
-2353433495.index
-3331020613.index
-1875112272.index
+1458629415.index
