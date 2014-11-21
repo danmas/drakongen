@@ -2,7 +2,13 @@
 <ConfigTree version="0.0.2">
 <TreeNode
 id="-1"
-name="dg2j"
+name="All"
+>
+<properties>
+</properties>
+<TreeNode
+id="-1"
+name="DG2J"
 >
 <properties>
 </properties>
@@ -66,15 +72,18 @@ not_vis_in_user_mode="true"
 <src_file_name>
 /groovy/GroovyTest.groovy
 </src_file_name>
+<groovy>
+
+</groovy>
 </properties>
 </GroovyNode>
 <ExecTreeNode
 id="-1"
-name="Запуск indigo-eclipse"
+name="Запуск eclipse indigo"
 >
 <properties>
 <command>
-C:\YandexDisk\FLASH\CONFEX\indigo\eclipse\eclipse.exe
+C:\ERV\eclipse\indigo\eclipse\eclipse.exe
 </command>
 </properties>
 </ExecTreeNode>
@@ -103,6 +112,9 @@ not_vis_in_user_mode="true"
 <src_file_name>
 /groovy/easy_form.groovy
 </src_file_name>
+<groovy>
+
+</groovy>
 </properties>
 </GroovyNode>
 </CompositeFormViewNode>
@@ -337,7 +349,7 @@ public class Snippet023TreeViewerCustomTooltips {
 		}
 
 		public String toString() {
-			String rv = &amp;quot;Это Item &amp;quot;;
+			String rv = &amp;quot;��� Item &amp;quot;;
 			if (parent != null) {
 				rv = parent.toString() + &amp;quot;.&amp;quot;;
 			}
@@ -469,44 +481,44 @@ public class Snippet023TreeViewerCustomTooltips {
 </TreeNode>
 <FolderNode
 id="-1"
-name=""
+name="eclipse-luna-graf"
 >
 <properties>
 <path>
-c:/ERV/WRK/drakongen/work/../develop/DG2J/DragonGen2J/src/ru/erv/drakongen/reserv/
+c:\ERV\eclipse\luna-graf\eclipse\
 </path>
 </properties>
 </FolderNode>
 </TreeNode>
 <TreeNode
 id="-1"
-name="J2EE"
+name="Grafin"
 >
 <properties>
+<tooltiptext>
+Дракон-Редактор встроенный в Конфекс
+</tooltiptext>
 </properties>
-<FolderNode
-id="-1"
-name="JavaSE7_Cert"
->
-<properties>
-<path>
-C:\Java\JavaSE7_Cert
-</path>
-</properties>
-</FolderNode>
 <ExecTreeNode
 id="-1"
-name="cmd"
+name="Запуск eclipse indigo"
 >
 <properties>
 <command>
-cmd.exe
+C:\ERV\eclipse\indigo\eclipse\eclipse.exe
 </command>
-<work_dir>
-C:\Java\JavaSE7_Cert\
-</work_dir>
 </properties>
 </ExecTreeNode>
+<FolderNode
+id="-1"
+name="C:\ERV\WRK\grafin"
+>
+<properties>
+<path>
+C:\ERV\WRK\grafin
+</path>
+</properties>
+</FolderNode>
 </TreeNode>
 <TreeNode
 id="-1"
@@ -531,11 +543,7 @@ not_vis_in_user_mode="true"
 >
 <properties>
 <vars>
-<<<<<<< HEAD
 <var name="TAB_RUN_DRAKON">Исполнение дракон файла</var><var name="TAB_RESULT">Результаты</var><var name="BASE_DIR">#{WORK_DIR}../develop/</var><var name="SCHEMES_DIR">#{WORK_DIR}../develop/Schemes</var><var name="DRAKON_RUN_FORM_NAME">Форма для запуска DrakonAct SRS</var><var name="DRAKON_FILE1">SRS_v.0.9.81.graphml</var><var name="DRAKON_FILE3">--</var><var name="TEXT_ENTER_DRAKON_FILE_NAME">Выберите название дракон файла для выполнения</var><var name="BTN_EXECUTE">Выполнить</var><var name="DRAKON_FILE2">--</var><var name="DRAKON_FILE4">--</var><var name="DRAKON_FILE5">--</var></vars>
-=======
-<var name="TAB_RESULT">Результаты</var><var name="TAB_RUN_DRAKON">Исполнение дракон файла</var><var name="BASE_DIR">#{WORK_DIR}../develop/</var><var name="DRAKON_FILE1">SRS_v.0.9.81.graphml</var><var name="DRAKON_RUN_FORM_NAME">Форма для запуска DrakonAct SRS</var><var name="SCHEMES_DIR">#{WORK_DIR}../develop/Schemes</var><var name="DRAKON_FILE3">--</var><var name="DRAKON_FILE2">--</var><var name="BTN_EXECUTE">Выполнить</var><var name="TEXT_ENTER_DRAKON_FILE_NAME">Выберите название дракон файла для выполнения</var><var name="DRAKON_FILE4">--</var><var name="DRAKON_FILE5">--</var></vars>
->>>>>>> 565b349e32b6e0c67fd6b4e8f2216ccccc6a7b4f
 </properties>
 </VarsNode>
 <FolderNode
@@ -598,7 +606,41 @@ not_vis_in_user_mode="true"
 <src_file_name>
 /groovy/DA2SRS.groovy
 </src_file_name>
+<groovy>
+
+</groovy>
 </properties>
 </GroovyNode>
+</TreeNode>
+<TreeNode
+id="-1"
+name="J2EE"
+>
+<properties>
+</properties>
+<FolderNode
+id="-1"
+name="JavaSE7_Cert"
+>
+<properties>
+<path>
+C:\Java\JavaSE7_Cert
+</path>
+</properties>
+</FolderNode>
+<ExecTreeNode
+id="-1"
+name="cmd"
+>
+<properties>
+<command>
+cmd.exe
+</command>
+<work_dir>
+C:\Java\JavaSE7_Cert\
+</work_dir>
+</properties>
+</ExecTreeNode>
+</TreeNode>
 </TreeNode>
 </ConfigTree>

@@ -1,1 +1,0 @@
-INDEX VERSION 1.126+C:\ERV\WRK\drakongen\work\connfex 0.9.3\workspace\.metadata\.plugins\org.eclipse.jdt.core

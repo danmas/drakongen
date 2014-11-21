@@ -117,7 +117,7 @@ public class Snippet023TreeViewerCustomTooltips {
 		}
 
 		public String toString() {
-			String rv = "Это Item ";
+			String rv = "пїЅпїЅпїЅ Item ";
 			if (parent != null) {
 				rv = parent.toString() + ".";
 			}
