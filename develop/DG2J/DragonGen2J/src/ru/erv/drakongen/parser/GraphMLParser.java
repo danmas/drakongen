@@ -280,7 +280,7 @@ public class GraphMLParser extends DefaultHandler {
 					if (currentAttributeType.equals(GraphMLToken.STRING
 							.getTag())) {
 						// debug
-						//System.err.println(" -!!!- edgeAttributes.setAttribute("+ currentAttributeData);
+						System.err.println(" -!!!- edgeAttributes.setAttribute("+ currentAttributeData);
 						currentEdge.setProperty("type", currentAttributeData);
 //						edgeAttributes.setAttribute(
 //								currentEdge.getIdentifier(),

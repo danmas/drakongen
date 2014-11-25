@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="PreferencesImportWizard">
+		<item value="C:\ERV\WRK\Preferences\black_theem.epf" key=""/>
+		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\ERV\WRK\Preferences\black_theem.epf"/>
+		</list>
+	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="86" key="DIALOG_Y_ORIGIN"/>
 		<item value="200" key="DIALOG_X_ORIGIN"/>
@@ -10,7 +16,7 @@
 		<item value="true" key="actionSetFilter"/>
 	</section>
 	<section name="ImportExportAction">
-		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.Preferences" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<item value="org.eclipse.jdt.internal.ui.jarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>

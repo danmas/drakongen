@@ -167,7 +167,8 @@ return (String)node.getProperty("code") ;
 		//-- строим код
 		int i = 0;
 for (Edge e : v.getInEdges()) {
-	i++;
+	if(!DrakonUtils.isReferenceEdge(e))
+		i++;
 }
 return i;
  
@@ -178,7 +179,8 @@ return i;
 		//-- строим код
 		int i = 0;
 for (Edge e : v.getOutEdges()) {
-	i++;
+	if(!DrakonUtils.isReferenceEdge(e))
+		i++;
 }
 return i;
  
@@ -191,6 +193,8 @@ return i;
 	return null;
 int i = 0;
 for (Edge e : v.getInEdges()) {
+	if(DrakonUtils.isReferenceEdge(e))
+		continue;
 	if(i==num) 
 		return e.getOutVertex();
 	i++;
@@ -205,6 +209,8 @@ return null;
 	return null;
 int i = 0;
 for (Edge e : v.getOutEdges()) {
+	if(DrakonUtils.isReferenceEdge(e))
+		continue;
 	if(i==num) 
 		return e.getInVertex();
 	i++;
@@ -219,6 +225,8 @@ return null;
 	return null;
 int i = 0;
 for (Edge e : v.getOutEdges()) {
+	if(DrakonUtils.isReferenceEdge(e))
+		continue;
 	if(i==num) 
 		return e;
 	i++;

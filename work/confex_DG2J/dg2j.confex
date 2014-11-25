@@ -72,21 +72,8 @@ not_vis_in_user_mode="true"
 <src_file_name>
 /groovy/GroovyTest.groovy
 </src_file_name>
-<groovy>
-
-</groovy>
 </properties>
 </GroovyNode>
-<ExecTreeNode
-id="-1"
-name="Запуск eclipse indigo"
->
-<properties>
-<command>
-C:\ERV\eclipse\indigo\eclipse\eclipse.exe
-</command>
-</properties>
-</ExecTreeNode>
 <CompositeFormViewNode
 id="-1"
 name="#{DRAKON_RUN_FORM_NAME}"
@@ -485,10 +472,20 @@ name="eclipse-luna-graf"
 >
 <properties>
 <path>
-c:\ERV\eclipse\luna-graf\eclipse\
+C:\ERV\eclipse\luna-graph
 </path>
 </properties>
 </FolderNode>
+<ExecTreeNode
+id="-1"
+name="Запуск eclipse indigo-confex"
+>
+<properties>
+<command>
+C:\ERV\eclipse\indigo-confex\eclipse\eclipse.exe
+</command>
+</properties>
+</ExecTreeNode>
 </TreeNode>
 <TreeNode
 id="-1"
@@ -501,11 +498,11 @@ name="Grafin"
 </properties>
 <ExecTreeNode
 id="-1"
-name="Запуск eclipse indigo"
+name="Запуск eclipse indigo-confex"
 >
 <properties>
 <command>
-C:\ERV\eclipse\indigo\eclipse\eclipse.exe
+C:\ERV\eclipse\indigo-confex\eclipse\eclipse.exe
 </command>
 </properties>
 </ExecTreeNode>
@@ -516,6 +513,16 @@ name="C:\ERV\WRK\grafin"
 <properties>
 <path>
 C:\ERV\WRK\grafin
+</path>
+</properties>
+</FolderNode>
+<FolderNode
+id="-1"
+name="C:\ERV\WRK\confex\develop\WRK_CONFEX_TOTAL"
+>
+<properties>
+<path>
+C:\ERV\WRK\confex\develop\WRK_CONFEX_TOTAL
 </path>
 </properties>
 </FolderNode>
@@ -543,7 +550,7 @@ not_vis_in_user_mode="true"
 >
 <properties>
 <vars>
-<var name="TAB_RUN_DRAKON">Исполнение дракон файла</var><var name="TAB_RESULT">Результаты</var><var name="BASE_DIR">#{WORK_DIR}../develop/</var><var name="SCHEMES_DIR">#{WORK_DIR}../develop/Schemes</var><var name="DRAKON_RUN_FORM_NAME">Форма для запуска DrakonAct SRS</var><var name="DRAKON_FILE1">SRS_v.0.9.81.graphml</var><var name="DRAKON_FILE3">--</var><var name="TEXT_ENTER_DRAKON_FILE_NAME">Выберите название дракон файла для выполнения</var><var name="BTN_EXECUTE">Выполнить</var><var name="DRAKON_FILE2">--</var><var name="DRAKON_FILE4">--</var><var name="DRAKON_FILE5">--</var></vars>
+<var name="TAB_RESULT">Результаты</var><var name="TAB_RUN_DRAKON">Исполнение дракон файла</var><var name="BASE_DIR">#{WORK_DIR}../develop/</var><var name="DRAKON_FILE1">SRS_v.0.9.81.graphml</var><var name="DRAKON_RUN_FORM_NAME">Форма для запуска DrakonAct SRS</var><var name="SCHEMES_DIR">#{WORK_DIR}../develop/Schemes</var><var name="DRAKON_FILE3">--</var><var name="DRAKON_FILE2">--</var><var name="BTN_EXECUTE">Выполнить</var><var name="TEXT_ENTER_DRAKON_FILE_NAME">Выберите название дракон файла для выполнения</var><var name="DRAKON_FILE4">--</var><var name="DRAKON_FILE5">--</var></vars>
 </properties>
 </VarsNode>
 <FolderNode
@@ -591,9 +598,6 @@ not_vis_in_user_mode="true"
 <src_file_name>
 /groovy/easy_form.groovy
 </src_file_name>
-<groovy>
-
-</groovy>
 </properties>
 </GroovyNode>
 </CompositeFormViewNode>
@@ -606,9 +610,6 @@ not_vis_in_user_mode="true"
 <src_file_name>
 /groovy/DA2SRS.groovy
 </src_file_name>
-<groovy>
-
-</groovy>
 </properties>
 </GroovyNode>
 </TreeNode>
@@ -641,6 +642,16 @@ C:\Java\JavaSE7_Cert\
 </work_dir>
 </properties>
 </ExecTreeNode>
+<UrlNode
+id="-1"
+name="Пример экзамена по 1Z0-803"
+>
+<properties>
+<url>
+http://exambraindumps.com/question-list/Oracle/1Z0-803.html
+</url>
+</properties>
+</UrlNode>
 </TreeNode>
 </TreeNode>
 </ConfigTree>

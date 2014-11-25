@@ -4513,7 +4513,8 @@ if(type==null)
       <data key="d5"><![CDATA[ACTION]]></data>
       <data key="d6"><![CDATA[int i = 0;
 for (Edge e : v.getInEdges()) {
-	i++;
+	if(!DrakonUtils.isReferenceEdge(e))
+		i++;
 }
 return i;
 ]]></data>
@@ -4564,7 +4565,8 @@ return i;
       <data key="d5"><![CDATA[ACTION]]></data>
       <data key="d6"><![CDATA[int i = 0;
 for (Edge e : v.getOutEdges()) {
-	i++;
+	if(!DrakonUtils.isReferenceEdge(e))
+		i++;
 }
 return i;
 ]]></data>
@@ -4597,6 +4599,8 @@ return i;
 	return null;
 int i = 0;
 for (Edge e : v.getInEdges()) {
+	if(DrakonUtils.isReferenceEdge(e))
+		continue;
 	if(i==num) 
 		return e.getOutVertex();
 	i++;
@@ -4671,6 +4675,8 @@ return null;]]></data>
 	return null;
 int i = 0;
 for (Edge e : v.getOutEdges()) {
+	if(DrakonUtils.isReferenceEdge(e))
+		continue;
 	if(i==num) 
 		return e.getInVertex();
 	i++;
@@ -4725,6 +4731,8 @@ return null;]]></data>
 	return null;
 int i = 0;
 for (Edge e : v.getOutEdges()) {
+	if(DrakonUtils.isReferenceEdge(e))
+		continue;
 	if(i==num) 
 		return e;
 	i++;
@@ -44472,10 +44480,10 @@ comment = DrakonUtils.getComment(cur_node);]]></data>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e1439" source="n1514" target="n1536">
+    <edge id="e1439" source="n1514" target="n1516">
       <data key="d11">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="7.296605187026671" ty="14.463809548270547"/>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>

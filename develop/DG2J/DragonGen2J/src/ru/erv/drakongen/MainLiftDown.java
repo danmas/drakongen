@@ -19,9 +19,11 @@ public class MainLiftDown {
 	  //private static final String XML_FILE = "../graphml/test4.graphml";
 	  //private static final String XML_FILE = "C:/YandexDisk/FLASH/WRK/DG2J/Schemes/DrakonGen2.graphml";
 	  //private static final String XML_FILE = "C:/YandexDisk/FLASH/WRK/SRS_v.09/Schemes/SRS_v.09.7.graphml";
-	  private static final String XML_FILE = "../../../WRK/DG2J/Schemes/DrakonGen2.graphml";
+	  //private static final String XML_FILE = "../../../WRK/DG2J/Schemes/DrakonGen2.graphml";
 	  //private static final String XML_FILE = "../../../WRK/DG2J/Schemes/test.graphml";
 	  //private static final String XML_FILE = "./src/ru/erv/drakongen/test/test2_gen.graphml";
+	  
+	  private static final String XML_FILE = "C:/ERV/WRK/drakongen/work/Schemes/test_REF.graphml";
 	  
 	  public static void main(String[] args) throws Exception {
 		  
@@ -57,9 +59,9 @@ public class MainLiftDown {
 			e.printStackTrace();
 		}
 		
-		
 	    DrakonGen2 dg = new DrakonGen2();
 	    dg.parse_drakon(graph);
+	    
 		
 		/*
 	    DgVertex cv1 = new DgVertex("1", (TinkerGraph)graph);
