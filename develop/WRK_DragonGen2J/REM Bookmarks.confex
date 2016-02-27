@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ConfigTree version="0.0.2">
+<TreeNode
+id="-1"
+name="Закладки DrakonGen2J"
+>
+<properties>
+</properties>
+<BookmarkNode
+id="-1"
+name="Утилиты  (class DrakonUtils)"
+>
+<properties>
+<resource>
+DrakonUtils.java
+</resource>
+<path>
+DragonGen2J/src/ru/erv/drakongen
+</path>
+<location>
+16
+</location>
+<selection>
+public class DrakonUtils {
+</selection>
+</properties>
+</BookmarkNode>
+<TreeNode
+id="-1"
+name="Парсер graphml"
+>
+<properties>
+<tooltiptext>
+Разбор graphml файла, превращение его в граф.
+</tooltiptext>
+</properties>
+<BookmarkNode
+id="-1"
+name="Загрузчик граф файла (class GraphMLReader)"
+>
+<properties>
+<resource>
+GraphMLReader.java
+</resource>
+<path>
+DragonGen2J/src/ru/erv/drakongen/parser
+</path>
+<location>
+30
+</location>
+<selection>
+public class GraphMLReader
+</selection>
+</properties>
+</BookmarkNode>
+<BookmarkNode
+id="-1"
+name="Парсер (class GraphMLParser)"
+>
+<properties>
+<resource>
+GraphMLParser.java
+</resource>
+<path>
+DragonGen2J/src/ru/erv/drakongen/parser
+</path>
+<location>
+27
+</location>
+<selection>
+public class GraphMLParser
+</selection>
+</properties>
+<BookmarkNode
+id="-1"
+name="Считывание типа связи(ребра)"
+>
+<properties>
+<resource>
+GraphMLParser.java
+</resource>
+<path>
+DragonGen2J/src/ru/erv/drakongen/parser
+</path>
+<location>
+284
+</location>
+<selection>
+currentEdge.setProperty(&amp;quot;type&amp;quot;,
+</selection>
+</properties>
+</BookmarkNode>
+</BookmarkNode>
+</TreeNode>
+<TreeNode
+id="-1"
+name="Классовая структура"
+>
+<properties>
+</properties>
+<BookmarkNode
+id="-1"
+name="class DgEdge"
+>
+<properties>
+<resource>
+DgEdge.java
+</resource>
+<path>
+DragonGen2J/src/ru/erv/drakongen/parser
+</path>
+<location>
+3
+</location>
+<selection>
+public class DgEdge
+</selection>
+</properties>
+</BookmarkNode>
+<BookmarkNode
+id="-1"
+name="class DgVertex"
+>
+<properties>
+<resource>
+DgVertex.java
+</resource>
+<path>
+DragonGen2J/src/ru/erv/drakongen/parser
+</path>
+<location>
+8
+</location>
+<selection>
+public class DgVertex
+</selection>
+</properties>
+</BookmarkNode>
+</TreeNode>
+</TreeNode>
+</ConfigTree>

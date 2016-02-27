@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/DragonGen2J/src/ru/erv/drakongen/MainLiftDown.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ru.erv.drakongen.MainLiftDown"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="C:\YandexDisk\FLASH\WRK\SRS\develop\ C:\YandexDisk\FLASH\WRK\SRS\develop\Schemes\SRS_v.0.9.81.graphml"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="DragonGen2J"/>
+</launchConfiguration>

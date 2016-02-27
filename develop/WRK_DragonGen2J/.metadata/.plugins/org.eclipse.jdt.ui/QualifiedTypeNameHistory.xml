@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.antlr.grammar.v3.ANTLRv3Lexer"/>
+<fullyQualifiedTypeName name="antlr.CommonToken"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="antlr.TokenStream"/>
+<fullyQualifiedTypeName name="antlr.NoViableAltException"/>
+<fullyQualifiedTypeName name="antlr.Parser"/>
+<fullyQualifiedTypeName name="antlr.RecognitionException"/>
+<fullyQualifiedTypeName name="antlr.collections.impl.BitSet"/>
+<fullyQualifiedTypeName name="antlr.Token"/>
+<fullyQualifiedTypeName name="org.antlr.analysis.DFA"/>
+<fullyQualifiedTypeName name="grammar.antlr.ANTLRv3Parser"/>
+<fullyQualifiedTypeName name="grammar.antlr.ANTLRv3Lexer"/>
+<fullyQualifiedTypeName name="org.antlr.grammar.v3.ANTLRv3Parser"/>
+<fullyQualifiedTypeName name="lang.csharp.csParser"/>
+<fullyQualifiedTypeName name="lang.csharp.csParser.compilation_unit_return"/>
+</qualifiedTypeNameHistroy>
