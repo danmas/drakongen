@@ -1,0 +1,31 @@
+
+C:\ERV\PROJECTS\DrakonGen\Schemes>REM Generation  src classes from  scheme. 
+
+C:\ERV\PROJECTS\DrakonGen\Schemes>chcp 1251 
+’ҐЄгй п Є®¤®ў п бва ­Ёж : 1251
+
+C:\ERV\PROJECTS\DrakonGen\Schemes>REM chcp 65001 
+
+C:\ERV\PROJECTS\DrakonGen\Schemes>set DRAKON_GEN="C:\ERV\PROJECTS\DrakonGen\exe\drakongen.jar" 
+
+C:\ERV\PROJECTS\DrakonGen\Schemes>REM set BASE_DIR= 
+
+C:\ERV\PROJECTS\DrakonGen\Schemes>REM java -jar "C:\ERV\PROJECTS\DrakonGen\exe\drakongen.jar"    
+
+C:\ERV\PROJECTS\DrakonGen\Schemes>java -jar "C:\ERV\PROJECTS\DrakonGen\exe\drakongen.jar" C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\ DrakonGen2.graphml 
+Базовый каталог:C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\ Файл со схемой:DrakonGen2.graphml
+ <--- Was read:DrakonGen2.graphml
+--->Текущая реальность из Акт: null
+---> Разбираем силуэт 
+--->Текущая реальность из Начало: null
+----> Записываем файл C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\\src\ru\erv\drakongen\DrakonUtils.java
+
+--- Конец активности 
+--->Текущая реальность из Акт: CODE_JAVA
+---> Разбираем силуэт 
+--->Текущая реальность из Начало: CODE_JAVA
+Проверка правил выходов не выполняется  FOR_BEGикона:Проходим по всем узлам
+
+----> Записываем файл C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\\src/ru/erv/drakongen/DrakonGen2.java
+
+--- Конец активности 
