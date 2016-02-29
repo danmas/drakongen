@@ -1,0 +1,90 @@
+
+C:\ERV\PROJECTS\DrakonGen\schemes>REM Generation  src classes from  scheme. 
+
+C:\ERV\PROJECTS\DrakonGen\schemes>chcp 1251 
+’ҐЄгй п Є®¤®ў п бва ­Ёж : 1251
+
+C:\ERV\PROJECTS\DrakonGen\schemes>REM chcp 65001 
+
+C:\ERV\PROJECTS\DrakonGen\schemes>set DRAKON_GEN="C:\ERV\PROJECTS\DrakonGen\exe\drakongen.jar" 
+
+C:\ERV\PROJECTS\DrakonGen\schemes>REM set BASE_DIR= 
+
+C:\ERV\PROJECTS\DrakonGen\schemes>REM java -jar "C:\ERV\PROJECTS\DrakonGen\exe\drakongen.jar"    
+
+C:\ERV\PROJECTS\DrakonGen\schemes>REM copy C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\src\ru\erv\drakongen C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\src\ru\erv\drakongen_RES  
+
+C:\ERV\PROJECTS\DrakonGen\schemes>java -jar "C:\ERV\PROJECTS\DrakonGen\exe\drakongen.jar" C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\ DrakonGen2.graphml 
+Базовый каталог:C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\ Файл со схемой:DrakonGen2.graphml
+ <--- Was read:DrakonGen2.graphml
+--->Текущая реальность из Акт: null
+---> Разбираем силуэт 
+--->Текущая реальность: null
+--->Текущая реальность из Начало: null
+----> Записываем файл C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\\src\ru\erv\drakongen\DrakonUtils.java
+
+--- Конец активности 
+--->Текущая реальность из Акт: CODE_JAVA
+---> Разбираем силуэт 
+--->Текущая реальность: CODE_JAVA
+--->Текущая реальность из Начало: CODE_JAVA
+Проверка правил выходов не выполняется  FOR_BEGикона:Проходим по всем узлам
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+Проверка правил выходов не выполняется  FOR_BEGикона:по всем ЧАСТЯМ СБОРКИ
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+Проверка правил выходов не выполняется  FOR_BEGикона:для всех выходов
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+Проверка правил выходов не выполняется  FOR_BEGикона:Обрабатываем все case ветки
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+Проверка правил выходов не выполняется  FOR_BEGикона:для всех выходов
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+Проверка правил выходов не выполняется  FOR_BEGикона:для всех входов
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+Проверка правил выходов не выполняется  FOR_BEGикона:для всех входов
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+----> Записываем файл C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\\src/ru/erv/drakongen/DrakonGen2.java
+
+--- Конец активности 
+--->Текущая реальность из Акт: null
+---> Разбираем силуэт 
+--->Текущая реальность: null
+--->Текущая реальность из Начало: null
+Проверка правил выходов не выполняется  FOR_BEGикона:Проходим по всем узлам
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+Проверка правил выходов не выполняется  FOR_BEGикона:Проходим по всем узлам ЗАПУСКА
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+Проверка правил выходов не выполняется  FOR_BEGикона:Проходим по всем узлам
+
+Проверка правил выходов не выполняется  FOR_ENDикона:
+            
+
+----> Записываем файл C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\\src\ru\erv\drakongen\DrakonAct.java
+
+--- Конец активности 
