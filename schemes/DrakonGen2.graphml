@@ -3928,7 +3928,7 @@ try {
       <data key="d5"/>
       <data key="d7">
         <y:UMLNoteNode>
-          <y:Geometry height="34.000000000000455" width="193.8812230025319" x="-3842.1580816955247" y="-5614.123986031564"/>
+          <y:Geometry height="34.000000000000455" width="193.8812230025319" x="-3437.6835337749535" y="-5507.868162046036"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="193.8812230025319" x="0.0" y="3.9375">DrakonUtils v.0.0.1<y:LabelModel>
@@ -3947,7 +3947,7 @@ try {
       <data key="d6"><![CDATA[public DrakonUtils() {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-4088.4227334812585" y="-5216.677002171488"/>
+          <y:Geometry height="40.0" width="185.0" x="-3683.9481855606873" y="-5110.42117818596"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">Конструктор</y:NodeLabel>
@@ -3960,7 +3960,7 @@ try {
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-4035.9227334812585" y="-4741.622371036257"/>
+          <y:Geometry height="40.0" width="80.0" x="-3631.4481855606873" y="-4635.366547050729"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -3983,7 +3983,7 @@ try {
 */]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="30.0" width="166.7513148999774" x="-4077.3800170663526" y="-5460.716383233002"/>
+          <y:Geometry height="30.0" width="166.7513148999774" x="-3672.9054691457814" y="-5354.460559247474"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="152.810546875" x="6.970384012488466" y="5.6494140625">упоминание о DrakonGen2<y:LabelModel>
@@ -4007,7 +4007,7 @@ import com.tinkerpop.blueprints.pgm.Vertex;
 import ru.erv.drakongen.utils.*;]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="30.0" width="166.7513148999774" x="-4077.3800170663526" y="-5416.05148160656"/>
+          <y:Geometry height="30.0" width="166.7513148999774" x="-3672.9054691457814" y="-5309.795657621032"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="49.369140625" x="58.691087137488466" y="-1.701171875">package
@@ -4027,7 +4027,7 @@ imports<y:LabelModel>
       <data key="d6"><![CDATA[ public class DrakonUtils {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="30.0" width="166.7513148999774" x="-4077.3800170663526" y="-5371.386579980119"/>
+          <y:Geometry height="30.0" width="166.7513148999774" x="-3672.9054691457814" y="-5265.130755994591"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.689453125" x="35.030930887488466" y="5.6494140625">class DrakonUtils<y:LabelModel>
@@ -4136,7 +4136,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
 ]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="30.0" width="166.7513148999774" x="-4077.3800170663526" y="-5327.084825820013"/>
+          <y:Geometry height="30.0" width="166.7513148999774" x="-3672.9054691457814" y="-5220.829001834485"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="61.46875" x="52.641282449988466" y="5.6494140625">константы<y:LabelModel>
@@ -4154,7 +4154,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
       <data key="d5"><![CDATA[ACTION]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="30.0" width="166.7513148999774" x="-4077.3800170663526" y="-5282.783071659906"/>
+          <y:Geometry height="30.0" width="166.7513148999774" x="-3672.9054691457814" y="-5176.5272476743785"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="73.99609375" x="46.377610574988466" y="5.6494140625">переменные<y:LabelModel>
@@ -4172,7 +4172,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
       <data key="d5"><![CDATA[DG_BEG]]></data>
       <data key="d7">
         <y:SVGNode>
-          <y:Geometry height="64.53585815429688" width="56.560157775878906" x="-4022.2844385043027" y="-5645.1153844703485"/>
+          <y:Geometry height="64.53585815429688" width="56.560157775878906" x="-3617.8098905837314" y="-5538.859560484821"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="151.09375" x="-47.26679611206055" y="68.53585815429688">Сборка класса DrakonUtils<y:LabelModel>
@@ -4194,7 +4194,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
       <data key="d5"><![CDATA[SI_BEG]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.internalStorage">
-          <y:Geometry height="55.804717792552765" width="167.39241346185827" x="-4077.7005663472937" y="-5541.392845669819"/>
+          <y:Geometry height="55.804717792552765" width="167.39241346185827" x="-3673.2260184267225" y="-5435.137021684291"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="102.015625" x="32.688394230929134" y="18.551772958776382">Класс DrakonUtils<y:LabelModel>
@@ -4213,7 +4213,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
       <data key="d6"><![CDATA[src\ru\erv\drakongen\DrakonUtils.java]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.dataBase">
-          <y:Geometry height="64.53585815429688" width="148.682197954262" x="-3819.5585691713895" y="-5550.123986031563"/>
+          <y:Geometry height="64.53585815429688" width="148.682197954262" x="-3415.0840212508183" y="-5443.868162046035"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="36.1875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.682197954262" x="0.0" y="14.174179077148438">Записать в файл DrakonUtils.java<y:LabelModel>
@@ -4233,7 +4233,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
 ]]></data>
       <data key="d7">
         <y:ShapeNode>
-          <y:Geometry height="40.0" width="50.0" x="-3499.370947380752" y="-4053.5502146960216"/>
+          <y:Geometry height="40.0" width="50.0" x="-3094.896399460181" y="-3947.2943907104936"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="23.0" y="18.0">
@@ -4254,7 +4254,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
       <data key="d6"><![CDATA[public static void main(String[] args) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="200.0" x="-3803.5936847216144" y="-4132.3025424396355"/>
+          <y:Geometry height="40.0" width="200.0" x="-3399.119136801043" y="-4026.0467184541076"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="30.009765625" x="84.9951171875" y="10.6494140625">main<y:LabelModel>
@@ -4273,7 +4273,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="30.0" width="30.0" x="-3718.5936847216144" y="-4041.2696452242844"/>
+          <y:Geometry height="30.0" width="30.0" x="-3314.119136801043" y="-3935.0138212387565"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="13.0" y="13.0">
@@ -4293,7 +4293,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
       <data key="d6"><![CDATA[public static String getIconType(Vertex node) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-5156.677002171488"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-5050.42117818596"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">Получение типа иконы узла</y:NodeLabel>
@@ -4307,7 +4307,7 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
 }]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="30.0" width="84.97632246462649" x="-3341.163828889632" y="-5151.677002171488"/>
+          <y:Geometry height="30.0" width="84.97632246462649" x="-2936.6892809690607" y="-5045.42117818596"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.97632246462649" x="0.0" y="4.453125">тип</y:NodeLabel>
@@ -4324,7 +4324,7 @@ if(type==null)
 	type = "";]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3564.9687708141573" y="-5157.725888260538"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3160.494222893586" y="-5051.47006427501"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">получаем иконый тип</y:NodeLabel>
@@ -4337,7 +4337,7 @@ if(type==null)
       <data key="d6"><![CDATA[public static String getComment(Vertex node) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-5084.579229993387"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-4978.323406007859"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">Получение комента из узла</y:NodeLabel>
@@ -4351,7 +4351,7 @@ if(type==null)
 }]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="30.0" width="84.97632246462649" x="-3341.163828889632" y="-5080.812080130877"/>
+          <y:Geometry height="30.0" width="84.97632246462649" x="-2936.6892809690607" y="-4974.556256145349"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.97632246462649" x="0.0" y="4.453125">ком.</y:NodeLabel>
@@ -4366,7 +4366,7 @@ if(type==null)
 String ret =  (String) node.getProperty("comment") ;]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3564.9687708141573" y="-5086.860966219928"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3160.494222893586" y="-4980.6051422344"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">получаем коментарий</y:NodeLabel>
@@ -4379,7 +4379,7 @@ String ret =  (String) node.getProperty("comment") ;]]></data>
       <data key="d6"><![CDATA[public static String getCode(Vertex node) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-5010.675090083408"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-4904.41926609788"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">Возвращает код из узла</y:NodeLabel>
@@ -4395,7 +4395,7 @@ return (String)node.getProperty("code") ;
 ]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3567.119512820069" y="-5013.216516753742"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.6449648994976" y="-4906.960692768214"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4408,7 +4408,7 @@ return (String)node.getProperty("code") ;
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.675667657317" y="-5013.321923297687"/>
+          <y:Geometry height="40.0" width="80.0" x="-2934.2011197367456" y="-4907.066099312159"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4428,7 +4428,7 @@ return (String)node.getProperty("code") ;
       <data key="d6"><![CDATA[public static String getCodeMark(Vertex node) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-5216.677002171488"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-5110.42117818596"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">Получение маркера кода</y:NodeLabel>
@@ -4442,7 +4442,7 @@ return (String)node.getProperty("code") ;
 }]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="30.0" width="84.97632246462649" x="-3341.163828889632" y="-5211.677002171488"/>
+          <y:Geometry height="30.0" width="84.97632246462649" x="-2936.6892809690607" y="-5105.42117818596"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.97632246462649" x="0.0" y="4.453125">маркер</y:NodeLabel>
@@ -4459,7 +4459,7 @@ if(type==null)
 	type = "";]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3564.9687708141573" y="-5217.725888260538"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3160.494222893586" y="-5111.47006427501"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">получаем маркер кода</y:NodeLabel>
@@ -4472,7 +4472,7 @@ if(type==null)
       <data key="d6"><![CDATA[public static void message(String str) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-4888.001891762061"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-4781.746067776533"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">message()</y:NodeLabel>
@@ -4485,7 +4485,7 @@ if(type==null)
       <data key="d6"><![CDATA[System.out.println(str);]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.627204172397" y="-4889.050777851112"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.1526562518256" y="-4782.794953865584"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4498,7 +4498,7 @@ if(type==null)
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.2351249956755" y="-4888.001891762061"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751043" y="-4781.746067776533"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4518,7 +4518,7 @@ if(type==null)
       <data key="d6"><![CDATA[public static int getInDegree(Vertex v) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-4623.86134702333"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-4517.605523037802"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">getInDegree()</y:NodeLabel>
@@ -4537,7 +4537,7 @@ return i;
 ]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.627204172397" y="-4624.91023311238"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.1526562518256" y="-4518.654409126852"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4550,7 +4550,7 @@ return i;
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.2351249956755" y="-4623.86134702333"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751043" y="-4517.605523037802"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4570,7 +4570,7 @@ return i;
       <data key="d6"><![CDATA[public static int getOutDegree(Vertex v) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-4551.763574845229"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-4445.507750859701"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">getOutDegree()</y:NodeLabel>
@@ -4589,7 +4589,7 @@ return i;
 ]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.627204172397" y="-4552.81246093428"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.1526562518256" y="-4446.556636948752"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4602,7 +4602,7 @@ return i;
       <data key="d6"><![CDATA[public static Vertex getInNode(Vertex v, int num) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-4480.784494518689"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-4374.528670533161"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">getInNode()</y:NodeLabel>
@@ -4625,7 +4625,7 @@ for (Edge e : v.getInEdges()) {
 return null;]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.627204172397" y="-4481.833380607739"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.1526562518256" y="-4375.577556622211"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4638,7 +4638,7 @@ return null;]]></data>
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.2351249956755" y="-4551.76357484523"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751043" y="-4445.507750859702"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4658,7 +4658,7 @@ return null;]]></data>
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.2351249956755" y="-4480.784494518689"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751043" y="-4374.528670533161"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4678,7 +4678,7 @@ return null;]]></data>
       <data key="d6"><![CDATA[public static Vertex getOutNode(Vertex v, int num) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-4415.170001148755"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-4308.914177163227"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">getOutNode()</y:NodeLabel>
@@ -4701,7 +4701,7 @@ for (Edge e : v.getOutEdges()) {
 return null;]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.627204172397" y="-4416.218887237806"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.1526562518256" y="-4309.963063252278"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4714,7 +4714,7 @@ return null;]]></data>
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.2351249956755" y="-4415.170001148755"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751043" y="-4308.914177163227"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4734,7 +4734,7 @@ return null;]]></data>
       <data key="d6"><![CDATA[public static Edge getOutEdge(Vertex v, int num) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-4349.55550777882"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-4243.299683793292"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">getOutEdge()</y:NodeLabel>
@@ -4757,7 +4757,7 @@ for (Edge e : v.getOutEdges()) {
 return null;]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.627204172397" y="-4350.604393867871"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.1526562518256" y="-4244.348569882343"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4770,7 +4770,7 @@ return null;]]></data>
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.2351249956755" y="-4349.55550777882"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751043" y="-4243.299683793292"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4790,7 +4790,7 @@ return null;]]></data>
       <data key="d6"><![CDATA[public static boolean isEdgeYes(Edge edge) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216126" y="-4283.941014408887"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.6191368010413" y="-4177.685190423359"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">isEdgeYes()</y:NodeLabel>
@@ -4812,7 +4812,7 @@ if(di_type_edge.toUpperCase().equals("ДА") ||
 return false;]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.6272041723932" y="-4284.989900497937"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.152656251822" y="-4178.734076512409"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4825,7 +4825,7 @@ return false;]]></data>
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.235124995672" y="-4283.941014408887"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751006" y="-4177.685190423359"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4845,7 +4845,7 @@ return false;]]></data>
       <data key="d6"><![CDATA[public static boolean isReferenceEdge(Edge edge) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216144" y="-4223.335439654987"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801043" y="-4117.079615669459"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">isReferenceEdge()</y:NodeLabel>
@@ -4866,7 +4866,7 @@ if(di_type_edge.toUpperCase().equals("REF") )
 return false;]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.627204172397" y="-4224.384325744037"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.1526562518256" y="-4118.128501758509"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4879,7 +4879,7 @@ return false;]]></data>
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.2351249956755" y="-4223.335439654987"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751043" y="-4117.079615669459"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4899,7 +4899,7 @@ return false;]]></data>
       <data key="d6"><![CDATA[public static void error(String str) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216162" y="-4825.0239652282935"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801045" y="-4718.7681412427655"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">error()</y:NodeLabel>
@@ -4912,7 +4912,7 @@ return false;]]></data>
       <data key="d6"><![CDATA[System.err.println(str);]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.6272041723987" y="-4826.0728513173435"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.1526562518275" y="-4719.817027331816"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4925,7 +4925,7 @@ return false;]]></data>
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.2351249956755" y="-4825.0239652282935"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751043" y="-4718.7681412427655"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -4945,7 +4945,7 @@ return false;]]></data>
       <data key="d6"><![CDATA[public static void debug(String str) {]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="185.0" x="-3796.0936847216162" y="-4762.046038694524"/>
+          <y:Geometry height="40.0" width="185.0" x="-3391.619136801045" y="-4655.790214708996"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="185.0" x="0.0" y="9.453125">debug()</y:NodeLabel>
@@ -4959,7 +4959,7 @@ return false;]]></data>
 	System.out.println(str);]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3566.6272041723987" y="-4763.094924783575"/>
+          <y:Geometry height="42.09777217810051" width="166.7513148999774" x="-3162.1526562518275" y="-4656.839100798047"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.09375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.7513148999774" x="0.0" y="10.50201108905003">строим код</y:NodeLabel>
@@ -4972,7 +4972,7 @@ return false;]]></data>
       <data key="d6"><![CDATA[}]]></data>
       <data key="d7">
         <y:GenericNode configuration="com.yworks.flowchart.onPageReference">
-          <y:Geometry height="40.0" width="80.0" x="-3338.2351249956755" y="-4762.046038694524"/>
+          <y:Geometry height="40.0" width="80.0" x="-2933.7605770751043" y="-4655.790214708996"/>
           <y:Fill color="#E5FFFF" color2="#E5FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="2.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="38.0" y="18.0">
@@ -6138,7 +6138,7 @@ if (code != null)
       <data key="d5"/>
       <data key="d7">
         <y:UMLNoteNode>
-          <y:Geometry height="34.000000000000455" width="193.8812230025319" x="-3436.3584508104987" y="-3616.0010774295797"/>
+          <y:Geometry height="34.000000000000455" width="193.8812230025319" x="-3436.3584508104987" y="-3589.0708128022384"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="193.8812230025319" x="0.0" y="3.9375">DrakonGen v.0.9.7<y:LabelModel>
@@ -6667,7 +6667,7 @@ protected var CURRENT_RELEASE:String = RELEASE_TYPE_CODE_AS; ]]></data>
       <data key="d6"><![CDATA[CODE_JAVA]]></data>
       <data key="d7">
         <y:SVGNode>
-          <y:Geometry height="64.53585815429688" width="56.560157775878906" x="-3653.6679815906546" y="-3595.857156716952"/>
+          <y:Geometry height="64.53585815429688" width="56.560157775878906" x="-3653.6679815906546" y="-3568.9268920896106"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="157.1171875" x="-50.27851486206055" y="68.53585815429688">Сборка класса DrakonGen2<y:LabelModel>
@@ -9715,7 +9715,7 @@ CURRENT_RELEASE = data["description"];]]></data>
       <data key="d6"><![CDATA[CODE_AS]]></data>
       <data key="d7">
         <y:SVGNode>
-          <y:Geometry height="64.53585815429688" width="56.560157775878906" x="-3555.8929237816055" y="-3631.2690065067277"/>
+          <y:Geometry height="64.53585815429688" width="56.560157775878906" x="-3555.8929237816055" y="-3604.3387418793864"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="77.6875" x="-10.563671112060547" y="68.53585815429688">Точка сборки
@@ -9770,7 +9770,7 @@ AS<y:LabelModel>
       <data key="d5"><![CDATA[DG_BEG]]></data>
       <data key="d7">
         <y:SVGNode>
-          <y:Geometry height="64.53585815429688" width="56.560157775878906" x="-3751.4430393997036" y="-3631.2690065067277"/>
+          <y:Geometry height="64.53585815429688" width="56.560157775878906" x="-3751.4430393997036" y="-3604.3387418793864"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="77.6875" x="-10.563671112060547" y="68.53585815429688">Точка сборки<y:LabelModel>
@@ -14767,7 +14767,7 @@ DrakonGen2.java<y:LabelModel>
       <data key="d5"/>
       <data key="d7">
         <y:UMLNoteNode>
-          <y:Geometry height="64.53585815429688" width="193.8812230025319" x="-3436.3584508104987" y="-3577.4317160637897"/>
+          <y:Geometry height="64.53585815429688" width="193.8812230025319" x="-3436.3584508104987" y="-3550.5014514364484"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="46.25" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="193.8812230025319" x="0.0" y="9.142929077148438">~DG2A -&gt; DG2A,DG2J
@@ -31205,7 +31205,7 @@ public static final String POST_CODE_CDATA = "]]]]><![CDATA[></data>";
 ]]></data>
       <data key="d7">
         <y:UMLNoteNode>
-          <y:Geometry height="34.000000000000455" width="193.8812230025319" x="-3880.628702166375" y="-5329.084825820013"/>
+          <y:Geometry height="34.000000000000455" width="193.8812230025319" x="-3476.154154245804" y="-5222.829001834485"/>
           <y:Fill color="#FF0000" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="66.375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="193.8812230025319" x="-4.547473508864641E-13" y="-16.1875">
@@ -33990,7 +33990,7 @@ public class MakeAutoCodeMark {
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="51.965231394589864" y="27.09230647611912">
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="51.965169940161104" y="27.09227108664618">
             <y:LabelModel>
               <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
             </y:LabelModel>
@@ -34067,7 +34067,7 @@ public class MakeAutoCodeMark {
       <data key="d11">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="-3474.370947380752" y="-4107.5546895777325"/>
+            <y:Point x="-3069.896399460181" y="-4001.2988655922045"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -34079,7 +34079,7 @@ public class MakeAutoCodeMark {
       <data key="d11">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="-3702.934711835217" y="-4080.2021302336652"/>
+            <y:Point x="-3298.460163914646" y="-3973.9463062481373"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
