@@ -3,10 +3,6 @@ REM Generation  src classes from  scheme.
 chcp 1251
 REM chcp 65001
 
-set DRAKON_GEN="C:\ERV\PROJECTS\DrakonGen\exe\drakongen.jar"
-REM set BASE_DIR=%1
-REM java -jar %DRAKON_GEN% %BASE_DIR% %2 
-
-REM copy C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\src\ru\erv\drakongen C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\src\ru\erv\drakongen_RES 
+set DRAKON_GEN="..\exe\drakongen_NEW.jar"
  
-java -jar %DRAKON_GEN% C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\ DrakonGen2.graphml
+java -jar %DRAKON_GEN% ..\develop\WRK_DragonGen2J\DragonGen2J\ DrakonGen2.graphml

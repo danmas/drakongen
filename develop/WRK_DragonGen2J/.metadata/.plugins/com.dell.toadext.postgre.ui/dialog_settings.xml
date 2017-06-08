@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.dell.toadext.postgre.detailviewer.PgTableViewer">
+	</section>
+	<section name="com.dell.toadext.postgre.detailviewer.PgScriptViewer">
+		<section name="saveToFile">
+		</section>
+	</section>
+</section>

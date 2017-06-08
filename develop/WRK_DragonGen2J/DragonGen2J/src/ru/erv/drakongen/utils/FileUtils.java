@@ -54,15 +54,20 @@ public class FileUtils {
 
 	
 	public static String fileRead(String name) {
+		return fileRead(name,"UTF-8");
+	}
+	
+	
+	public static String fileRead(String name, String encode) {
 		BufferedReader br = null;
 	    try {
 	        File file = new File(name);
 	        FileInputStream is = new FileInputStream(file);
 	        
 	        StringBuilder out = new StringBuilder();
-	        br = new BufferedReader(new InputStreamReader(is));
+	        br = new BufferedReader(new InputStreamReader(is,encode));
 	        for(String line = br.readLine(); line != null; line = br.readLine()) 
-	          out.append(line);
+	          out.append(line+"\n"); 
 	        br.close();
 	        return out.toString();
 	        

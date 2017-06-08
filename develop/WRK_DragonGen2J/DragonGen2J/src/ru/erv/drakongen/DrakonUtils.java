@@ -1,21 +1,26 @@
 
-//-- Класс DrakonUtils
-	//-- упоминание о DrakonGen2
+//--dg-- Класс DrakonUtils
+	//--dg-- упоминание о DrakonGen2
 	/**
   * Этот текст сгенерирован программой DrakonGen2
-  * @author Erv +
+  * @author Erv -
 */ 
-	//-- package//-- imports
+	//--dg-- package//--dg-- imports
 	package ru.erv.drakongen;
 
 import com.tinkerpop.blueprints.pgm.Edge;
 import com.tinkerpop.blueprints.pgm.Graph;
 import com.tinkerpop.blueprints.pgm.Vertex;
 import ru.erv.drakongen.utils.*; 
-	//-- class DrakonUtils
+	//--dg-- class DrakonUtils
 	 public class DrakonUtils { 
-	//-- константы
-	public final static String DI_EXT_NEXT = "next";
+	//--dg-- константы
+		 public static final String PREF_MARKER_CDATA = "<data key=\"d4\"><![CDATA[";
+		 public static final String PREF_MARKER_DG2J = "<DG2J code_mark=\"";
+		 public static final String PREF_CODE_CDATA = "<data key=\"d6\"><![CDATA[";
+		 public static final String POST_CODE_CDATA = "]]></data>";
+
+public final static String DI_EXT_NEXT = "next";
 public final static String DI_DG_BEG = "DG_BEG";
 public final static String DI_SI_BEG = "SI_BEG";
 public final static String DI_SI_END = "SI_END";
@@ -100,73 +105,73 @@ public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
 		REM_CALL_PROC;	
 	};
  
-	//-- переменные
-	//-- Конструктор
+	//--dg-- переменные
+	//--dg-- Конструктор
 	public DrakonUtils() { 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- Получение маркера кода
+	//--dg-- Получение маркера кода
 	public static String getCodeMark(Vertex node) { 
-		//-- получаем маркер кода
+		//--dg-- получаем маркер кода
 		if(node==null)
 	return "";
 String type =  (String) node.getProperty("code_mark") ;
 if(type==null)
 	type = ""; 
-		//-- маркер
+		//--dg-- маркер
 		return type;
 }
-	//-- Получение типа иконы узла
+	//--dg-- Получение типа иконы узла
 	public static String getIconType(Vertex node) { 
-		//-- получаем иконый тип
+		//--dg-- получаем иконый тип
 		if(node==null)
 	return "";
 String type =  (String) node.getProperty("type") ;
 if(type==null)
 	type = ""; 
-		//-- тип
+		//--dg-- тип
 		return type;
 }
-	//-- Получение комента из узла
+	//--dg-- Получение комента из узла
 	public static String getComment(Vertex node) { 
-		//-- получаем коментарий
+		//--dg-- получаем коментарий
 		if(node==null)
 	return "";
 String ret =  (String) node.getProperty("comment") ; 
-		//-- ком.
+		//--dg-- ком.
 		return ret;
 }
-	//-- Возвращает код из узла
+	//--dg-- Возвращает код из узла
 	public static String getCode(Vertex node) { 
-		//-- строим код
+		//--dg-- строим код
 		if(node == null)
 	return "";
 return (String)node.getProperty("code") ;
  
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- message()
+	//--dg-- message()
 	public static void message(String str) { 
-		//-- строим код
+		//--dg-- строим код
 		System.out.println(str); 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- error()
+	//--dg-- error()
 	public static void error(String str) { 
-		//-- строим код
+		//--dg-- строим код
 		System.err.println(str); 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- debug()
+	//--dg-- debug()
 	public static void debug(String str) { 
-		//-- строим код
+		//--dg-- строим код
 		if(Settings.isDebug())
 	System.out.println(str); 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- getInDegree()
+	//--dg-- getInDegree()
 	public static int getInDegree(Vertex v) { 
-		//-- строим код
+		//--dg-- строим код
 		int i = 0;
 for (Edge e : v.getInEdges()) {
 	if(!DrakonUtils.isReferenceEdge(e))
@@ -174,11 +179,11 @@ for (Edge e : v.getInEdges()) {
 }
 return i;
  
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- getOutDegree()
+	//--dg-- getOutDegree()
 	public static int getOutDegree(Vertex v) { 
-		//-- строим код
+		//--dg-- строим код
 		int i = 0;
 for (Edge e : v.getOutEdges()) {
 	if(!DrakonUtils.isReferenceEdge(e))
@@ -186,11 +191,11 @@ for (Edge e : v.getOutEdges()) {
 }
 return i;
  
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- getInNode()
+	//--dg-- getInNode()
 	public static Vertex getInNode(Vertex v, int num) { 
-		//-- строим код
+		//--dg-- строим код
 		if(v == null)
 	return null;
 int i = 0;
@@ -202,11 +207,11 @@ for (Edge e : v.getInEdges()) {
 	i++;
 }
 return null; 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- getOutNode()
+	//--dg-- getOutNode()
 	public static Vertex getOutNode(Vertex v, int num) { 
-		//-- строим код
+		//--dg-- строим код
 		if(v == null)
 	return null;
 int i = 0;
@@ -218,11 +223,11 @@ for (Edge e : v.getOutEdges()) {
 	i++;
 }
 return null; 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- getOutEdge()
+	//--dg-- getOutEdge()
 	public static Edge getOutEdge(Vertex v, int num) { 
-		//-- строим код
+		//--dg-- строим код
 		if(v == null)
 	return null;
 int i = 0;
@@ -234,11 +239,11 @@ for (Edge e : v.getOutEdges()) {
 	i++;
 }
 return null; 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- isEdgeYes()
+	//--dg-- isEdgeYes()
 	public static boolean isEdgeYes(Edge edge) { 
-		//-- строим код
+		//--dg-- строим код
 		if(edge == null)
 	return false;
 
@@ -249,11 +254,11 @@ if(di_type_edge.toUpperCase().equals("ДА") ||
 		di_type_edge.toUpperCase().equals("YES"))
 	return true;
 return false; 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- isReferenceEdge()
+	//--dg-- isReferenceEdge()
 	public static boolean isReferenceEdge(Edge edge) { 
-		//-- строим код
+		//--dg-- строим код
 		if(edge == null)
 	return false;
 
@@ -263,13 +268,13 @@ if(di_type_edge == null) return false;
 if(di_type_edge.toUpperCase().equals("REF") )
 	return true;
 return false; 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- main
+	//--dg-- main
 	public static void main(String[] args) { 
-		//-- //--             
+		//--dg-- //--dg--             
 		}
-	//-- 
+	//--dg-- 
             
 	} //-- конец класса
  

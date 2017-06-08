@@ -14,20 +14,8 @@ public class MainLiftDown {
 	/**
 	 * @param args
 	 */
-	  private static final String BASE_DIR = "..\\..\\..\\WRK\\DG2J\\DragonGen2J\\";
-	  
-	  //private static final String XML_FILE = "../graphml/test4.graphml";
-	  //private static final String XML_FILE = "C:/YandexDisk/FLASH/WRK/DG2J/Schemes/DrakonGen2.graphml";
-	  //private static final String XML_FILE = "C:/YandexDisk/FLASH/WRK/SRS_v.09/Schemes/SRS_v.09.7.graphml";
-	  //private static final String XML_FILE = "../../../WRK/DG2J/Schemes/DrakonGen2.graphml";
-	  //private static final String XML_FILE = "../../../WRK/DG2J/Schemes/test.graphml";
-	  //private static final String XML_FILE = "./src/ru/erv/drakongen/test/test2_gen.graphml";
-	  
-	  private static final String XML_FILE = "C:/ERV/WRK/drakongen/work/Schemes/test_REF.graphml";
-	  
-	  private static String base_dir = ""; 
-	  private static String xml_file = ""; 
-	  
+	  private static String base_dir = "C:/RDTEX/CB-NRD/work/";  
+	  private static String xml_file = "C:/RDTEX/CB-NRD/work/schemes/DG_Algoritms_ACM.graphml"; 
 	  
 	  public static void main(String[] args) throws Exception {
 	  
@@ -35,13 +23,17 @@ public class MainLiftDown {
 			base_dir = args[0];
 			xml_file = args[1];
 			
-			System.out.println("Базовый каталог:"+base_dir+" Файл со схемой:"+xml_file);
 		} else {
-			//System.err.println("Должно быть два аргумента! Базовый каталог и файл со схемой.");
-			System.err.println("Error. Must be two arguments!");
-			System.err.println("java -jar drakongen.jar <base dir> <schema file>");
-			return;
+//			System.err.println("Должно быть два аргумента! Базовый каталог и файл со схемой.");
+//			System.err.println("Error. Must be two arguments!");
+//			System.err.println("java -jar drakongen.jar <base dir> <schema file>");
+//			
+			base_dir = "C:/RDTEX/CB-NRD/work/";  
+			xml_file = "C:/RDTEX/CB-NRD/work/schemes/DG_Algoritms_ACM.graphml"; 
+			
+//			return;
 		}
+		System.out.println("Базовый каталог:"+base_dir+" Файл со схемой:"+xml_file);
 		  
 		DrakonAct da = new DrakonAct();
 		Graph graph = new TinkerGraph();

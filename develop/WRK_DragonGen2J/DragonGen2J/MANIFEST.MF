@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Rsrc-Class-Path: ./ blueprints-core-1.2.jar
+Class-Path: .
+Rsrc-Main-Class: ru.erv.drakongen.MainLiftDown
+Main-Class: org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
+

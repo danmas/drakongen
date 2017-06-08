@@ -17,16 +17,10 @@ C:\ERV\PROJECTS\DrakonGen\schemes>REM copy C:\ERV\PROJECTS\DrakonGen\develop\WRK
 C:\ERV\PROJECTS\DrakonGen\schemes>java -jar "C:\ERV\PROJECTS\DrakonGen\exe\drakongen.jar" C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\ DrakonGen2.graphml 
 Базовый каталог:C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\ Файл со схемой:DrakonGen2.graphml
  <--- Was read:DrakonGen2.graphml
---->Текущая реальность из Акт: null
----> Разбираем силуэт 
---->Текущая реальность: null
---->Текущая реальность из Начало: null
-----> Записываем файл C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\\src\ru\erv\drakongen\DrakonUtils.java
-
---- Конец активности 
 --->Текущая реальность из Акт: CODE_JAVA
 ---> Разбираем силуэт 
 --->Текущая реальность: CODE_JAVA
+--->префикс коментария: //--dg-- 
 --->Текущая реальность из Начало: CODE_JAVA
 Проверка правил выходов не выполняется  FOR_BEGикона:Проходим по всем узлам
 
@@ -43,12 +37,12 @@ C:\ERV\PROJECTS\DrakonGen\schemes>java -jar "C:\ERV\PROJECTS\DrakonGen\exe\drako
 Проверка правил выходов не выполняется  FOR_ENDикона:
             
 
-Проверка правил выходов не выполняется  FOR_BEGикона:Обрабатываем все case ветки
+Проверка правил выходов не выполняется  FOR_BEGикона:для всех выходов
 
 Проверка правил выходов не выполняется  FOR_ENDикона:
             
 
-Проверка правил выходов не выполняется  FOR_BEGикона:для всех выходов
+Проверка правил выходов не выполняется  FOR_BEGикона:Обрабатываем все case ветки
 
 Проверка правил выходов не выполняется  FOR_ENDикона:
             
@@ -64,27 +58,5 @@ C:\ERV\PROJECTS\DrakonGen\schemes>java -jar "C:\ERV\PROJECTS\DrakonGen\exe\drako
             
 
 ----> Записываем файл C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\\src/ru/erv/drakongen/DrakonGen2.java
-
---- Конец активности 
---->Текущая реальность из Акт: null
----> Разбираем силуэт 
---->Текущая реальность: null
---->Текущая реальность из Начало: null
-Проверка правил выходов не выполняется  FOR_BEGикона:Проходим по всем узлам
-
-Проверка правил выходов не выполняется  FOR_ENDикона:
-            
-
-Проверка правил выходов не выполняется  FOR_BEGикона:Проходим по всем узлам ЗАПУСКА
-
-Проверка правил выходов не выполняется  FOR_ENDикона:
-            
-
-Проверка правил выходов не выполняется  FOR_BEGикона:Проходим по всем узлам
-
-Проверка правил выходов не выполняется  FOR_ENDикона:
-            
-
-----> Записываем файл C:\ERV\PROJECTS\DrakonGen\develop\WRK_DragonGen2J\DragonGen2J\\src\ru\erv\drakongen\DrakonAct.java
 
 --- Конец активности 

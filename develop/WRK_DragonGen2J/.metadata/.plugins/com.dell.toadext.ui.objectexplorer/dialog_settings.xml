@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="POSTGRESQL_9_1#root">
+		<section name="Tablespaces">
+			<section name="com.dell.toadext.postgre.ui.contentProvider.PgTablespaceContentProvider">
+			</section>
+		</section>
+		<section name="Databases">
+			<section name="com.dell.toadext.postgre.ui.contentProvider.PgDatabaseContentProvider">
+			</section>
+		</section>
+		<section name="Login Roles">
+			<section name="com.dell.toadext.postgre.ui.contentProvider.PgLoginRoleContentProvider">
+			</section>
+		</section>
+		<section name="Group Roles">
+			<section name="com.dell.toadext.postgre.ui.contentProvider.PgGroupRoleContentProvider">
+			</section>
+		</section>
+		<section name="Schemas">
+			<section name="com.dell.toadext.postgre.ui.contentProvider.PgSchemaContentProvider">
+				<section name="Domains">
+					<section name="com.dell.toadext.postgre.model.PgDomain">
+					</section>
+				</section>
+				<section name="Types">
+					<section name="com.dell.toadext.postgre.model.PgType">
+					</section>
+				</section>
+				<section name="Trigger Functions">
+					<section name="com.dell.toadext.postgre.model.PgTriggerFunction">
+					</section>
+				</section>
+				<section name="Sequences">
+					<section name="com.dell.toadext.postgre.model.PgSequence">
+					</section>
+				</section>
+				<section name="Views">
+					<section name="com.dell.toadext.postgre.model.PgView">
+						<section name="Columns">
+							<section name="com.dell.toadext.postgre.model.PgColumn">
+							</section>
+						</section>
+						<section name="Triggers">
+							<section name="com.dell.toadext.postgre.model.PgTrigger">
+							</section>
+						</section>
+						<section name="Rules">
+							<section name="com.dell.toadext.postgre.model.PgRule">
+							</section>
+						</section>
+					</section>
+				</section>
+				<section name="Constraints">
+					<section name="com.dell.toadext.postgre.model.PgConstraint">
+					</section>
+				</section>
+				<section name="Aggregates">
+					<section name="com.dell.toadext.postgre.model.PgAggregate">
+					</section>
+				</section>
+				<section name="Collations">
+					<section name="com.dell.toadext.postgre.model.PgCollation">
+					</section>
+				</section>
+				<section name="Tables">
+					<section name="com.dell.toadext.postgre.model.PgTable">
+						<section name="Constraints">
+							<section name="com.dell.toadext.postgre.model.PgConstraint">
+							</section>
+						</section>
+						<section name="Columns">
+							<section name="com.dell.toadext.postgre.model.PgColumn">
+							</section>
+						</section>
+						<section name="Triggers">
+							<section name="com.dell.toadext.postgre.model.PgTrigger">
+							</section>
+						</section>
+						<section name="Indexes">
+							<section name="com.dell.toadext.postgre.model.PgIndex">
+							</section>
+						</section>
+						<section name="Rules">
+							<section name="com.dell.toadext.postgre.model.PgRule">
+							</section>
+						</section>
+					</section>
+				</section>
+				<section name="Functions">
+					<section name="com.dell.toadext.postgre.model.PgFunction">
+					</section>
+				</section>
+				<section name="Triggers">
+					<section name="com.dell.toadext.postgre.model.PgTrigger">
+					</section>
+				</section>
+				<section name="Indexes">
+					<section name="com.dell.toadext.postgre.model.PgIndex">
+					</section>
+				</section>
+			</section>
+		</section>
+		<section name="Catalogs">
+			<section name="com.dell.toadext.postgre.ui.contentProvider.PgCatalogContentProvider">
+				<section name="Domains">
+					<section name="com.dell.toadext.postgre.model.PgDomain">
+					</section>
+				</section>
+				<section name="Types">
+					<section name="com.dell.toadext.postgre.model.PgType">
+					</section>
+				</section>
+				<section name="Trigger Functions">
+					<section name="com.dell.toadext.postgre.model.PgTriggerFunction">
+					</section>
+				</section>
+				<section name="Sequences">
+					<section name="com.dell.toadext.postgre.model.PgSequence">
+					</section>
+				</section>
+				<section name="Views">
+					<section name="com.dell.toadext.postgre.model.PgView">
+						<section name="Columns">
+							<section name="com.dell.toadext.postgre.model.PgColumn">
+							</section>
+						</section>
+						<section name="Triggers">
+							<section name="com.dell.toadext.postgre.model.PgTrigger">
+							</section>
+						</section>
+						<section name="Rules">
+							<section name="com.dell.toadext.postgre.model.PgRule">
+							</section>
+						</section>
+					</section>
+				</section>
+				<section name="Constraints">
+					<section name="com.dell.toadext.postgre.model.PgConstraint">
+					</section>
+				</section>
+				<section name="Aggregates">
+					<section name="com.dell.toadext.postgre.model.PgAggregate">
+					</section>
+				</section>
+				<section name="Collations">
+					<section name="com.dell.toadext.postgre.model.PgCollation">
+					</section>
+				</section>
+				<section name="Tables">
+					<section name="com.dell.toadext.postgre.model.PgTable">
+						<section name="Constraints">
+							<section name="com.dell.toadext.postgre.model.PgConstraint">
+							</section>
+						</section>
+						<section name="Columns">
+							<section name="com.dell.toadext.postgre.model.PgColumn">
+							</section>
+						</section>
+						<section name="Triggers">
+							<section name="com.dell.toadext.postgre.model.PgTrigger">
+							</section>
+						</section>
+						<section name="Indexes">
+							<section name="com.dell.toadext.postgre.model.PgIndex">
+							</section>
+						</section>
+						<section name="Rules">
+							<section name="com.dell.toadext.postgre.model.PgRule">
+							</section>
+						</section>
+					</section>
+				</section>
+				<section name="Functions">
+					<section name="com.dell.toadext.postgre.model.PgFunction">
+					</section>
+				</section>
+				<section name="Triggers">
+					<section name="com.dell.toadext.postgre.model.PgTrigger">
+					</section>
+				</section>
+				<section name="Indexes">
+					<section name="com.dell.toadext.postgre.model.PgIndex">
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+	<section name="com.dell.toadext.schemabrowser.ActionList@4a7bb0a6#root">
+	</section>
+	<section name="DEPENDENCIES#root">
+	</section>
+	<section name="TRUNCATE#root">
+	</section>
+	<section name="EXPORT_DDL_FILE#root">
+	</section>
+	<section name="NEW_DATABASE#root">
+	</section>
+	<section name="COUNT_ROWS#root">
+	</section>
+	<section name="REFRESH#root">
+	</section>
+	<section name="CASCADE_DROP#root">
+	</section>
+	<section name="OPEN_DBO#root">
+	</section>
+	<section name="EXPORT_DATA#root">
+	</section>
+	<section name="EDIT_DDL_WORKSHEET#root">
+	</section>
+	<section name="SEPARATOR#root">
+	</section>
+	<section name="COPY_TABLE#root">
+	</section>
+	<section name="NEW_SCHEMA#root">
+	</section>
+	<section name="RENAME#root">
+	</section>
+	<section name="RUN#root">
+	</section>
+	<section name="NEW_FUNCTION#root">
+	</section>
+	<section name="DROP#root">
+	</section>
+	<section name="COPY_DDL_CLIPBOARD#root">
+	</section>
+	<section name="IMPORT_DATA#root">
+	</section>
+	<section name="CREATE_TABLE#root">
+	</section>
+	<section name="com.dell.toadext.schemabrowser.ActionList@5145dc7#root">
+	</section>
+</section>

@@ -255,8 +255,10 @@ public class GraphMLParser extends DefaultHandler {
 						//		currentAttributeKey, currentAttributeData);
 						if(currentAttributeKey.equals(d_code_mark)) {
 							currentVertix.setProperty("code_mark", currentAttributeData);
+							//System.err.println(" !!!code_mark!!!!!!!!!!!!!!!! "+currentAttributeData);
 						}
 						if(currentAttributeKey.equals(d_type)) {
+							//System.err.println(" !!!type!!!!!!!!!!!!!!!! ");
 							currentVertix.setProperty("type", currentAttributeData);
 						}
 						if(currentAttributeKey.equals(d_code)) {
@@ -280,7 +282,7 @@ public class GraphMLParser extends DefaultHandler {
 					if (currentAttributeType.equals(GraphMLToken.STRING
 							.getTag())) {
 						// debug
-						System.err.println(" -!!!- edgeAttributes.setAttribute("+ currentAttributeData);
+//						System.err.println(" -!!!- edgeAttributes.setAttribute("+ currentAttributeData);
 						currentEdge.setProperty("type", currentAttributeData);
 //						edgeAttributes.setAttribute(
 //								currentEdge.getIdentifier(),
@@ -299,7 +301,6 @@ public class GraphMLParser extends DefaultHandler {
 				}
 			}
 		}
-
 	}
 
 	public void endElement(String uri, String localName, String qName)
