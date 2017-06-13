@@ -38,7 +38,7 @@
 <entry path="C:\Program Files\Java\jre1.8.0_91\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="E:\ERV\eclipse\Working\luna-graf\eclipse" version="1.7.0_25">
+<libraryInfo home="E:\ERV\eclipse\Working\luna-graf\eclipse\jre" version="1.7.0_25">
 <bootpath>
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\resources.jar"/>
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\rt.jar"/>
@@ -57,7 +57,7 @@
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="E:\ERV\eclipse\Working\luna-graf\eclipse\jre" version="1.7.0_25">
+<libraryInfo home="E:\ERV\eclipse\Working\luna-graf\eclipse" version="1.7.0_25">
 <bootpath>
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\resources.jar"/>
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\rt.jar"/>

@@ -21,6 +21,8 @@
 			<item value=",,,,,,,,,,,,,,,,,,,," key="col.widths"/>
 		</section>
 	</section>
+	<section name="com.dell.toadext.detailbrowser.dialogs.DefaultOpenDatabaseObjectDialog">
+	</section>
 	<section name="com.dell.toadext.editor.AbstractEditorExtension$HideResultSetAction">
 		<item value="false" key="active"/>
 	</section>

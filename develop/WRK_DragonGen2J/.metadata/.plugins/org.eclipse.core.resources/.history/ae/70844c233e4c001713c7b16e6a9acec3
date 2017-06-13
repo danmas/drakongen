@@ -1,0 +1,8 @@
+package ru.erv.drakongen.test;
+import org.json.simple.JSONObject;
+
+public class JsonTest {
+	  
+	JSONObject resultJson = new JSONObject();
+
+}

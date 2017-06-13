@@ -1,0 +1,68 @@
+package ru.erv.drakongen.test;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+public class JsonTest {
+
+	
+    public static void main(String[] args) {
+        String url = "http://freemusicarchive.org/api/get/genres.json?api_key=60BLHNQCAOUFPIBZ&limit=2";
+        /*
+         * {"title":"Free Music Archive - Genres","message":"","errors":[],"total" : "161","total_pages":81,"page":1,"limit":"2",
+         * "dataset":
+         * [{"genre_id": "1","genre_parent_id":"38","genre_title":"Avant-Garde" ,"genre_handle": "Avant-Garde","genre_color":"#006666"},
+         * {"genre_id":"2","genre_parent_id" :null,"genre_title":"International","genre_handle":"International","genre_color":"#CC3300"}]}
+         */
+        String s =  "{\"title\":\"Free Music Archive - Genres\",\"message\":\"\",\"errors\":[],\"total\" : \"161\",\"total_pages\":81,\"page\":1,\"limit\":\"2\"," +
+                 "\"dataset\":" +
+                    "[{\"genre_id\": \"1\",\"genre_parent_id\":\"38\",\"genre_title\":\"Avant-Garde\" ,\"genre_handle\": \"Avant-Garde\",\"genre_color\":\"#006666\"}," +
+                     "{\"genre_id\":\"2\",\"genre_parent_id\" :null,\"genre_title\":\"International\",\"genre_handle\":\"International\",\"genre_color\":\"#CC3300\"}]}";
+        
+        try {
+            //String genreJson = IOUtils.toString(new URL(url));
+            JSONObject genreJsonObject = (JSONObject) JSONValue.parseWithException(s);
+            // get the title
+            System.out.println(genreJsonObject.get("title"));
+            // get the data
+            JSONArray genreArray = (JSONArray) genreJsonObject.get("dataset");
+            // get the first genre
+            JSONObject firstGenre = (JSONObject) genreArray.get(0);
+            System.out.println(firstGenre.get("genre_title"));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+	
+	public static void main2(String[] args) {
+		try {	
+		JSONObject resultJson = new JSONObject();
+		
+//		String json = "{paramsArray: [\"first\", 100],"
+//	            + "paramsObj: {one: \"two\", three: \"four\"},"
+//	            + "paramsStr: \"some string\"}";
+		String json = "{\"p\": \"first\"";
+	
+		JSONParser parser = new JSONParser();
+		
+		Object obj = parser.parse(json);
+		JSONObject jsonObj = (JSONObject) obj;
+		System.out.println(jsonObj.get("p"));
+
+		System.out.println(jsonObj.get("paramsStr"));
+		// some string
+		
+		JSONObject jo = (JSONObject) jsonObj.get("paramsObj");
+		//JsonObject jo = jsonObj.get("paramsObj");
+		System.out.println(jo.get("three"));
+		
+		// four
+		JSONArray ja = (JSONArray) jsonObj.get("paramsArray");
+		System.out.println(ja.get(1));
+		} catch ( Exception e) {
+			System.err.println(e.getMessage());
+		}
+	}
+}
