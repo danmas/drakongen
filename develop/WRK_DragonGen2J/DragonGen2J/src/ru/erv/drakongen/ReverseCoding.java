@@ -1,5 +1,6 @@
 
 //--dg-- Сборка класса ReverseCoding
+ 
 	//--dg-- package//--dg-- imports
 	package ru.erv.drakongen;
 

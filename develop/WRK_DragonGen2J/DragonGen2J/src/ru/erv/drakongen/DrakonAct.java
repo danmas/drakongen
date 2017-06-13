@@ -1,5 +1,6 @@
 
 //--dg-- Класс DrakonAct
+ 
 	//--dg-- упоминание о DrakonGen2
 	/**
   * Этот текст сгенерирован программой DrakonGen2
@@ -39,6 +40,30 @@ Vertex in;
  
 	//--dg-- Конструктор
 	public DrakonAct() { 
+		//--dg-- //--dg--             
+		}
+	//--dg-- main
+	public static void main(String[] args) { 
+		//--dg-- устанавливаем BASE_DIR
+		Settings.setProperty("BASE_DIR", "..\\..\\..\\WRK\\DG2J\\DragonGen2J\\"); 
+		//--dg-- переменная da
+		DrakonAct da 
+		//--dg-- экземпляр класса DrakonAct
+		= new DrakonAct(); 
+		//--dg-- строим Graph из файла Маin
+		Graph graph = new TinkerGraph();
+
+GraphMLReader reader = new GraphMLReader(MAIN_DG_FILE, graph);
+
+try {
+	reader.read();
+	System.out.println(" <--- Прочитали файл "+ MAIN_DG_FILE);
+} catch(Exception e) {
+	System.err.println(" err " +e.getMessage());
+	e.printStackTrace();
+} 
+		//--dg-- выполнение активностей
+		da.activate_drakon(graph); 
 		//--dg-- //--dg--             
 		}
 	//--dg-- Запускаем graph на выполнение
@@ -99,7 +124,7 @@ for (Vertex v : graph.getVertices()) {
 				}
 				}
 		} else {
-			//--dg-- Запускаем graph на выполнение по одному
+			//--dg-- Запускаем graph на //--dg-- выполнение по одному
 			activate_drakon_single(graph);  
 		}
 		//--dg-- //--dg--             
@@ -299,30 +324,6 @@ reader.read();
 				//--dg-- break
 				break; 
 		}
-		//--dg-- //--dg--             
-		}
-	//--dg-- main
-	public static void main(String[] args) { 
-		//--dg-- устанавливаем BASE_DIR
-		Settings.setProperty("BASE_DIR", "..\\..\\..\\WRK\\DG2J\\DragonGen2J\\"); 
-		//--dg-- переменная da
-		DrakonAct da 
-		//--dg-- экземпляр класса DrakonAct
-		= new DrakonAct(); 
-		//--dg-- строим Graph из файла Маin
-		Graph graph = new TinkerGraph();
-
-GraphMLReader reader = new GraphMLReader(MAIN_DG_FILE, graph);
-
-try {
-	reader.read();
-	System.out.println(" <--- Прочитали файл "+ MAIN_DG_FILE);
-} catch(Exception e) {
-	System.err.println(" err " +e.getMessage());
-	e.printStackTrace();
-} 
-		//--dg-- выполнение активностей
-		da.activate_drakon(graph); 
 		//--dg-- //--dg--             
 		}
 	//--dg-- 

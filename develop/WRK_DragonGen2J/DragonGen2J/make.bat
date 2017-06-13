@@ -12,5 +12,6 @@ set JAVA_PATH=C:\Program Files\Java\jdk1.8.0_111\bin\
 "%JAVA_PATH%jar.exe" uf ..\..\..\exe\drakongen_NEW.jar .\org
 "%JAVA_PATH%jar.exe" uf ..\..\..\exe\drakongen_NEW.jar -C .\libs blueprints-core-1.2.jar
 "%JAVA_PATH%jar.exe" uf ..\..\..\exe\drakongen_NEW.jar -C .\libs json-simple-1.1.jar
+"%JAVA_PATH%jar.exe" uf ..\..\..\exe\drakongen_NEW.jar -C .\libs ojdbc7.jar
 
 

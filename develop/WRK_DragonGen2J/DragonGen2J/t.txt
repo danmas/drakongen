@@ -1,0 +1,151 @@
+"chcp" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+src\ru\erv\drakongen\DrakonAct.java:3: error: class, interface, or enum expected
+╩ырёё DrakonAct
+^
+src\ru\erv\drakongen\DrakonAct.java:130: error: 'else' without 'if'
+		} else {
+		  ^
+src\ru\erv\drakongen\DrakonAct.java:137: error: illegal start of expression
+	protected void activate_drakon_single(Graph graph) {
+	^
+src\ru\erv\drakongen\DrakonAct.java:137: error: illegal start of expression
+	protected void activate_drakon_single(Graph graph) {
+	          ^
+src\ru\erv\drakongen\DrakonAct.java:137: error: ';' expected
+	protected void activate_drakon_single(Graph graph) {
+	                                     ^
+src\ru\erv\drakongen\DrakonAct.java:137: error: ';' expected
+	protected void activate_drakon_single(Graph graph) {
+	                                                 ^
+src\ru\erv\drakongen\DrakonAct.java:155: error: illegal start of expression
+	protected void activate_siluet(Vertex v) {
+	^
+src\ru\erv\drakongen\DrakonAct.java:155: error: illegal start of expression
+	protected void activate_siluet(Vertex v) {
+	          ^
+src\ru\erv\drakongen\DrakonAct.java:155: error: ';' expected
+	protected void activate_siluet(Vertex v) {
+	                              ^
+src\ru\erv\drakongen\DrakonAct.java:155: error: ';' expected
+	protected void activate_siluet(Vertex v) {
+	                                       ^
+src\ru\erv\drakongen\DrakonAct.java:185: error: illegal start of expression
+	public void parseSiluet(Vertex node) {
+	^
+src\ru\erv\drakongen\DrakonAct.java:185: error: illegal start of expression
+	public void parseSiluet(Vertex node) {
+	       ^
+src\ru\erv\drakongen\DrakonAct.java:185: error: ';' expected
+	public void parseSiluet(Vertex node) {
+	                       ^
+src\ru\erv\drakongen\DrakonAct.java:185: error: ';' expected
+	public void parseSiluet(Vertex node) {
+	                                   ^
+src\ru\erv\drakongen\DrakonAct.java:337: error: reached end of file while parsing
+	} //-- ъюэхЎ ъырёёр
+	 ^
+src\ru\erv\drakongen\DrakonAct.java:339: error: reached end of file while parsing
+src\ru\erv\drakongen\ReverseCoding.java:3: error: class, interface, or enum expected
+╤сюЁър ъырёёр ReverseCoding
+^
+src\ru\erv\drakongen\ReverseCoding.java:95: error: illegal start of expression
+	public String replaseMarkedCode(String src_text) { 
+	^
+src\ru\erv\drakongen\ReverseCoding.java:95: error: ';' expected
+	public String replaseMarkedCode(String src_text) { 
+	                               ^
+src\ru\erv\drakongen\ReverseCoding.java:95: error: ';' expected
+	public String replaseMarkedCode(String src_text) { 
+	                                               ^
+src\ru\erv\drakongen\ReverseCoding.java:148: error: illegal start of expression
+	protected boolean geReleaseCode(String full_file_name) { 
+	^
+src\ru\erv\drakongen\ReverseCoding.java:148: error: ';' expected
+	protected boolean geReleaseCode(String full_file_name) { 
+	                               ^
+src\ru\erv\drakongen\ReverseCoding.java:148: error: ';' expected
+	protected boolean geReleaseCode(String full_file_name) { 
+	                                                     ^
+src\ru\erv\drakongen\ReverseCoding.java:188: error: 'catch' without 'try'
+		} catch(Exception e) {
+		  ^
+src\ru\erv\drakongen\ReverseCoding.java:150: error: 'try' without 'catch', 'finally' or resource declarations
+		try { 
+		^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: illegal start of expression
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: illegal start of expression
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	       ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: ';' expected
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                    ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: ')' expected
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                                          ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: illegal start of expression
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                                               ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: ';' expected
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                                                       ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: not a statement
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                                                        ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: ';' expected
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                                                              ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: ';' expected
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                                                                                        ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: illegal start of expression
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                                                                                                   ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: illegal start of expression
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                                                                                                           ^
+src\ru\erv\drakongen\ReverseCoding.java:195: error: ';' expected
+	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
+	                                                                                                            ^
+src\ru\erv\drakongen\ReverseCoding.java:219: error: illegal start of expression
+	public void addCodeFile(String file_name) {
+	^
+src\ru\erv\drakongen\ReverseCoding.java:219: error: illegal start of expression
+	public void addCodeFile(String file_name) {
+	       ^
+src\ru\erv\drakongen\ReverseCoding.java:219: error: ';' expected
+	public void addCodeFile(String file_name) {
+	                       ^
+src\ru\erv\drakongen\ReverseCoding.java:219: error: ';' expected
+	public void addCodeFile(String file_name) {
+	                                        ^
+src\ru\erv\drakongen\ReverseCoding.java:226: error: illegal start of expression
+	public void run() { 
+	^
+src\ru\erv\drakongen\ReverseCoding.java:226: error: illegal start of expression
+	public void run() { 
+	       ^
+src\ru\erv\drakongen\ReverseCoding.java:226: error: ';' expected
+	public void run() { 
+	               ^
+src\ru\erv\drakongen\ReverseCoding.java:237: error: illegal start of expression
+	public static void main(String[] args) { 
+	^
+src\ru\erv\drakongen\ReverseCoding.java:237: error: illegal start of expression
+	public static void main(String[] args) { 
+	       ^
+src\ru\erv\drakongen\ReverseCoding.java:237: error: ';' expected
+	public static void main(String[] args) { 
+	             ^
+src\ru\erv\drakongen\ReverseCoding.java:237: error: '.class' expected
+	public static void main(String[] args) { 
+	                                 ^
+src\ru\erv\drakongen\ReverseCoding.java:237: error: ';' expected
+	public static void main(String[] args) { 
+	                                     ^
+src\ru\erv\drakongen\ReverseCoding.java:258: error: reached end of file while parsing
+	} //-- ъюэхЎ ъырёёр
+	 ^
+50 errors

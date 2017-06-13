@@ -32,3 +32,37 @@ Caused by: org.eclipse.jgit.errors.TransportException: http://git.eclipse.org/gi
 	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1111) ~[na:na]
 	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:130) ~[na:na]
 	... 4 common frames omitted
+2017-06-13 14:53:46,779 [Worker-6] ERROR o.e.r.s.GitSnippetRepository - Transport operation failed.
+org.eclipse.jgit.api.errors.TransportException: http://git.eclipse.org/gitroot/recommenders/org.eclipse.recommenders.snipmatch.snippets.git: 407 Proxy Authentication Required
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:139) ~[na:na]
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.fetch(GitSnippetRepository.java:187) ~[na:na]
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.open(GitSnippetRepository.java:82) ~[na:na]
+	at org.eclipse.recommenders.internal.snipmatch.rcp.EclipseGitSnippetRepository$1.run(EclipseGitSnippetRepository.java:106) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) ~[org.eclipse.core.jobs_3.6.1.v20141014-1248.jar:na]
+Caused by: org.eclipse.jgit.errors.TransportException: http://git.eclipse.org/gitroot/recommenders/org.eclipse.recommenders.snipmatch.snippets.git: 407 Proxy Authentication Required
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:513) ~[na:na]
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:309) ~[na:na]
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136) ~[na:na]
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122) ~[na:na]
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1111) ~[na:na]
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:130) ~[na:na]
+	... 4 common frames omitted
+2017-06-13 14:53:46,895 [Worker-6] ERROR o.e.r.i.s.r.EclipseGitSnippetRepository - Exception while opening repository.
+java.io.IOException: Could not connect to remote repository. Your internet connection may be down.
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.createException(GitSnippetRepository.java:126) ~[na:na]
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.open(GitSnippetRepository.java:101) ~[na:na]
+	at org.eclipse.recommenders.internal.snipmatch.rcp.EclipseGitSnippetRepository$1.run(EclipseGitSnippetRepository.java:106) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) ~[org.eclipse.core.jobs_3.6.1.v20141014-1248.jar:na]
+Caused by: org.eclipse.jgit.api.errors.TransportException: http://git.eclipse.org/gitroot/recommenders/org.eclipse.recommenders.snipmatch.snippets.git: 407 Proxy Authentication Required
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:139) ~[na:na]
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.fetch(GitSnippetRepository.java:187) ~[na:na]
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.open(GitSnippetRepository.java:82) ~[na:na]
+	... 2 common frames omitted
+Caused by: org.eclipse.jgit.errors.TransportException: http://git.eclipse.org/gitroot/recommenders/org.eclipse.recommenders.snipmatch.snippets.git: 407 Proxy Authentication Required
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:513) ~[na:na]
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:309) ~[na:na]
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136) ~[na:na]
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122) ~[na:na]
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1111) ~[na:na]
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:130) ~[na:na]
+	... 4 common frames omitted
