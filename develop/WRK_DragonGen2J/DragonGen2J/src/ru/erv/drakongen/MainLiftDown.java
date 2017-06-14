@@ -28,8 +28,8 @@ public class MainLiftDown {
 //			System.err.println("Error. Must be two arguments!");
 //			System.err.println("java -jar drakongen.jar <base dir> <schema file>");
 //			
-			base_dir = "C:/RDTEX/CB-NRD/work/";  
-			xml_file = "C:/RDTEX/CB-NRD/work/schemes/DG_Algoritms_ACM.graphml"; 
+			base_dir = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/";  
+			xml_file = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/some_SQL.graphml"; 
 			
 //			return;
 		}

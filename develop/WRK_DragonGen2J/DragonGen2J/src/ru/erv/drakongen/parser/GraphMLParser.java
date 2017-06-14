@@ -124,6 +124,7 @@ public class GraphMLParser extends DefaultHandler {
 	}
 
 	boolean catch_label = false;
+	boolean catch_label_2 = false;
 	boolean catch_edge_label = false;
 	
 	String d_aspect = "d114";
@@ -131,6 +132,7 @@ public class GraphMLParser extends DefaultHandler {
 	String d_type = "d5";
 	String d_code = "d6";
 	//String d_edge_type = "d9";
+	String label_text = "";
 	
 	public void startElement(String namespace, String localName, String qName,
 			Attributes atts) throws SAXException {
@@ -138,8 +140,18 @@ public class GraphMLParser extends DefaultHandler {
 			System.out.println("---> " + qName);
 		if(qName.equals("y:NodeLabel")) {
 			catch_label = true;
-			if(Settings.isDebug())
+			catch_label_2 = true;
+			if(Settings.isDebug()) {
 				System.out.println("!Catch y:NodeLabel");
+			}
+		}
+		if(qName.equals("y:SmartNodeLabelModel")) {
+			if(catch_label_2) { 
+				//currentVertix.setProperty("comment", label_text);
+				System.err.println("~~~~~~~~~~~~ new:"+label_text);			
+			}
+			label_text = "";
+			catch_label_2 = false;
 		}
 		if(qName.equals("y:EdgeLabel")) {
 			catch_edge_label = true;
@@ -228,18 +240,15 @@ public class GraphMLParser extends DefaultHandler {
 		}
 	}
 
+	  
 	public void characters(char[] ch, int start, int length) {
 		currentAttributeData = new String(ch, start, length);
-		if(catch_label) {
-			//System.out.println(" === Label = " + currentAttributeData);
-			//nodeAttributes.setAttribute(currentAttributeID,
-			//		currentAttributeKey, currentAttributeData);
-			
-			//currentNode.setComment(currentAttributeData);
-			//currentNode.setProperty("comment", currentAttributeData); 
-			currentVertix.setProperty("comment", currentAttributeData);
-			
+		if(catch_label_2) {
+			label_text += currentAttributeData;
+		} else if(catch_label) {
 			catch_label = false;
+			System.err.println("~~~~~~~~~~~~ old:"+currentAttributeData);			
+			currentVertix.setProperty("comment", currentAttributeData);
 		} else if(catch_edge_label) {
 			currentEdge.setProperty("dglabel", currentAttributeData);
 			catch_edge_label = false;
@@ -247,18 +256,11 @@ public class GraphMLParser extends DefaultHandler {
 		if (currentObjectTarget != null) {
 			if (currentObjectTarget.equals(GraphMLToken.NODE.getTag())) {
 				if (currentAttributeType != null) {
-					if (currentAttributeType.equals(GraphMLToken.STRING
-							.getTag())) {
-						// debug
-						// System.out.println(currentAttributeData);
-						//nodeAttributes.setAttribute(currentAttributeID,
-						//		currentAttributeKey, currentAttributeData);
+					if (currentAttributeType.equals(GraphMLToken.STRING.getTag())) {
 						if(currentAttributeKey.equals(d_code_mark)) {
 							currentVertix.setProperty("code_mark", currentAttributeData);
-							//System.err.println(" !!!code_mark!!!!!!!!!!!!!!!! "+currentAttributeData);
 						}
 						if(currentAttributeKey.equals(d_type)) {
-							//System.err.println(" !!!type!!!!!!!!!!!!!!!! ");
 							currentVertix.setProperty("type", currentAttributeData);
 						}
 						if(currentAttributeKey.equals(d_code)) {
@@ -268,10 +270,7 @@ public class GraphMLParser extends DefaultHandler {
 							currentVertix.setProperty("aspect", currentAttributeData);
 						}
 
-					} else if (currentAttributeType.equals(GraphMLToken.DOUBLE
-							.getTag())) {
-						// debug
-						// System.out.println(currentAttributeData);
+					} else if (currentAttributeType.equals(GraphMLToken.DOUBLE.getTag())) {
 						nodeAttributes.setAttribute(currentAttributeID,
 								currentAttributeKey,
 								Double.parseDouble(currentAttributeData));
@@ -281,22 +280,9 @@ public class GraphMLParser extends DefaultHandler {
 				if (currentAttributeType != null) {
 					if (currentAttributeType.equals(GraphMLToken.STRING
 							.getTag())) {
-						// debug
-//						System.err.println(" -!!!- edgeAttributes.setAttribute("+ currentAttributeData);
 						currentEdge.setProperty("type", currentAttributeData);
-//						edgeAttributes.setAttribute(
-//								currentEdge.getIdentifier(),
-//								currentAttributeKey, currentAttributeData);
 					}
-					if (currentAttributeType.equals(GraphMLToken.DOUBLE
-							.getTag())) {
-						// debug
-						//System.err.println(" -!!!- edgeAttributes.setAttribute("+ currentAttributeData);
-						
-//						edgeAttributes.setAttribute(
-//								currentEdge.getIdentifier(),
-//								currentAttributeKey,
-//								Double.parseDouble(currentAttributeData));
+					if (currentAttributeType.equals(GraphMLToken.DOUBLE	.getTag())) {
 					}
 				}
 			}
@@ -305,6 +291,15 @@ public class GraphMLParser extends DefaultHandler {
 
 	public void endElement(String uri, String localName, String qName)
 			throws SAXException {
+		//System.err.println("~~~~~~~~~~~~ endElement:"+qName);
+		if(qName.equals("y:NodeLabel")) {
+			if(catch_label_2) { 
+				//currentVertix.setProperty("comment", label_text);
+				System.err.println("~~~~~~~~~~~~ new:"+label_text);			
+			}
+			label_text = "";
+			catch_label_2 = false;
+		}
 		if(Settings.isDebug())
 			System.out.println("<--- "+ currentQname);
 		if (currentQname != GraphMLToken.DATA.getTag()) {

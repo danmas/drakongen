@@ -17,4 +17,5 @@
 <fullyQualifiedTypeName name="lang.csharp.csParser.compilation_unit_return"/>
 <fullyQualifiedTypeName name="org.json.simple.parser.ParseException"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="oracle.jdbc.OracleDriver"/>
 </qualifiedTypeNameHistroy>

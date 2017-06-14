@@ -117,16 +117,19 @@ public class DrakonUtils {
 		// --dg-- строим код
 		if (node == null)
 			return "";
-		String s = (String) node.getProperty("code"); //--.trim();
-		if ( s==null || s.equals("")) {
-			s = ((String) node.getProperty("comment")).trim();
-			if(s.equals("")) {
-				s = null;
-			}
-			System.err.println("++++++++ comment="+ s/*(String) node.getProperty("comment")*/ +" code "+(String) node.getProperty("code") + " type="+(String) node.getProperty("type"));
-		}
+		
+		String s = (String) node.getProperty("code");
+
 		return s;
 	}
+	
+//		if ( s==null || s.equals("")) {
+//			s = (String) node.getProperty("comment");
+//			if(s == null || s.equals("")) {
+//			} else {
+//				s = s.trim();
+//			}
+//			//System.err.println("++++++++ comment="+ s/*(String) node.getProperty("comment")*/ +" code "+(String) node.getProperty("code") + " type="+(String) node.getProperty("type"));
 
 	public static String getCodeFromLabel(Vertex node) {
 		// --dg-- строим код
