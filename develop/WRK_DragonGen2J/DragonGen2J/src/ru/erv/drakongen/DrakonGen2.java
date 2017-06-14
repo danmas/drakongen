@@ -379,21 +379,6 @@ if (code != null)
 res_str += spaces +code + "\n"; 
 					//--dg-- тек. узел
 					return cur_node; 
-			//--dg--  НАЧАЛО ПРОЦЕДУРЫ
-			case DI_PROC_BEG:
-				//--dg--  НАЧАЛО ШАМПУРА(SH_BEG)
-				case DI_SH_BEG:
-					//--dg--  ЧАСТЬ СБОРКИ
-					case DI_SUB_COMPIL:
-						//--dg-- тек. узел
-						return cur_node; 
-			//--dg-- неизвестный тип
-			default:
-				//--dg-- Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ В НАЧАЛЬНОЙ ГРУППЕ 
-				str = "Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ \"" + comment + "\" ("+ di_type + ") В НАЧАЛЬНОЙ ГРУППЕ. !n";
-DrakonUtils.error(str); 
-				//--dg-- break
-				break; 
 			//--dg--  ДЕСТВИЕ(ACTION)
 			case DI_ACTION:
 				//--dg--  ДЕСТВИЕ(AC)
@@ -433,6 +418,21 @@ if(code != null)
 						res_str += spaces + str; 
 						//--dg-- "ОШИБКА! У Действия ... должен быть выход.
 						DrakonUtils.error(str); 
+						//--dg-- тек. узел
+						return cur_node; 
+			//--dg-- неизвестный тип
+			default:
+				//--dg-- Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ В НАЧАЛЬНОЙ ГРУППЕ 
+				str = "Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ \"" + comment + "\" ("+ di_type + ") В НАЧАЛЬНОЙ ГРУППЕ. !n";
+DrakonUtils.error(str); 
+				//--dg-- break
+				break; 
+			//--dg--  НАЧАЛО ПРОЦЕДУРЫ
+			case DI_PROC_BEG:
+				//--dg--  НАЧАЛО ШАМПУРА(SH_BEG)
+				case DI_SH_BEG:
+					//--dg--  ЧАСТЬ СБОРКИ
+					case DI_SUB_COMPIL:
 						//--dg-- тек. узел
 						return cur_node; 
 		}
@@ -589,8 +589,7 @@ DrakonUtils.getIconType(next_node).equals(DI_CLASS_END)
  
 		//--dg-- в строку пробелов добавляем табуляторы по глубине уровня
 		for (int i = 0; i < _level; i++)  
-			spaces += "\t";
- 
+			spaces += "\t"; 
 		//--dg-- получаем параметры текущего узла
 		cur_node = node;
 		code= geReleaseCode(cur_node);

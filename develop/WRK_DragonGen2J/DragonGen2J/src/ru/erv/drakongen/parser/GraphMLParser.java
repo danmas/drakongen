@@ -296,7 +296,7 @@ public class GraphMLParser extends DefaultHandler {
 		if(qName.equals("y:NodeLabel")) {
 			if(catch_label_2) { 
 				//currentVertix.setProperty("comment", label_text);
-				System.err.println("~~~~~~~~~~~~ new:"+label_text);			
+				System.err.println("++~~~~~~~~~~ new:"+label_text);			
 			}
 			label_text = "";
 			catch_label_2 = false;

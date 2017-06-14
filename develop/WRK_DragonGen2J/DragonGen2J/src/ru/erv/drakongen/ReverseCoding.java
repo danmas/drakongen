@@ -13,7 +13,7 @@ import ru.erv.drakongen.utils.FileUtils;
  
 	//--dg-- сlass ReverseCoding
 	public class ReverseCoding { 
-	//--dg-- вспомогательный class Wrapper
+	//--dg-- вспомогательный class Wrapper T 
 	static class Wrapper<T> {
 	T value;
 	Wrapper(T value){

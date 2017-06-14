@@ -191,6 +191,22 @@ DrakonGen2 dg = null;
 		DrakonUtils.debug("-psi- n: "+DrakonUtils.getComment(node)); 
 		//--dg-- тип узла
 		switch(it) {
+			//--dg--  DI_SI_BEG
+			case DrakonUtils.DI_SI_BEG:
+				//--dg-- создаем новый DrakonGen
+				dg = new DrakonGen2();
+ 
+				//--dg-- устанавливаем текущую реальность
+				dg.setCurRelease(CURRENT_RELEASE);	
+ 
+				//--dg-- ---
+				DrakonUtils.message("--->Текущая реальность из Начало: " + CURRENT_RELEASE); 
+				//--dg-- производим разбор силуэта
+				dg.parseSiluet(node);
+
+ 
+				//--dg-- break
+				break; 
 			//--dg-- неизвестный тип
 			default:
 				//--dg-- Неизвестный тип активности ...
@@ -304,22 +320,6 @@ reader.read();
 	e.printStackTrace();
 	return;
 } 
- 
-				//--dg-- break
-				break; 
-			//--dg--  DI_SI_BEG
-			case DrakonUtils.DI_SI_BEG:
-				//--dg-- создаем новый DrakonGen
-				dg = new DrakonGen2();
- 
-				//--dg-- устанавливаем текущую реальность
-				dg.setCurRelease(CURRENT_RELEASE);	
- 
-				//--dg-- ---
-				DrakonUtils.message("--->Текущая реальность из Начало: " + CURRENT_RELEASE); 
-				//--dg-- производим разбор силуэта
-				dg.parseSiluet(node);
-
  
 				//--dg-- break
 				break; 
