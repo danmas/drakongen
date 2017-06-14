@@ -7286,3 +7286,13 @@ DrakonGenGood.java
               
 ~~~~~~~~~~~~ old:
             
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:58)
+Caused by: java.lang.NullPointerException
+	at ru.erv.drakongen.DrakonAct.activate_drakon(DrakonAct.java:108)
+	at ru.erv.drakongen.MainLiftDown.main(MainLiftDown.java:54)
+	... 5 more
