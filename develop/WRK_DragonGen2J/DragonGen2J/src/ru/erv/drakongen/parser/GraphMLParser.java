@@ -245,7 +245,8 @@ public class GraphMLParser extends DefaultHandler {
 		currentAttributeData = new String(ch, start, length);
 		if(catch_label_2) {
 			label_text += currentAttributeData;
-		} else if(catch_label) {
+		} 
+		if(catch_label) { 
 			catch_label = false;
 			System.err.println("~~~~~~~~~~~~ old:"+currentAttributeData);			
 			currentVertix.setProperty("comment", currentAttributeData);
