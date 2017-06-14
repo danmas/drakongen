@@ -1,7 +1,5 @@
 package cb.dfs.trail;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.sql.Clob;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,8 +11,7 @@ import java.sql.Statement;
 //import org.apache.log4j.Logger;
 
 import cb.dfs.trail.common.Constants;
-import cb.dfs.trail.db.OraConnector;
-//import oracle.jdbc.driver.OracleDriver;
+import oracle.jdbc.driver.OracleDriver;
 
 public class TrailSql extends TrailBase {
 
