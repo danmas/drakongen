@@ -249,7 +249,7 @@ public class GraphMLParser extends DefaultHandler {
 		if(catch_label) { 
 			catch_label = false;
 			System.err.println("~~~~~~~~~~~~ old:"+currentAttributeData);			
-			currentVertix.setProperty("comment", currentAttributeData);
+			currentVertix.setProperty("comment", currentAttributeData); //.trim());
 		} else if(catch_edge_label) {
 			currentEdge.setProperty("dglabel", currentAttributeData);
 			catch_edge_label = false;

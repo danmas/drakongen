@@ -12077,3 +12077,40 @@ Caused by: org.eclipse.jgit.errors.TransportException: http://git.eclipse.org/gi
 	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1111)
 	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:130)
 	... 4 more
+!SESSION 2017-06-15 06:17:09.568 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-06-15 06:17:24.416
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.emf.liveeditor/org.eclipse.e4.tools.emf.liveeditor.OpenLiveDialogHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-06-15 06:17:24.432
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.css.spy/org.eclipse.e4.tools.css.spy.OpenSpyHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-06-15 06:17:24.433
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.e4.tools.css.spy/org.eclipse.e4.tools.css.spy.OpenScratchpadHandler
+
+!ENTRY org.eclipse.jface 2 0 2017-06-15 06:17:41.505
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-06-15 06:17:41.505
+!MESSAGE A conflict occurred for ALT+C:
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.emf.emfstore.client.ui.commitProject,commit,
+		,
+		Category(org.eclipse.emf.emfstore.client.ui.project,ECP,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1043c493,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples.tableschemaeditor.copycolumn,Copy,
+		,
+		Category(org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples.tableschemaedtor.10x,ASA 9.x table schema editor,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b27d5d3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)

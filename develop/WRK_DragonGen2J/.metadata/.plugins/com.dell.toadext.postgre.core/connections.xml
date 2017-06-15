@@ -8,7 +8,7 @@
     <SavePassword>true</SavePassword>
     <Password>S7ODHTYBiFacYGIfhJHplQ==</Password>
     <RestoreWork>false</RestoreWork>
-    <LastConnectionDate>2017-06-14T06:45:50</LastConnectionDate>
+    <LastConnectionDate>2017-06-15T06:21:43</LastConnectionDate>
     <Database>carlinkng</Database>
     <Options>
       <UUID>c0686f45-e8cc-4bcf-82c5-c70e9b9baf63</UUID>
@@ -87,11 +87,11 @@
           <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
-          <Key>VIEWS</Key>
+          <Key>SEQUENCES</Key>
           <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
-          <Key>SEQUENCES</Key>
+          <Key>VIEWS</Key>
           <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
