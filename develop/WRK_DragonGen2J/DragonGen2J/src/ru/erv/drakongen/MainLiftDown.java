@@ -27,12 +27,11 @@ public class MainLiftDown {
 //			System.err.println("Должно быть два аргумента! Базовый каталог и файл со схемой.");
 //			System.err.println("Error. Must be two arguments!");
 //			System.err.println("java -jar drakongen.jar <base dir> <schema file>");
-//			
 			
-			//base_dir = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/";  
-			//xml_file = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/some_SQL.graphml"; 
-			base_dir = "C:/YandexDisk/WORKS/pg_and_ora_transactions/";  
-			xml_file = "C:/YandexDisk/WORKS/pg_and_ora_transactions/some_SQL.graphml"; 
+			base_dir = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/";  
+			xml_file = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/some_SQL.graphml"; 
+			//base_dir = "C:/YandexDisk/WORKS/pg_and_ora_transactions/";  
+			//xml_file = "C:/YandexDisk/WORKS/pg_and_ora_transactions/some_SQL.graphml"; 
 			
 //			return;
 		}
