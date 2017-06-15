@@ -550,7 +550,7 @@ res_str += str;
 		}
 		//--dg-- есть след.узел?
 		if(next_node != null) {
-			//--dg-- тип след.узла НАЧАЛО ШАМПУРА?
+			//--dg-- тип след.узла НАЧАЛО(ШАМПУРА,ПРОЦЕДУРЫ)?
 			if(DrakonUtils.getIconType(next_node).equals(DI_SH_BEG) || DrakonUtils.getIconType(next_node).equals(DI_PROC_BEG)) {
 				//--dg-- Разбираем след. шамапур
 				parceShampur(next_node,_level); 
