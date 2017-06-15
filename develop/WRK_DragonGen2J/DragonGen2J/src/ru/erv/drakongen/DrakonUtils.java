@@ -119,10 +119,11 @@ public class DrakonUtils {
 			return "";
 		
 		String s = (String) node.getProperty("code");
-
+        if(s==null) {
+        	s="";
+        }
 		return s;
 	}
-	
 //		if ( s==null || s.equals("")) {
 //			s = (String) node.getProperty("comment");
 //			if(s == null || s.equals("")) {

@@ -191,6 +191,12 @@ DrakonGen2 dg = null;
 		DrakonUtils.debug("-psi- n: "+DrakonUtils.getComment(node)); 
 		//--dg-- тип узла
 		switch(it) {
+			//--dg-- неизвестный тип
+			default:
+				//--dg-- Неизвестный тип активности ...
+				DrakonUtils.error("Неизвестный тип активности  \"" + DrakonUtils.getIconType(node) + "\" узла  \"" + DrakonUtils.getComment(node) + " \".\n"); 
+				//--dg-- //--dg--         
+				return; 
 			//--dg--  DI_SI_BEG
 			case DrakonUtils.DI_SI_BEG:
 				//--dg-- создаем новый DrakonGen
@@ -205,14 +211,8 @@ DrakonGen2 dg = null;
 				dg.parseSiluet(node);
 
  
-				//--dg-- break
+				//--dg-- break 
 				break; 
-			//--dg-- неизвестный тип
-			default:
-				//--dg-- Неизвестный тип активности ...
-				DrakonUtils.error("Неизвестный тип активности  \"" + DrakonUtils.getIconType(node) + "\" узла  \"" + DrakonUtils.getComment(node) + " \".\n"); 
-				//--dg-- //--dg--         
-				return; 
 			//--dg--  DG_LIFT_UP
 			case DI_DG_LIFT_UP:
 				//--dg-- получаем вход который не НАЧАЛО

@@ -147,7 +147,7 @@ public class GraphMLParser extends DefaultHandler {
 		}
 		if(qName.equals("y:SmartNodeLabelModel")) {
 			if(catch_label_2) { 
-				//currentVertix.setProperty("comment", label_text);
+				currentVertix.setProperty("comment", label_text.trim());
 				System.err.println("~~~~~~~~~~~~ new:"+label_text);			
 			}
 			label_text = "";
@@ -249,7 +249,7 @@ public class GraphMLParser extends DefaultHandler {
 		if(catch_label) { 
 			catch_label = false;
 			System.err.println("~~~~~~~~~~~~ old:"+currentAttributeData);			
-			currentVertix.setProperty("comment", currentAttributeData); //.trim());
+			//currentVertix.setProperty("comment", currentAttributeData.trim());
 		} else if(catch_edge_label) {
 			currentEdge.setProperty("dglabel", currentAttributeData);
 			catch_edge_label = false;
@@ -295,7 +295,7 @@ public class GraphMLParser extends DefaultHandler {
 		//System.err.println("~~~~~~~~~~~~ endElement:"+qName);
 		if(qName.equals("y:NodeLabel")) {
 			if(catch_label_2) { 
-				//currentVertix.setProperty("comment", label_text);
+				currentVertix.setProperty("comment", label_text.trim());
 				System.err.println("++~~~~~~~~~~ new:"+label_text);			
 			}
 			label_text = "";
