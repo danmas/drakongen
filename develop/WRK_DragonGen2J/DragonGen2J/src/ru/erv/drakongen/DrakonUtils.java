@@ -102,6 +102,19 @@ public class DrakonUtils {
 		return type;
 	}
 
+	// --dg-- Получение типа иконы узла
+	public static boolean isIconType(Vertex node, String istype) {
+		// --dg-- получаем иконый тип
+		if (node == null)
+			return false;
+		String type = (String) node.getProperty("type");
+		if (type == null)
+			return false;
+		
+		return type.contains(istype);
+	}
+	
+	
 	// --dg-- Получение комента из узла
 	public static String getComment(Vertex node) {
 		// --dg-- получаем коментарий

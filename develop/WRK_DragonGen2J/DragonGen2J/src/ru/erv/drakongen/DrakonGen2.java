@@ -83,7 +83,7 @@ protected String commentPrefix = "//-- ";
 			//--dg-- получаем тип узла
 			di_type = DrakonUtils.getIconType(v); ; 
 			//--dg-- узел НАЧАЛО?
-			if(di_type != null && di_type.equals(DI_DG_BEG)) {
+			if(di_type != null && di_type.contains(DI_DG_BEG)) {
 				//--dg-- извлекаем из Начало тип реальности
 				setCurReleaseFromNode(v); 
 				//--dg-- у текущего узла один выход?
@@ -137,7 +137,7 @@ code = geReleaseCode(cur_node);
 di_type = DrakonUtils.getIconType(cur_node);
 comment = DrakonUtils.getComment(cur_node); 
 		//--dg-- узел НАЧАЛО СИЛУЭТА?
-		if(di_type.equals(DI_SI_BEG) || di_type.equals(DI_COMPIL_BEG)) {
+		if(di_type.contains(DI_SI_BEG) || di_type.contains(DI_COMPIL_BEG)) {
 			//--dg-- Проверка выходов проходит?
 			if(isCheckOutputs(cur_node)) {
 			} else {
@@ -184,7 +184,7 @@ if(code != null)
 di_type = DrakonUtils.getIconType(v);
  
 			//--dg-- на первом выходе ЗАПИСЬ В ФАЙЛ?
-			if(di_type.equals(DI_WR_RES_FILE)) {
+			if(di_type.contains(DI_WR_RES_FILE)) {
 				//--dg-- след.узлом будет тот что на первом выходе, а текущим станет тот что на втором
 				next_node = DrakonUtils.getOutNode(cur_node,0);
 cur_node = DrakonUtils.getOutNode(cur_node,1); 
@@ -204,9 +204,9 @@ cur_node = DrakonUtils.getOutNode(cur_node,0);
 		//--dg-- Разбираем начальную группу
 		parceBegGroup(cur_node, level + 1); 
 		//--dg-- тек.узел ЧАСТЬ СБОРКИ?
-		if(DrakonUtils.getIconType(cur_node).equals(DI_SUB_COMPIL)) {
+		if(DrakonUtils.isIconType(cur_node,DI_SUB_COMPIL)) {
 			//--dg-- по всем ЧАСТЯМ СБОРКИ
-			while(cur_node!=null && DrakonUtils.getIconType(cur_node).equals(DI_SUB_COMPIL)) {
+			while(cur_node!=null && DrakonUtils.isIconType(cur_node,DI_SUB_COMPIL)) {
 				//--dg-- получаем параметры текущего узла
 				code = geReleaseCode(cur_node);
 di_type = DrakonUtils.getIconType(cur_node);
@@ -221,7 +221,7 @@ if(code != null)
 				if(DrakonUtils.getOutDegree(cur_node) == 2
 ) {
 					//--dg-- на первом выходе ЧАСТЬ СБОРКИ?
-					if(di_type.equals(DI_SUB_COMPIL)) {
+					if(di_type.contains(DI_SUB_COMPIL)) {
 						//--dg-- след.узлом будет тот что на втором выходе, а текущим станет тот что на первом
 						next_node2 = DrakonUtils.getOutNode(cur_node,1);
 cur_node = DrakonUtils.getOutNode(cur_node,0); 
@@ -246,7 +246,7 @@ DrakonUtils.error(str);
 					}
 				}
 				//--dg-- тип тек.узла НАЧАЛО ШАМПУРА?
-				if(DrakonUtils.getIconType(cur_node).equals(DI_SH_BEG) || DrakonUtils.getIconType(cur_node).equals(DI_PROC_BEG)) {
+				if(DrakonUtils.isIconType(cur_node,DI_SH_BEG) || DrakonUtils.isIconType(cur_node,DI_PROC_BEG)) {
 				} else {
 					//--dg-- тек.узел
 					cur_node = 
@@ -263,7 +263,7 @@ DrakonUtils.error(str);
 				}
 		} else {
 			//--dg-- тип тек.узла НАЧАЛО (ШАМПУРА,ПРОЦЕДУРЫ)?
-			if(DrakonUtils.getIconType(cur_node).equals(DI_SH_BEG) || DrakonUtils.getIconType(cur_node).equals(DI_PROC_BEG)) {
+			if(DrakonUtils.isIconType(cur_node,DI_SH_BEG) || DrakonUtils.isIconType(cur_node,DI_PROC_BEG)) {
 				//--dg-- Разбираем шампур
 				parceShampur(cur_node, level + 1);
  
@@ -274,7 +274,7 @@ DrakonUtils.error(str);
 					parceSheet(cur_node,level); 
 				} else {
 					//--dg-- тек. узел. КОНЕЦ СИЛУЭТА?
-					if(DrakonUtils.getIconType(cur_node).equals(DI_SI_END)) {
+					if(DrakonUtils.isIconType(cur_node,DI_SI_END)) {
 						//--dg-- Разбираем шампур
 						parceShampur(cur_node, level + 1);
  
@@ -289,7 +289,7 @@ DrakonUtils.error(str);
 		//--dg-- есть след.узел?
 		if(next_node != null) {
 			//--dg-- узел ЗАПИСЬ В ФАЙЛ?
-			if(DrakonUtils.getIconType(next_node).equals(DI_WR_RES_FILE)) {
+			if(DrakonUtils.isIconType(next_node,DI_WR_RES_FILE)) {
 				//--dg-- имя файла
 				String file_name
  
@@ -469,12 +469,12 @@ this_comment = comment;
 		//--dg-- -psh- n:
 		DrakonUtils.debug("-psh- n: "+DrakonUtils.getComment(cur_node)); 
 		//--dg-- узел НАЧАЛО (ШАМПУРА,ПРОЦЕДУРЫ)?
-		if(di_type.equals(DI_SH_BEG) || di_type.equals(DI_PROC_BEG)) {
+		if(di_type.contains(DI_SH_BEG) || di_type.contains(DI_PROC_BEG)) {
 		} else {
 			//--dg-- узел КОНЕЦ (СИЛУЭТА,СБОРКИ,КЛАССА)?
-			if(di_type.equals(DI_SI_END) ||
-di_type.equals(DI_COMPIL_END) ||
-di_type.equals(DI_CLASS_END)) {
+			if(di_type.contains(DI_SI_END) ||
+di_type.contains(DI_COMPIL_END) ||
+di_type.contains(DI_CLASS_END)) {
 				//--dg-- добавляем в результат комментарий и код если они есть
 				if(comment != null)
 	res_str += spaces + commentPrefix + comment + "\n";
@@ -485,7 +485,7 @@ if(code != null)
 				return; 
 			} else {
 				//--dg-- узел БЛОК КОДА?
-				if(di_type.equals(DI_NATIVE_CODE)) {
+				if(di_type.contains(DI_NATIVE_CODE)) {
 				} else {
 					//--dg-- формируем сообщение о ошибке
 					String str = "ОШИБКА! Первый узел должен быть " + DI_SH_BEG + " а не "+ di_type + " икона "+comment+" !";
@@ -511,8 +511,8 @@ if(code != null)
 di_type = DrakonUtils.getIconType(v);
  
 			//--dg-- на первом выходе НАЧАЛО(ШАМПУРА,ПРОЦЕДУРЫ) или КОНЕЦ (СИЛУЭТА,СБОРКИ)//--dg-- или БЛОК КОДА?
-			if(di_type.equals(DI_SH_BEG) || di_type.equals(DI_PROC_BEG) || di_type.equals(DI_SI_END) || di_type.equals(DI_COMPIL_END) ||
-di_type.equals(DI_NATIVE_CODE)) {
+			if(di_type.contains(DI_SH_BEG) || di_type.contains(DI_PROC_BEG) || di_type.contains(DI_SI_END) || di_type.equals(DI_COMPIL_END) ||
+di_type.contains(DI_NATIVE_CODE)) {
 				//--dg-- след.узлом будет тот что на втором выходе, а текущим станет тот что на первом
 				next_node = DrakonUtils.getOutNode(cur_node,0);
 cur_node = DrakonUtils.getOutNode(cur_node,1); 
@@ -551,19 +551,19 @@ res_str += str;
 		//--dg-- есть след.узел?
 		if(next_node != null) {
 			//--dg-- тип след.узла НАЧАЛО(ШАМПУРА,ПРОЦЕДУРЫ)?
-			if(DrakonUtils.getIconType(next_node).equals(DI_SH_BEG) || DrakonUtils.getIconType(next_node).equals(DI_PROC_BEG)) {
+			if(DrakonUtils.isIconType(next_node,DI_SH_BEG) || DrakonUtils.isIconType(next_node,DI_PROC_BEG)) {
 				//--dg-- Разбираем след. шамапур
 				parceShampur(next_node,_level); 
 			} else {
 				//--dg-- след узел узел БЛОК КОДА?
-				if(DrakonUtils.getIconType(next_node).equals(DI_NATIVE_CODE) ) {
+				if(DrakonUtils.isIconType(next_node,DI_NATIVE_CODE) ) {
 					//--dg-- Разбираем след. простыню
 					parceSheet(next_node,_level); 
 				} else {
 					//--dg-- след узел КОНЕЦ (СИЛУЭТА,СБОРКИ,КЛАССА)?
-					if(DrakonUtils.getIconType(next_node).equals(DI_SI_END) ||
-DrakonUtils.getIconType(next_node).equals(DI_COMPIL_END) ||
-DrakonUtils.getIconType(next_node).equals(DI_CLASS_END)
+					if(DrakonUtils.isIconType(next_node,DI_SI_END) ||
+DrakonUtils.isIconType(next_node,DI_COMPIL_END) ||
+DrakonUtils.isIconType(next_node,DI_CLASS_END)
 ) {
 						//--dg-- Разбираем след. блок кода
 						parceSheet(next_node,_level); 
@@ -603,12 +603,12 @@ this_comment = comment;
 		//--dg-- -psh- n:
 		DrakonUtils.debug("-psh- n: "+DrakonUtils.getComment(cur_node)); 
 		//--dg-- узел БЛОК КОДА?
-		if(di_type.equals(DI_NATIVE_CODE)) {
+		if(di_type.contains(DI_NATIVE_CODE)) {
 		} else {
 			//--dg-- узел КОНЕЦ (СИЛУЭТА,СБОРКИ,КЛАССА)?
-			if(di_type.equals(DI_SI_END) ||
-di_type.equals(DI_COMPIL_END) ||
-di_type.equals(DI_CLASS_END)) {
+			if(di_type.contains(DI_SI_END) ||
+di_type.contains(DI_COMPIL_END) ||
+di_type.contains(DI_CLASS_END)) {
 				//--dg-- добавляем в результат комментарий и код если они есть
 				if(comment != null)
 	res_str += spaces + commentPrefix + comment + "\n";
@@ -651,19 +651,19 @@ cur_node = null;
 		//--dg-- есть след.узел?
 		if(next_node != null) {
 			//--dg-- тип след.узла НАЧАЛО ШАМПУРА?
-			if(DrakonUtils.getIconType(next_node).equals(DI_SH_BEG) || DrakonUtils.getIconType(next_node).equals(DI_PROC_BEG)) {
+			if(DrakonUtils.isIconType(next_node,DI_SH_BEG) || DrakonUtils.isIconType(next_node,DI_PROC_BEG)) {
 				//--dg-- Разбираем след. шамапур
 				parceShampur(next_node,_level); 
 			} else {
 				//--dg-- след узел ПРОСТЫНЯ ?
-				if(DrakonUtils.getIconType(next_node).equals(DI_NATIVE_CODE) ) {
+				if(DrakonUtils.isIconType(next_node,DI_NATIVE_CODE) ) {
 					//--dg-- Разбираем след. блок кода
 					parceSheet(next_node,_level); 
 				} else {
 					//--dg-- след узел КОНЕЦ (СИЛУЭТА,СБОРКИ,КЛАССА)?
-					if(DrakonUtils.getIconType(next_node).equals(DI_SI_END) ||
-DrakonUtils.getIconType(next_node).equals(DI_COMPIL_END) ||
-DrakonUtils.getIconType(next_node).equals(DI_CLASS_END)
+					if(DrakonUtils.isIconType(next_node,DI_SI_END) ||
+DrakonUtils.isIconType(next_node,DI_COMPIL_END) ||
+DrakonUtils.isIconType(next_node,DI_CLASS_END)
 ) {
 						//--dg-- Разбираем след. блок кода
 						parceSheet(next_node,_level); 
@@ -835,7 +835,7 @@ term_yes = parceNext(cur_node_d, _level + 1);
 }
  
 					//--dg-- выход НЕ КОНЕЦ_ЕСЛИ ?
-					if(!DrakonUtils.getIconType(cur_node_d).equals(DI_EI)) {
+					if(!DrakonUtils.isIconType(cur_node_d,DI_EI)) {
 						//--dg-- записываем в результат "else"
 						res_str += spaces +"else \n";
  
@@ -864,12 +864,12 @@ term_no = parceNext(cur_node_d, _level+1);
  
 				}
 				//--dg-- выбираем куда дальше идти
-				if (DrakonUtils.getIconType(term_yes).equals(DI_SH_END) &&
-!DrakonUtils.getIconType(term_no).equals(DI_SH_END)) 
+				if (DrakonUtils.isIconType(term_yes,DI_SH_END) &&
+!DrakonUtils.isIconType(term_no,DI_SH_END)) 
 term_yes = term_no; 
 				//--dg-- первый выход КОНЕЦ ШАМПУРА а второй нет?
-				if(DrakonUtils.getIconType(term_yes).equals(DI_SH_END) &&
-!DrakonUtils.getIconType(term_no).equals(DI_SH_END)) {
+				if(DrakonUtils.isIconType(term_yes,DI_SH_END) &&
+!DrakonUtils.isIconType(term_no,DI_SH_END)) {
 					//--dg-- делаем текущим второй выход
 					term_yes = term_no; 
 				} else {
@@ -881,7 +881,7 @@ term_yes = term_no;
 				} else {
 				}
 				//--dg-- выбранный терминатор КОНЕЦ ЦИКЛА?
-				if(DrakonUtils.getIconType(term_yes).equals(DI_FOR_END)) {
+				if(DrakonUtils.isIconType(term_yes,DI_FOR_END)) {
 					//--dg-- терминатор
 					return term_yes; 
 				} else {
@@ -898,7 +898,7 @@ term_yes = term_no;
 					return node; 
 				} else {
 					//--dg-- терминатор КОНЕЦ ШАМПУРА?
-					if(di_type.equals(DI_SH_END) || di_type.equals(DI_PROC_END)) {
+					if(di_type.contains(DI_SH_END) || di_type.contains(DI_PROC_END)) {
 					} else {
 						//--dg-- формируем предупреждение
 						str = commentPrefix + " ПРЕДУПРЕЖДЕНИЕ!   Терминатор развилки \"" + comment +"\" имеет "+ DrakonUtils.getOutDegree(term_yes) +" выходов. Должен быть один. \n";
@@ -995,7 +995,7 @@ res_str += spaces + code +"\n";
 				//--dg-- Разбираем ветку
 				= parceNext(cur_node, _level + 1); 
 				//--dg-- вернулся не КОНЕЦ ЦИКЛА?
-				if(DrakonUtils.getIconType(term).equals(DI_FOR_END)) {
+				if(DrakonUtils.isIconType(term,DI_FOR_END)) {
 				} else {
 					//--dg-- формируем сообщение о ошибке
 					str = "ОШИБКА! У Цикла \"" + comment + "\" нет конца!\n"; 
@@ -1092,8 +1092,8 @@ res_str += spaces +"switch(" + code + ") {\n";
 code = geReleaseCode(cur_node_d);
 di_type = DrakonUtils.getIconType(cur_node_d); 
 					//--dg-- это  CASE или DEFAULT?
-					if(di_type.equals(DI_CASE) 
-|| di_type.equals(DI_DEFAULT)) {
+					if(di_type.contains(DI_CASE) 
+|| di_type.contains(DI_DEFAULT)) {
 						//--dg-- term_yes
 						term_yes 
 						//--dg-- Разбираем ветку
@@ -1129,7 +1129,7 @@ di_type = DrakonUtils.getIconType(cur_node_d);
 					return node; 
 				} else {
 					//--dg-- терминатор КОНЕЦ ШАМПУРА?
-					if(di_type.equals(DI_SH_END) || di_type.equals(DI_PROC_END)) {
+					if(di_type.contains(DI_SH_END) || di_type.contains(DI_PROC_END)) {
 					} else {
 						//--dg-- формируем предупреждение
 						str = commentPrefix + "ПРЕДУПРЕЖДЕНИЕ!   Терминатор развилки \"" + comment +"\" имеет "+ DrakonUtils.getOutDegree(term_yes) +" выходов. Должен быть один. \n";
@@ -1150,8 +1150,8 @@ di_type = DrakonUtils.getIconType(cur_node_d);
 	//--dg-- Получение рабочего кода узла с маркером
 	public String geReleaseCode(Vertex node) { 
 		//--dg-- икона из тех что без кода?
-		if(DrakonUtils.getIconType(node).equals(DI_EI) /*||
-DrakonUtils.getIconType(node).equals(DI_FOR_END)*/) {
+		if(DrakonUtils.isIconType(node,DI_EI) /*||
+DrakonUtils.isIconType(node,DI_FOR_END)*/) {
 			//--dg-- ""
 			return ""; 
 		} else {
@@ -1165,7 +1165,7 @@ DrakonUtils.getIconType(node).equals(DI_FOR_END)*/) {
 				//--dg-- получаем входной узел
 				Vertex in_node = DrakonUtils.getInNode(node,i); 
 				//--dg-- это узел текущей реализации?
-				if(DrakonUtils.getIconType(in_node).equals(CURRENT_RELEASE)) {
+				if(DrakonUtils.isIconType(in_node,CURRENT_RELEASE)) {
 					//--dg-- получаем код из вход. узла
 					code = DrakonUtils.getCode(in_node); 
 					//--dg-- есть маркер?
@@ -1211,7 +1211,7 @@ code = "\n"+commentPrefix+"<DG2J code_mark=\"" + /*n"+ (String) node.getId() + "
 	//--dg-- Получение рабочего кода узла без маркера
 	public String getCleanReleaseCode(Vertex node) { 
 		//--dg-- икона из тех что без кода?
-		if(DrakonUtils.getIconType(node).equals(DI_EI)  /*|| DrakonUtils.getIconType(node).equals(DI_FOR_END)*/) {
+		if(DrakonUtils.isIconType(node,DI_EI)  /*|| DrakonUtils.isIconType(node,DI_FOR_END)*/) {
 			//--dg-- ""
 			return ""; 
 		} else {
@@ -1225,7 +1225,7 @@ code = "\n"+commentPrefix+"<DG2J code_mark=\"" + /*n"+ (String) node.getId() + "
 				//--dg-- получаем входной узел
 				Vertex in_node = DrakonUtils.getInNode(node,i); 
 				//--dg-- это узел текущей реализации?
-				if(DrakonUtils.getIconType(in_node).equals(CURRENT_RELEASE)) {
+				if(DrakonUtils.isIconType(in_node,CURRENT_RELEASE)) {
 					//--dg-- получаем код из вход. узла
 					code = DrakonUtils.getCode(in_node); 
 					//--dg-- код
@@ -1266,10 +1266,10 @@ code = geReleaseCode(cur_node);
 di_type = DrakonUtils.getIconType(cur_node);
 comment = DrakonUtils.getComment(cur_node); 
 		//--dg-- икона из тех что без выхода?
-		if(di_type.equals(DI_SH_END) 
-|| di_type.equals(DI_PROC_END) 
-|| di_type.equals(DI_SI_END) 
-|| di_type.equals(DI_CLASS_END)) {
+		if(di_type.contains(DI_SH_END) 
+|| di_type.contains(DI_PROC_END) 
+|| di_type.contains(DI_SI_END) 
+|| di_type.contains(DI_CLASS_END)) {
 			//--dg-- выходных узлов 0?
 			if(DrakonUtils.getOutDegree(cur_node) == 0) {
 			} else {
@@ -1281,17 +1281,17 @@ DrakonUtils.error(str);
 			}
 		} else {
 			//--dg-- икона из тех что с одним выходом?
-			if(di_type.equals(DI_ACTION) 
-|| di_type.equals(DI_AC) 
-|| di_type.equals(DI_EI) 
-|| di_type.equals(DI_DG_BEG)
-|| di_type.equals(DI_CASE)
-|| di_type.equals(DI_DEFAULT)
-|| di_type.equals(DI_FOR_BEG)
-|| di_type.equals(DI_FOR_END)
-|| di_type.equals(DI_BREAK)
-|| di_type.equals(DI_OUTPUT)
-|| di_type.equals(DI_INSERT)) {
+			if(di_type.contains(DI_ACTION) 
+|| di_type.contains(DI_AC) 
+|| di_type.contains(DI_EI) 
+|| di_type.contains(DI_DG_BEG)
+|| di_type.contains(DI_CASE)
+|| di_type.contains(DI_DEFAULT)
+|| di_type.contains(DI_FOR_BEG)
+|| di_type.contains(DI_FOR_END)
+|| di_type.contains(DI_BREAK)
+|| di_type.contains(DI_OUTPUT)
+|| di_type.contains(DI_INSERT)) {
 				//--dg-- выходных узлов 1?
 				if(DrakonUtils.getOutDegree(cur_node) == 1) {
 				} else {
@@ -1310,7 +1310,7 @@ DrakonUtils.error(str);
 						//--dg--  ДЕСТВИЕ(AC)
 						case DI_AC:
 							//--dg-- тип ЧАСТЬ СБОРКИ?
-							if(DrakonUtils.getIconType(out_1).equals(DI_SUB_COMPIL)) {
+							if(DrakonUtils.isIconType(out_1,DI_SUB_COMPIL)) {
 								//--dg-- истина
 								return true; 
 							} else {
@@ -1326,32 +1326,32 @@ DrakonUtils.error(str);
 											//--dg--  ВЫВОД
 											case DI_OUTPUT:
 												//--dg-- тип ВАРИАНТ?
-												if(DrakonUtils.getIconType(out_1).equals(DI_CASE)) {
+												if(DrakonUtils.isIconType(out_1,DI_CASE)) {
 													//--dg-- истина
 													return true; 
 												} else {
 												}
 												//--dg-- тип из группы RG_B или ТЕРМИНАТОР?
-												if(DrakonUtils.getIconType(out_1).equals(DI_ACTION) 
-|| DrakonUtils.getIconType(out_1).equals(DI_SW) 
-|| DrakonUtils.getIconType(out_1).equals(DI_IF) 
-|| DrakonUtils.getIconType(out_1).equals(DI_EI) 
-|| DrakonUtils.getIconType(out_1).equals(DI_BREAK)
-|| DrakonUtils.getIconType(out_1).equals(DI_OUTPUT)
-|| DrakonUtils.getIconType(out_1).equals(DI_INSERT)) {
+												if(DrakonUtils.isIconType(out_1,DI_ACTION) 
+|| DrakonUtils.isIconType(out_1,DI_SW) 
+|| DrakonUtils.isIconType(out_1,DI_IF) 
+|| DrakonUtils.isIconType(out_1,DI_EI) 
+|| DrakonUtils.isIconType(out_1,DI_BREAK)
+|| DrakonUtils.isIconType(out_1,DI_OUTPUT)
+|| DrakonUtils.isIconType(out_1,DI_INSERT)) {
 												} else {
 													//--dg-- тип из группы RG_С?
-													if(DrakonUtils.getIconType(out_1).equals(DI_PROC_END) 
-|| DrakonUtils.getIconType(out_1).equals(DI_SH_END) 
-|| DrakonUtils.getIconType(out_1).equals(DI_RETURN) ) {
+													if(DrakonUtils.isIconType(out_1,DI_PROC_END) 
+|| DrakonUtils.isIconType(out_1,DI_SH_END) 
+|| DrakonUtils.isIconType(out_1,DI_RETURN) ) {
 													} else {
 														//--dg-- тип из группы RG_D?
-														if(DrakonUtils.getIconType(out_1).equals(DI_FOR_BEG) 
-|| DrakonUtils.getIconType(out_1).equals(DI_FOR_END)) {
+														if(DrakonUtils.isIconType(out_1,DI_FOR_BEG) 
+|| DrakonUtils.isIconType(out_1,DI_FOR_END)) {
 														} else {
 															//--dg-- тип НАЧАЛО ПРОЦЕДУРЫ?
-															if(DrakonUtils.getIconType(out_1).equals(DI_PROC_BEG) 
-|| DrakonUtils.getIconType(out_1).equals(DI_SH_BEG)) {
+															if(DrakonUtils.isIconType(out_1,DI_PROC_BEG) 
+|| DrakonUtils.isIconType(out_1,DI_SH_BEG)) {
 															} else {
 																//--dg-- НАРУШЕНИЕ ПРАВИЛА Действия! У иконы ... неверный тип выхода.
 																str = "НАРУШЕНИЕ ПРАВИЛА Действия! У иконы \"" + comment + "\"  неверный тип выхода ("+ DrakonUtils.getIconType(out_1)+").\n";
@@ -1373,15 +1373,15 @@ DrakonUtils.error(str);
 						//--dg--  DEFAULT
 						case DI_DEFAULT:
 							//--dg-- тип из группы RG_B  или ВОЗВРАТ или НАЧАЛО ЦИКЛА или ВАРИАНТ?
-							if(DrakonUtils.getIconType(out_1).equals(DI_ACTION) 
-|| DrakonUtils.getIconType(out_1).equals(DI_SW) 
-|| DrakonUtils.getIconType(out_1).equals(DI_IF) 
-|| DrakonUtils.getIconType(out_1).equals(DI_RETURN)
-|| DrakonUtils.getIconType(out_1).equals(DI_FOR_BEG)
-|| DrakonUtils.getIconType(out_1).equals(DI_CASE)
-|| DrakonUtils.getIconType(out_1).equals(DI_BREAK)
-|| DrakonUtils.getIconType(out_1).equals(DI_OUTPUT)
-|| DrakonUtils.getIconType(out_1).equals(DI_INSERT)) {
+							if(DrakonUtils.isIconType(out_1,DI_ACTION) 
+|| DrakonUtils.isIconType(out_1,DI_SW) 
+|| DrakonUtils.isIconType(out_1,DI_IF) 
+|| DrakonUtils.isIconType(out_1,DI_RETURN)
+|| DrakonUtils.isIconType(out_1,DI_FOR_BEG)
+|| DrakonUtils.isIconType(out_1,DI_CASE)
+|| DrakonUtils.isIconType(out_1,DI_BREAK)
+|| DrakonUtils.isIconType(out_1,DI_OUTPUT)
+|| DrakonUtils.isIconType(out_1,DI_INSERT)) {
 							} else {
 								//--dg-- НАРУШЕНИЕ ПРАВИЛА Вариант! У иконы ... неверный тип выхода.
 								str = "НАРУШЕНИЕ ПРАВИЛА Вариант! У иконы \"" + comment + "\"  неверный тип выхода ("+ DrakonUtils.getIconType(out_1) +").\n";
@@ -1402,10 +1402,10 @@ DrakonUtils.error(str);
 								//--dg-- получам первый выход
 								out_1 = DrakonUtils.getOutNode(cur_node,0); 
 								//--dg-- тип вых.узла НАЧАЛО ПРОЦЕДУРЫ или ДЕЙСТВИЕ или БЛОК КОДА?
-								if(DrakonUtils.getIconType(out_1).equals(DI_SH_BEG)
-|| DrakonUtils.getIconType(out_1).equals(DI_PROC_BEG) 
-|| DrakonUtils.getIconType(out_1).equals(DI_ACTION) 
-|| DrakonUtils.getIconType(out_1).equals(DI_NATIVE_CODE) ) {
+								if(DrakonUtils.isIconType(out_1,DI_SH_BEG)
+|| DrakonUtils.isIconType(out_1,DI_PROC_BEG) 
+|| DrakonUtils.isIconType(out_1,DI_ACTION) 
+|| DrakonUtils.isIconType(out_1,DI_NATIVE_CODE) ) {
 								} else {
 									//--dg-- НАРУШЕНИЕ ПРАВИЛА Сборка-1! У иконы СБОРКА ... неправильный тип выхода!
 									str = "НАРУШЕНИЕ ПРАВИЛА Сборка-1! У иконы \"" + comment + "\" неправильный тип выхода!\n";
@@ -1422,12 +1422,12 @@ DrakonUtils.error(str);
 									out_1 = DrakonUtils.getOutNode(cur_node,0);
 out_2 = DrakonUtils.getOutNode(cur_node,1); 
 									//--dg-- первый выход ЗАПИСЬ В ФАЙЛ?
-									if(DrakonUtils.getIconType(out_1).equals(DI_WR_RES_FILE)) {
+									if(DrakonUtils.isIconType(out_1,DI_WR_RES_FILE)) {
 										//--dg-- первый выход НАЧАЛО ПРОЦЕДУРЫ или ДЕЙСТВИЕ или БЛОК КОДА?
-										if(DrakonUtils.getIconType(out_2).equals(DI_SH_BEG)
-|| DrakonUtils.getIconType(out_2).equals(DI_PROC_BEG) 
-|| DrakonUtils.getIconType(out_2).equals(DI_ACTION) 
-|| DrakonUtils.getIconType(out_2).equals(DI_NATIVE_CODE) ) {
+										if(DrakonUtils.isIconType(out_2,DI_SH_BEG)
+|| DrakonUtils.isIconType(out_2,DI_PROC_BEG) 
+|| DrakonUtils.isIconType(out_2,DI_ACTION) 
+|| DrakonUtils.isIconType(out_2,DI_NATIVE_CODE) ) {
 										} else {
 											//--dg-- НАРУШЕНИЕ ПРАВИЛА Сборка-2! У иконы СБОРКА ... неправильный тип выхода!
 											str = "НАРУШЕНИЕ ПРАВИЛА Сборка-2! У иконы \"" + comment + "\" неправильный тип выхода!\n";
@@ -1437,12 +1437,12 @@ DrakonUtils.error(str);
 										}
 									} else {
 										//--dg-- второй выход ЗАПИСЬ В ФАЙЛ?
-										if(DrakonUtils.getIconType(out_2).equals(DI_WR_RES_FILE)) {
+										if(DrakonUtils.isIconType(out_2,DI_WR_RES_FILE)) {
 											//--dg-- первый выход НАЧАЛО ПРОЦЕДУРЫ или ДЕЙСТВИЕ или БЛОК КОДА?
-											if(DrakonUtils.getIconType(out_1).equals(DI_SH_BEG)
-|| DrakonUtils.getIconType(out_1).equals(DI_PROC_BEG) 
-|| DrakonUtils.getIconType(out_1).equals(DI_ACTION) 
-|| DrakonUtils.getIconType(out_1).equals(DI_NATIVE_CODE) ) {
+											if(DrakonUtils.isIconType(out_1,DI_SH_BEG)
+|| DrakonUtils.isIconType(out_1,DI_PROC_BEG) 
+|| DrakonUtils.isIconType(out_1,DI_ACTION) 
+|| DrakonUtils.isIconType(out_1,DI_NATIVE_CODE) ) {
 											} else {
 												//--dg-- НАРУШЕНИЕ ПРАВИЛА Сборка-1! У иконы СБОРКА ... неправильный тип выхода!
 												str = "НАРУШЕНИЕ ПРАВИЛА Сборка-2! У иконы \"" + comment + "\" неправильный тип выхода!\n";
@@ -1480,13 +1480,13 @@ DrakonUtils.error(str);
 							out_1 = DrakonUtils.getOutNode(cur_node,0);
 out_2 = DrakonUtils.getOutNode(cur_node,1); 
 							//--dg-- первый выход ЧАСТЬ СБОРКИ или КОНЕЦ СБОРКИ?
-							if(DrakonUtils.getIconType(out_1).equals(DI_SUB_COMPIL) || DrakonUtils.getIconType(out_1).equals(DI_SI_END)) {
+							if(DrakonUtils.isIconType(out_1,DI_SUB_COMPIL) || DrakonUtils.isIconType(out_1,DI_SI_END)) {
 							} else {
 								//--dg-- меняем местами выходы
 								out_1 = DrakonUtils.getOutNode(cur_node,1);
 out_2 = DrakonUtils.getOutNode(cur_node,0); 
 								//--dg-- первый выход ЧАСТЬ СБОРКИ или КОНЕЦ СБОРКИ?
-								if(DrakonUtils.getIconType(out_1).equals(DI_SUB_COMPIL) || DrakonUtils.getIconType(out_1).equals(DI_SI_END)) {
+								if(DrakonUtils.isIconType(out_1,DI_SUB_COMPIL) || DrakonUtils.isIconType(out_1,DI_SI_END)) {
 								} else {
 									//--dg-- НАРУШЕНИЕ ПРАВИЛА Часть сборки! У иконы ЧАСТЬ СБОРКИ ... неправильный тип выхода!
 									str = "НАРУШЕНИЕ ПРАВИЛА Часть сборки!  У иконы \"" + comment + "\" неправильный тип выхода!\n";
@@ -1496,10 +1496,10 @@ DrakonUtils.error(str);
 								}
 							}
 							//--dg-- второй выход НАЧАЛО ПРОЦЕДУРЫ или ДЕЙСТВИЕ или БЛОК КОДА?
-							if(DrakonUtils.getIconType(out_2).equals(DI_SH_BEG)
-|| DrakonUtils.getIconType(out_2).equals(DI_PROC_BEG) 
-|| DrakonUtils.getIconType(out_2).equals(DI_ACTION) 
-|| DrakonUtils.getIconType(out_2).equals(DI_NATIVE_CODE) ) {
+							if(DrakonUtils.isIconType(out_2,DI_SH_BEG)
+|| DrakonUtils.isIconType(out_2,DI_PROC_BEG) 
+|| DrakonUtils.isIconType(out_2,DI_ACTION) 
+|| DrakonUtils.isIconType(out_2,DI_NATIVE_CODE) ) {
 							} else {
 								//--dg-- НАРУШЕНИЕ ПРАВИЛА Часть сборки! У иконы ЧАСТЬ СБОРКИ ... неправильный тип выхода!
 								str = "НАРУШЕНИЕ ПРАВИЛА Часть сборки!  У иконы \"" + comment + "\" неправильный тип выхода!\n";
