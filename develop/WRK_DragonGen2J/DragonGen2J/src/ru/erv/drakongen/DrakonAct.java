@@ -197,6 +197,21 @@ DrakonGen2 dg = null;
 				DrakonUtils.error("Неизвестный тип активности  \"" + DrakonUtils.getIconType(node) + "\" узла  \"" + DrakonUtils.getComment(node) + " \".\n"); 
 				//--dg-- 
 				return; 
+			//--dg--  DI_OS_ACTION
+			case DI_OS_ACTION:
+				//--dg-- создаем новый DrakonGen
+				dg = new DrakonGen2();
+ 
+				//--dg-- устанавливаем текущую реальность
+				dg.setCurRelease(CURRENT_RELEASE);	
+ 
+				//--dg-- ---> Текущая реальность
+				DrakonUtils.message("--->Текущая реальность из Начало: " + CURRENT_RELEASE); 
+				//--dg-- Разбираем силуэт
+				dg.parseSiluet(node);
+ 
+				//--dg-- break
+				break; 
 			//--dg--  DG_LIFT_UP
 			case DI_DG_LIFT_UP:
 				//--dg-- получаем вход который не НАЧАЛО
@@ -267,9 +282,8 @@ in = DrakonUtils.getInNode(node,1);
  
 				//--dg-- ---> Текущая реальность
 				DrakonUtils.message("--->Текущая реальность из Начало: " + CURRENT_RELEASE); 
-				//--dg-- производим разбор силуэта
+				//--dg-- Разбираем силуэт
 				dg.parseSiluet(node);
-
  
 				//--dg-- break
 				break; 
