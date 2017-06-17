@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="305" key="DIALOG_WIDTH"/>
-		<item value="312" key="DIALOG_Y_ORIGIN"/>
-		<item value="984" key="DIALOG_X_ORIGIN"/>
+		<item value="393" key="DIALOG_Y_ORIGIN"/>
+		<item value="862" key="DIALOG_X_ORIGIN"/>
 		<item value="442" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="comme" key="selection"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
-			<item value="comme"/>
-			<item value="comment"/>
-			<item value="У иконы нет Коментария?"/>
-			<item value="currentVertix"/>
-			<item value="currentNode"/>
-			<item value="getre"/>
-			<item value="code"/>
-			<item value="getrel"/>
+			<item value="DI_OS_ACTION"/>
+			<item value="Syst"/>
+			<item value="res_str"/>
+			<item value="res_str="/>
+			<item value="res_str ="/>
+			<item value="getRe"/>
+			<item value="getRel"/>
+			<item value="это узел текущей реализации?"/>
 		</list>
 		<list key="replacehistory">
 			<item value="\&quot;"/>

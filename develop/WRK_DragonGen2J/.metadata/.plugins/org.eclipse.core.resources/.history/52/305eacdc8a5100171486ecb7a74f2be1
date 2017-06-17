@@ -1,0 +1,37 @@
+
+//--dg-- Класс DrakonGenX
+
+	//--dg-- package//--dg-- imports
+	package ru.erv.drakongen;
+
+import com.tinkerpop.blueprints.pgm.Edge;
+import com.tinkerpop.blueprints.pgm.Graph;
+import com.tinkerpop.blueprints.pgm.Vertex;
+import ru.erv.drakongen.utils.*;
+import ru.erv.drakongen.*; 
+ 
+	//--dg-- class DrakonGenX
+	 public class DrakonGenX { 
+	//--dg-- Конструктор
+	public  DrakonGenX() { 
+		//--dg-- 
+		int x =5;
+ 
+		//--dg-- Проходим по всем узлам
+		for each(var n:NodeSprite in gd.nodes)  {
+			//--dg-- получаем тип узла
+			di_type = DrakonUtils.getIconType(v); ; 
+			//--dg-- узел НАЧАЛО?
+			if(di_type != null && di_type.equals(DI_DG_BEG)) {
+				//--dg-- извлекаем из Начало тип реальности
+				setCurReleaseFromNode(v); 
+			} else {
+			}
+			}
+		//--dg-- 
+		}
+
+
+	//--dg-- 
+	} //-- конец класса
+ 

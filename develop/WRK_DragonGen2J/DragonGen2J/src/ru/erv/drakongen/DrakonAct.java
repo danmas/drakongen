@@ -40,7 +40,7 @@ Vertex in;
  
 	//--dg-- Конструктор
 	public DrakonAct() { 
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 	//--dg-- main
 	public static void main(String[] args) { 
@@ -64,7 +64,7 @@ try {
 } 
 		//--dg-- выполнение активностей
 		da.activate_drakon(graph); 
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 	//--dg-- Запускаем graph на выполнение
 	protected void activate_drakon(Graph graph) {
@@ -75,7 +75,7 @@ try {
 		//--dg-- Проходим по всем узлам
 		for (Vertex v : graph.getVertices()) {
 			//--dg-- узел ЗАПУСК АКТИВНОСТЕЙ?
-			if(DrakonUtils.getIconType(v).equals(DrakonUtils.DI_START_ACTS)) {
+			if(DrakonUtils.isIconType(v,DrakonUtils.DI_START_ACTS)) {
 				//--dg-- теперь текущий узел ЗАПУСК
 				cur_node = v;
  
@@ -92,11 +92,11 @@ try {
 				cur_node = DrakonUtils.getOutNode(cur_node,0);
  
 				//--dg-- узел НАЧАЛО?
-				if(DrakonUtils.getIconType(cur_node).equals(DrakonUtils.DI_DG_BEG)) {
+				if(DrakonUtils.isIconType(cur_node,DrakonUtils.DI_DG_BEG)) {
 				} else {
 					//--dg-- ОШИБКА! У иконы ЗАПУСК АКТИВНОСТЕЙ неправильный тип выхода.
 					DrakonUtils.error("ОШИБКА! У иконы ЗАПУСК АКТИВНОСТЕЙ неправильный тип выхода \"" + DrakonUtils.getIconType(cur_node) + "\""); 
-					//--dg-- //--dg--         
+					//--dg-- 
 					return; 
 				}
 				//--dg-- ищем в кодограмме НАЧАЛО с таким же именем
@@ -104,7 +104,7 @@ try {
 String name = DrakonUtils.getComment(cur_node);				
 for (Vertex v : graph.getVertices()) {
 	//-- узел НАЧАЛО?
-	if(v!= cur_node && DrakonUtils.getIconType(v).equals(DrakonUtils.DI_DG_BEG)) {
+	if(v!= cur_node && DrakonUtils.isIconType(v,DrakonUtils.DI_DG_BEG)) {
 		if(DrakonUtils.getComment(v).equals(name)) {
 			act_node = v;
 			break;
@@ -117,9 +117,9 @@ for (Vertex v : graph.getVertices()) {
 					//--dg-- Выполняем силуэт от ТС
 					activate_siluet(act_node); 
 				} else {
-					//--dg-- ОШИБКА! Не нашли узла с именем ... как у стартовой последовательности. 
+					//--dg-- ОШИБКА! Не нашли узла с именем ... как у стартовой последовательности.
 					DrakonUtils.error("ОШИБКА! У иконы Начало \"" + DrakonUtils.getOutDegree(cur_node) + "\" выходов!"); 
-					//--dg-- //--dg--         
+					//--dg-- 
 					return; 
 				}
 				}
@@ -127,7 +127,7 @@ for (Vertex v : graph.getVertices()) {
 			//--dg-- Запускаем graph на //--dg-- выполнение по одному
 			activate_drakon_single(graph);  
 		}
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 	//--dg-- Запускаем graph на выполнение по одному
 	protected void activate_drakon_single(Graph graph) {
@@ -135,7 +135,7 @@ for (Vertex v : graph.getVertices()) {
 		//--dg-- Проходим по всем узлам
 		for (Vertex v : graph.getVertices()) {
 			//--dg-- узел НАЧАЛО?
-			if(DrakonUtils.getIconType(v).equals(DrakonUtils.DI_DG_BEG)) {
+			if(DrakonUtils.isIconType(v,DrakonUtils.DI_DG_BEG)) {
 				//--dg-- Выполняем силуэт от ТС
 				activate_siluet(v); 
 			} else {
@@ -143,21 +143,21 @@ for (Vertex v : graph.getVertices()) {
 			}
 		//--dg-- -- Схема построена
 		DrakonUtils.message("--- Конец активности "); 
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 	//--dg-- Выполняем силуэт от ТС
 	protected void activate_siluet(Vertex v) {
  
 		//--dg-- извлекаем из Начало тип реальности
 		CURRENT_RELEASE = (String) DrakonUtils.getCode(v); 
-		//--dg-- ---
+		//--dg-- ---> Текущая реальность из Акт
 		DrakonUtils.message("--->Текущая реальность из Акт: " + CURRENT_RELEASE); 
 		//--dg-- у текущего узла один выход?
 		if(DrakonUtils.getOutDegree(v) == 1) {
 			//--dg-- теперь текущий узел тот на который указывает выход
 			v = DrakonUtils.getOutNode(v,0);
  
-			//--dg-- ---
+			//--dg-- ---> Разбираем силуэт
 			DrakonUtils.message("---> Разбираем силуэт "); 
 			//--dg-- Разбираем силуэт
 			parseSiluet(v); 
@@ -167,13 +167,13 @@ for (Vertex v : graph.getVertices()) {
 			} else {
 				//--dg-- ОШИБКА! У иконы Начало ...//--dg--  выходов!
 				DrakonUtils.error("ОШИБКА! У иконы Начало \"" + DrakonUtils.getOutDegree(v) + "\" выходов!"); 
-				//--dg-- //--dg--         
+				//--dg-- 
 				return; 
 			}
 		}
 		//--dg-- -- Схема построена
 		DrakonUtils.message("--- Конец активности "); 
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 	//--dg-- Парсер одного силуэта
 	public void parseSiluet(Vertex node) {
@@ -187,7 +187,7 @@ String it = DrakonUtils.getIconType(node);
 DrakonGen2 dg = null;
 
  
-		//--dg-- -psi- n: 
+		//--dg-- -psi- n:
 		DrakonUtils.debug("-psi- n: "+DrakonUtils.getComment(node)); 
 		//--dg-- тип узла
 		switch(it) {
@@ -195,48 +195,32 @@ DrakonGen2 dg = null;
 			default:
 				//--dg-- Неизвестный тип активности ...
 				DrakonUtils.error("Неизвестный тип активности  \"" + DrakonUtils.getIconType(node) + "\" узла  \"" + DrakonUtils.getComment(node) + " \".\n"); 
-				//--dg-- //--dg--         
+				//--dg-- 
 				return; 
-			//--dg--  DI_SI_BEG
-			case DrakonUtils.DI_SI_BEG:
-				//--dg-- создаем новый DrakonGen
-				dg = new DrakonGen2();
- 
-				//--dg-- устанавливаем текущую реальность
-				dg.setCurRelease(CURRENT_RELEASE);	
- 
-				//--dg-- ---
-				DrakonUtils.message("--->Текущая реальность из Начало: " + CURRENT_RELEASE); 
-				//--dg-- производим разбор силуэта
-				dg.parseSiluet(node);
-
- 
-				//--dg-- break 
-				break; 
 			//--dg--  DG_LIFT_UP
 			case DI_DG_LIFT_UP:
 				//--dg-- получаем вход который не НАЧАЛО
 				in = DrakonUtils.getInNode(node,0);
-if(DrakonUtils.getIconType(in).equals(DrakonUtils.DI_DG_BEG)) {
+if(DrakonUtils.isIconType(in,DrakonUtils.DI_DG_BEG)) {
 in = DrakonUtils.getInNode(node,1);
 }
  
 				//--dg-- на входе икона ФАЙЛ?
-				if(DrakonUtils.getIconType(in).equals(DI_FILE)) {
+				if(DrakonUtils.isIconType(in,DI_FILE)) {
 				} else {
 					//--dg-- На входе DG_LIFT_UP должна быть икона FILE
 					DrakonUtils.error("На входе DG_LIFT_UP \"" + DrakonUtils.getComment(in) + "\" должна быть икона типа FILE  !"); 
-					//--dg-- //--dg--         
+					//--dg-- 
 					return; 
 				}
-				//--dg-- получаем выход 
+				//--dg-- получаем выход
 				Vertex out = DrakonUtils.getOutNode(node,0); 
 				//--dg-- на выходе икона ФАЙЛ?
-				if(DrakonUtils.getIconType(out).equals(DI_FILE)) {
+				if(DrakonUtils.isIconType(out,DI_FILE)) {
 				} else {
 					//--dg-- На выходе DG_LIFT_UP должна быть икона FILE
 					DrakonUtils.error("На выходе DG_LIFT_UP \"" + DrakonUtils.getComment(in) + "\" должна быть икона типа FILE  !"); 
-					//--dg-- //--dg--         
+					//--dg-- 
 					return; 
 				}
 				//--dg-- try
@@ -260,7 +244,7 @@ in = DrakonUtils.getInNode(node,1);
 				//--dg-- записываем текст в выходной файл кодограммы
 				FileUtils.fileWrite(file_nm, res);
  
-				//--dg-- ---
+				//--dg-- ---> Записали файл ...
 				System.out.println(" ---> Записали файл "+ file_nm);
 
  
@@ -273,20 +257,36 @@ in = DrakonUtils.getInNode(node,1);
  
 				//--dg-- break
 				break; 
+			//--dg--  DI_SI_BEG
+			case DrakonUtils.DI_SI_BEG:
+				//--dg-- создаем новый DrakonGen
+				dg = new DrakonGen2();
+ 
+				//--dg-- устанавливаем текущую реальность
+				dg.setCurRelease(CURRENT_RELEASE);	
+ 
+				//--dg-- ---> Текущая реальность
+				DrakonUtils.message("--->Текущая реальность из Начало: " + CURRENT_RELEASE); 
+				//--dg-- производим разбор силуэта
+				dg.parseSiluet(node);
+
+ 
+				//--dg-- break
+				break; 
 			//--dg--  DG_LIFT_DOWN
 			case DI_DG_LIFT_DOWN:
 				//--dg-- получаем вход который не НАЧАЛО
 				in = DrakonUtils.getInNode(node,0);
-if(DrakonUtils.getIconType(in).equals(DrakonUtils.DI_DG_BEG)) {
+if(DrakonUtils.isIconType(in,DrakonUtils.DI_DG_BEG)) {
 in = DrakonUtils.getInNode(node,1);
 }
  
 				//--dg-- на входе икона ФАЙЛ?
-				if(DrakonUtils.getIconType(in).equals(DI_FILE)) {
+				if(DrakonUtils.isIconType(in,DI_FILE)) {
 				} else {
 					//--dg-- На входе DG_LIFT_DOWN должна быть икона FILE
 					DrakonUtils.error("На входе DG_LIFT_DOWN \"" + DrakonUtils.getComment(in) + "\" должна быть икона типа FILE  !"); 
-					//--dg-- //--dg--         
+					//--dg-- 
 					return; 
 				}
 				//--dg-- try
@@ -301,7 +301,7 @@ GraphMLReader reader = new GraphMLReader(file_nm, graph);
 reader.read();
 	
  
-				//--dg-- ---
+				//--dg-- ---> Прочитали файл ...
 				System.out.println(" ---> Прочитали файл "+ file_nm);
 
  
@@ -324,9 +324,8 @@ reader.read();
 				//--dg-- break
 				break; 
 		}
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 	//--dg-- 
-            
 	} //-- конец класса
  

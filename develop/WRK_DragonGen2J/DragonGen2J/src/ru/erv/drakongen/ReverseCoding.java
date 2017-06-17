@@ -13,7 +13,7 @@ import ru.erv.drakongen.utils.FileUtils;
  
 	//--dg-- сlass ReverseCoding
 	public class ReverseCoding { 
-	//--dg-- вспомогательный class Wrapper T 
+	//--dg-- вспомогательный class Wrapper T
 	static class Wrapper<T> {
 	T value;
 	Wrapper(T value){
@@ -51,7 +51,7 @@ public static final String POST_NODE_ID = "\"";
  
 	//--dg-- Конструктор
 	public ReverseCoding() { 
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 
 
@@ -102,7 +102,7 @@ String out_text = "";
 			//--dg-- выделяем маркер начиная с текущей позиции pos1
 			i.setValue(pos1);
 String mark_code = getTextBetween(src_text,DrakonUtils.PREF_MARKER_CDATA,"]",i); 
-			//--dg-- нашли маркер? 
+			//--dg-- нашли маркер?
 			if(mark_code != null) {
 				//--dg-- ищем позицию маркера с позиции pos1
 				int pos_m = src_text.indexOf(DrakonUtils.PREF_MARKER_CDATA,pos1); 
@@ -127,7 +127,7 @@ String node_id = getTextBetween(src_text,PREF_NODE_ID,POST_NODE_ID,i2);
 				//--dg-- Достаем старый код
 				i.setValue(pos1);
 String old_code = getTextBetween(src_text,DrakonUtils.PREF_CODE_CDATA,"]",i); 
-				//--dg-- новый код = старому 
+				//--dg-- новый код = старому
 				repl_text = old_code; 
 			}
 			//--dg-- добавляем в результат новый код
@@ -150,15 +150,15 @@ pos2 = pos1;
 		//--dg-- бесконечный поиск PREF_MARKER_DG2J
 		Wrapper<Integer> i = new Wrapper<Integer>(0);
 while(true) {
-			//--dg-- ищем маркер 
+			//--dg-- ищем маркер
 			String mark_code = getTextBetween(text,DrakonUtils.PREF_MARKER_DG2J,"\"",i); 
-			//--dg-- нашли маркер? 
+			//--dg-- нашли маркер?
 			if(mark_code != null) {
 			} else {
 				//--dg-- break
 				break; 
 			}
-			//--dg-- уже есть такой маркер в карте подстановок? 
+			//--dg-- уже есть такой маркер в карте подстановок?
 			if(insert_codes.get(mark_code) != null) {
 				//--dg-- Ошибка! Дублирование маркера кода ...
 				System.err.println("Ошибка! Дублирование маркера кода ..."); 
@@ -169,7 +169,7 @@ while(true) {
 			//--dg-- ищем текста подстановки
 			String out_text = getTextBetween(text,">","</DG2J>",i);
  
-			//--dg-- нашли текста подстановки? 
+			//--dg-- нашли текста подстановки?
 			if(out_text != null) {
 			} else {
 				//--dg-- break
@@ -189,11 +189,11 @@ while(true) {
 	public static String getTextBetween(String text, String prefix, String postfix,  Wrapper<Integer>  position) { 
 		//--dg-- ищем фразу префикса
 		int i1 = text.indexOf(prefix,position.getValue()); 
-		//--dg-- нашли префикс? 
+		//--dg-- нашли префикс?
 		if(i1 >= 0) {
-			//--dg-- ищем постфикс от конца префикса 
+			//--dg-- ищем постфикс от конца префикса
 			int i2 = text.indexOf(postfix,i1+prefix.length()+1); 
-			//--dg-- нашли постфикс? 
+			//--dg-- нашли постфикс?
 			if(i2>=0) {
 				//--dg-- результат
 				position.setValue(i2+postfix.length());
@@ -206,7 +206,7 @@ return text.substring(i1+prefix.length(),i2);
 			//--dg-- null
 			return null; 
 		}
-		//--dg-- //--dg--         
+		//--dg-- 
 		}
 
 	//--dg-- addCodeFile
@@ -214,7 +214,7 @@ return text.substring(i1+prefix.length(),i2);
  
 		//--dg-- files.add(file_name);
 		  files.add(file_name); 
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 	//--dg-- run()
 	public void run() { 
@@ -225,7 +225,7 @@ return text.substring(i1+prefix.length(),i2);
 		FileUtils.fileWrite(gml_tgt_file, out_text);
 		System.out.println("-- Записали файл: "+gml_tgt_file);
  
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 	//--dg-- main
 	public static void main(String[] args) { 
@@ -245,9 +245,8 @@ return text.substring(i1+prefix.length(),i2);
 		
 		rc.run();
  
-		//--dg-- //--dg--             
+		//--dg-- 
 		}
 	//--dg-- 
-            
 	} //-- конец класса
  

@@ -108,7 +108,7 @@ public class DrakonUtils {
 		if (node == null)
 			return false;
 		String type = (String) node.getProperty("type");
-		System.out.println("--------- "+(String) node.getProperty("comment") );
+		//System.out.println("--------- "+(String) node.getProperty("comment") );
 		if (type == null)
 			return false;
 		
@@ -128,7 +128,7 @@ public class DrakonUtils {
 
 	// --dg-- Возвращает код из узла
 	public static String getCode(Vertex node) {
-		System.out.println(" ------- getCode() :" );
+		//System.out.println(" ------- getCode() :" );
 		// --dg-- строим код
 		if (node == null)
 			return "";
