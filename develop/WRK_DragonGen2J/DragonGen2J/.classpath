@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="libs/json-simple-1.1.jar"/>
 	<classpathentry kind="lib" path="libs/jsch-0.1.53.jar"/>
 	<classpathentry kind="lib" path="libs/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

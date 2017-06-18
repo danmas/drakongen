@@ -7,8 +7,24 @@ import org.json.simple.parser.ParseException;
 
 public class JsonTest {
 
-	
-    public static void main(String[] args) { 
+    public static void main(String[] args) {
+    	String s =" {\"type\":\"OS_SCRIPT\",\"script\":\"ping -n 3 http-proxy.srv.rdtex.ru\""
+    			+ ",\"description\":\"Тест выполнения скрипта ОС\",\"max_duration_in_sec\":\"5\""
+    			+ ",\"launch_period_in_sec\":\"5\"}";
+    	try {
+            JSONObject jo = (JSONObject) JSONValue.parseWithException(s);
+            // get the title
+            System.out.println(jo.get("type"));
+            System.out.println(jo.get("script"));
+            System.out.println(jo.get("description"));
+            System.out.println(jo.get("max_duration_in_sec"));
+            System.out.println(jo.get("launch_period_in_sec"));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public static void main2(String[] args) { 
         /*
          * {"title":"Free Music Archive - Genres","message":"","errors":[],"total" : "161","total_pages":81,"page":1,"limit":"2",
          * "dataset":

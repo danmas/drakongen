@@ -1,16 +1,11 @@
 package cb.dfs.trail;
 
 import java.io.File;
-import java.sql.Clob;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
-//import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
+import org.json.simple.JSONObject;
 
 import cb.dfs.trail.common.Constants;
-import cb.dfs.trail.db.PreparedStatementHelper;
 import cb.dfs.trail.utils.Enviroment;
 
 import com.jcraft.jsch.JSch;
@@ -18,9 +13,8 @@ import com.jcraft.jsch.Session;
 
 public class TrailSshKey  extends TrailBase {
 
-	//final static Logger logger = //logger.getLogger(TrailSshKey.class);
+	final static Logger logger = Logger.getLogger(TrailSshKey.class);
 	
-	//protected volatile TrailRunner trail;
 	protected String host, port, user, script;
 
 	public TrailSshKey(String trail_key)  throws Exception {
@@ -36,6 +30,27 @@ public class TrailSshKey  extends TrailBase {
 		script = _script;
 	}
 
+	/*
+	 * Получение параметров из JSON
+	 * если в json не указан параметр то старый не переписыавется!
+	 */
+	@Override
+	public void updateParamsFromJ(JSONObject jo) throws Exception {
+		super.updateParamsFromJ(jo);
+		if(jo.get("host")!=null) {
+			host = (String)(jo.get("host")); 
+		}
+		if(jo.get("port")!=null) {
+			port = (String)(jo.get("port")); 
+		}
+		if(jo.get("user")!=null) {
+			user = (String)(jo.get("user")); 
+		}
+		if(jo.get("script")!=null) {
+			script = (String)(jo.get("script")); 
+		}
+	}
+	
 	@Override
 	public void setParam(String param, String value) throws Exception {
 		switch(param.trim().toLowerCase()) {
@@ -75,11 +90,11 @@ public class TrailSshKey  extends TrailBase {
 			String privateKey = "";
 
 			String home = System.getProperty("user.home");
-			//logger.debug("-- home dir : " + home);
+			logger.debug("-- home dir : " + home);
 			if (new File(home + "/.ssh/id_rsa").exists()) {
 				privateKey = home + "/.ssh/id_rsa";
 			} else {
-				//logger.debug("-- SSH_KEY_PATH : "	+ Enviroment.getEnvVar("SSH_KEY_PATH"));
+				logger.debug("-- SSH_KEY_PATH : "	+ Enviroment.getEnvVar("SSH_KEY_PATH"));
 				privateKey = Enviroment.getEnvVar("SSH_KEY_PATH");
 			}
 
@@ -90,11 +105,11 @@ public class TrailSshKey  extends TrailBase {
 				return;
 			}
 
-			//logger.debug("-- trying add identity with "	+ privateKey);
+			logger.debug("-- trying add identity with "	+ privateKey);
 			try {
 				jsch.addIdentity(privateKey);
 			} catch (Exception ex) {
-				//logger.error("-- identity WAS NOT added! ");
+				logger.error("-- identity WAS NOT added! ");
 				addRetErrStr("Не удается найти файл ключа.\n");
 				setStatusError();
 				return;
@@ -112,7 +127,8 @@ public class TrailSshKey  extends TrailBase {
 			return;
 		}
 	}
-	
+
+	/*
 	@Override
 	public void overwrite(Connection conn) throws Exception {
 		
@@ -197,7 +213,7 @@ public class TrailSshKey  extends TrailBase {
 			}
 		}
 	}
-
+*/
 	
 
 }

@@ -111,10 +111,11 @@ public class TrailRunner extends Versioned {
 		trail.setStatusRunning();
 		try {
 			thread.start();
+			System.out.println(" -- status ??  --  duration: "+duration);
 			for (int cur_duration = 0; cur_duration < duration * 1000; cur_duration += 100) {
 				Thread.sleep(1 * 100); // Приостанавливает поток на 100 милисек TODO: ВЫНЕСТИ В НАСТРОЙКИ!
 				if (!thread.isAlive()) {
-//					System.out.println(" -- status ??  -- "+trail.getStatus());
+					System.out.println(" -- status ??  -- "+trail.getStatus());
 					return;
 				}
 			}

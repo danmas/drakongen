@@ -1,0 +1,157 @@
+2017-06-18 10:52:34 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 10:52:34 DEBUG TrailBase:134 - -- is_ready_to_start(Sun Jun 18 10:52:34 MSK 2017) 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:110 - -- do_trail_subro 1 -- 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:113 - -- do_trail_subro 2 -- 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:117 - -- do_trail_subro 3 -- 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:120 - -- do_trail_subro 4 -- 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:123 - -- do_trail_subro 5 -- 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:127 - -- do_trail_subro 6 -- 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:135 - -- do_trail_subro 8 -- 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:138 - -- do_trail_subro 9 -- 
+2017-06-18 10:52:34 DEBUG TrailManagerBase:141 - -- do_trail_subro 10 -- 
+2017-06-18 10:52:34 ERROR TrailManagerBase:66 - -- ╬°шсър т launch_trail_if_ready() trail.is_ready_to_start(dt) ╧Ёхт√°хэю тЁхь  шёяюыэхэш .
+
+2017-06-18 11:10:27 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:10:27 DEBUG TrailBase:134 - -- is_ready_to_start(Sun Jun 18 11:10:27 MSK 2017) 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:110 - -- do_trail_subro 1 -- 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:113 - -- do_trail_subro 2 -- 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:117 - -- do_trail_subro 3 -- 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:120 - -- do_trail_subro 4 -- 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:123 - -- do_trail_subro 5 -- 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:127 - -- do_trail_subro 6 -- 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:135 - -- do_trail_subro 8 -- 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:138 - -- do_trail_subro 9 -- 
+2017-06-18 11:10:27 DEBUG TrailManagerBase:141 - -- do_trail_subro 10 -- 
+2017-06-18 11:10:27 ERROR TrailManagerBase:66 - -- ╬°шсър т launch_trail_if_ready() trail.is_ready_to_start(dt) ╧Ёхт√°хэю тЁхь  шёяюыэхэш .
+
+2017-06-18 11:12:57 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:12:57 DEBUG TrailBase:136 - -- is_ready_to_start(Sun Jun 18 11:12:57 MSK 2017) 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:110 - -- do_trail_subro 1 -- 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:113 - -- do_trail_subro 2 -- 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:117 - -- do_trail_subro 3 -- 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:120 - -- do_trail_subro 4 -- 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:123 - -- do_trail_subro 5 -- 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:127 - -- do_trail_subro 6 -- 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:135 - -- do_trail_subro 8 -- 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:138 - -- do_trail_subro 9 -- 
+2017-06-18 11:12:57 DEBUG TrailManagerBase:141 - -- do_trail_subro 10 -- 
+2017-06-18 11:12:57 ERROR TrailManagerBase:66 - -- ╬°шсър т launch_trail_if_ready() trail.is_ready_to_start(dt) ╧Ёхт√°хэю тЁхь  шёяюыэхэш .
+
+2017-06-18 11:37:52 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:37:52 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:37:52 DEBUG TrailBase:134 - -- is_ready_to_start(Sun Jun 18 11:37:52 MSK 2017) 
+2017-06-18 11:37:52 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-18 11:37:52 DEBUG TrailManagerBase:110 - -- do_trail_subro 1 -- 
+2017-06-18 11:37:52 DEBUG TrailManagerBase:113 - -- do_trail_subro 2 -- 
+2017-06-18 11:37:52 DEBUG TrailManagerBase:117 - -- do_trail_subro 3 -- 
+2017-06-18 11:37:52 DEBUG TrailManagerBase:120 - -- do_trail_subro 4 -- 
+2017-06-18 11:37:52 DEBUG TrailManagerBase:123 - -- do_trail_subro 5 -- 
+2017-06-18 11:37:52 DEBUG TrailManagerBase:127 - -- do_trail_subro 6 -- 
+2017-06-18 11:37:54 DEBUG TrailOsScript:81 - -- ╤ъЁшяЄ тхЁэєы 0. Out:
+Обмен пакетами с carlhost [192.168.1.56] с 32 байтами данных:
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+
+Статистика Ping для 192.168.1.56:
+    Пакетов: отправлено = 3, получено = 3, потеряно = 0
+    (0% потерь)
+Приблизительное время приема-передачи в мс:
+    Минимальное = 0мсек, Максимальное = 0 мсек, Среднее = 0 мсек
+
+2017-06-18 11:37:54 DEBUG TrailManagerBase:130 - -- do_trail_subro 7 -- 
+2017-06-18 11:37:54 DEBUG TrailManagerBase:135 - -- do_trail_subro 8 -- 
+2017-06-18 11:37:54 DEBUG TrailManagerBase:138 - -- do_trail_subro 9 -- 
+2017-06-18 11:37:54 DEBUG TrailManagerBase:141 - -- do_trail_subro 10 -- 
+2017-06-18 11:37:54 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-18 11:44:43 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:44:43 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:44:43 DEBUG TrailBase:125 - -- is_ready_to_start(Sun Jun 18 11:44:43 MSK 2017) 
+2017-06-18 11:44:43 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-18 11:44:45 DEBUG TrailOsScript:81 - -- ╤ъЁшяЄ тхЁэєы 0. Out:
+Обмен пакетами с carlhost [192.168.1.56] с 32 байтами данных:
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+
+Статистика Ping для 192.168.1.56:
+    Пакетов: отправлено = 3, получено = 3, потеряно = 0
+    (0% потерь)
+Приблизительное время приема-передачи в мс:
+    Минимальное = 0мсек, Максимальное = 0 мсек, Среднее = 0 мсек
+
+2017-06-18 11:44:46 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-18 11:46:13 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:46:13 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 11:46:13 DEBUG TrailBase:125 - -- is_ready_to_start(Sun Jun 18 11:46:13 MSK 2017) 
+2017-06-18 11:46:13 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-18 11:46:15 DEBUG TrailOsScript:81 - -- ╤ъЁшяЄ тхЁэєы 0. Out:
+Обмен пакетами с carlhost [192.168.1.56] с 32 байтами данных:
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+
+Статистика Ping для 192.168.1.56:
+    Пакетов: отправлено = 3, получено = 3, потеряно = 0
+    (0% потерь)
+Приблизительное время приема-передачи в мс:
+    Минимальное = 0мсек, Максимальное = 0 мсек, Среднее = 0 мсек
+
+2017-06-18 11:46:15 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-18 12:10:25 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 12:10:25 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 12:10:25 DEBUG TrailBase:125 - -- is_ready_to_start(Sun Jun 18 12:10:25 MSK 2017) 
+2017-06-18 12:10:25 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-18 12:10:28 DEBUG TrailOsScript:81 - -- ╤ъЁшяЄ тхЁэєы 0. Out:
+Обмен пакетами с carlhost [192.168.1.56] с 32 байтами данных:
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+
+Статистика Ping для 192.168.1.56:
+    Пакетов: отправлено = 3, получено = 3, потеряно = 0
+    (0% потерь)
+Приблизительное время приема-передачи в мс:
+    Минимальное = 0мсек, Максимальное = 0 мсек, Среднее = 0 мсек
+
+2017-06-18 12:10:28 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-18 12:11:27 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 12:11:27 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 12:11:27 DEBUG TrailBase:125 - -- is_ready_to_start(Sun Jun 18 12:11:27 MSK 2017) 
+2017-06-18 12:11:27 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-18 12:11:29 DEBUG TrailOsScript:81 - -- ╤ъЁшяЄ тхЁэєы 0. Out:
+Обмен пакетами с carlhost [192.168.1.56] с 32 байтами данных:
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+
+Статистика Ping для 192.168.1.56:
+    Пакетов: отправлено = 3, получено = 3, потеряно = 0
+    (0% потерь)
+Приблизительное время приема-передачи в мс:
+    Минимальное = 0мсек, Максимальное = 0 мсек, Среднее = 0 мсек
+
+2017-06-18 12:11:29 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-18 12:23:15 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 12:23:15 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-18 12:23:15 DEBUG TrailBase:125 - -- is_ready_to_start(Sun Jun 18 12:23:15 MSK 2017) 
+2017-06-18 12:23:15 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-18 12:23:17 DEBUG TrailOsScript:81 - -- ╤ъЁшяЄ тхЁэєы 0. Out:
+Обмен пакетами с carlhost [192.168.1.56] с 32 байтами данных:
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+Ответ от 192.168.1.56: число байт=32 время<1мс TTL=64
+
+Статистика Ping для 192.168.1.56:
+    Пакетов: отправлено = 3, получено = 3, потеряно = 0
+    (0% потерь)
+Приблизительное время приема-передачи в мс:
+    Минимальное = 0мсек, Максимальное = 0 мсек, Среднее = 0 мсек
+
+2017-06-18 12:23:17 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 

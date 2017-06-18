@@ -1,32 +1,25 @@
 package cb.dfs.trail;
 
-import java.sql.Clob;
-import java.sql.Connection;
-//import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Date;
+
+import org.apache.log4j.Logger;
+import org.json.simple.JSONObject;
 
 import cb.dfs.trail.common.Constants;
 import cb.dfs.trail.common.Version;
 import cb.dfs.trail.common.Versioned;
-import cb.dfs.trail.db.PreparedStatementHelper;
 import cb.dfs.trail.utils.Strings;
-//import org.apache.log4j.Logger;
 
 
 @Version(major = Constants.CUR_VER_MAJOR, minor = Constants.CUR_VER_MINOR, revision = Constants.CUR_VER_REVIS)
 public abstract class TrailBase extends Versioned implements Runnable {
 
-	//final static Logger logger = Logger.getLogger(TrailBase.class);
+	final static Logger logger = Logger.getLogger(TrailBase.class);
 
 	protected volatile String retOutStr = "";
 	protected volatile String retErrStr = "";
 	protected volatile String status = Constants.ST_UNKNOWN;
-	protected volatile int ob_object_id = 0; // -- Если != 0 то id
-												// контролируемого объекта в
-												// СУБРО
+	protected volatile int ob_object_id = 0; // -- Если != 0 то id контролируемого объекта в СУБРО
 
 	protected String run_agent = null;
 	protected String trail_key = null;
@@ -97,9 +90,39 @@ public abstract class TrailBase extends Versioned implements Runnable {
 		control_time_delay= getControlTimeDelay(control_time_delay_in_sec);
 	}
 
+	/*
+	 * Получение параметров из JSON
+	 * если в json не указан параметр то старый не переписыавется!
+	 */
+	public void updateParamsFromJ(JSONObject jo) throws Exception {
+		if(jo.get("run_agent")!=null) {
+			run_agent = (String)(jo.get("run_agent")); 
+		}
+		if(jo.get("trail_key")!=null) {
+			trail_key = (String)(jo.get("trail_key")); 
+		}
+//		if(jo.get("trail_type")!=null) {
+//			run_agent = (String)(jo.get("trail_type")); 
+//		}
+		if(jo.get("max_duration_in_sec")!=null) {
+			max_duration_in_sec = (String)(jo.get("max_duration_in_sec")); 
+			duration = getDuration(max_duration_in_sec);
+		}
+		if(jo.get("description")!=null) {
+			description = (String)(jo.get("description")); 
+		}
+		if(jo.get("launch_period_in_sec")!=null) {
+			launch_period_in_sec = (String)(jo.get("launch_period_in_sec")); 
+			launch_period = getLaunchPeriod(launch_period_in_sec);
+		}
+		if(jo.get("control_time_delay_in_sec")!=null) {
+			control_time_delay_in_sec = (String)(jo.get("control_time_delay_in_sec")); 
+			control_time_delay= getControlTimeDelay(control_time_delay_in_sec);
+		}
+	}
 	
 	boolean is_ready_to_start(Date cur_time) {
-		//logger.debug("-- is_ready_to_start("+cur_time+") "); 
+		logger.debug("-- is_ready_to_start("+cur_time+") "); 
 		if(last_start_date==null)
 			return true;
 		if(launch_period==0) {
@@ -107,7 +130,7 @@ public abstract class TrailBase extends Versioned implements Runnable {
 		}
 		//System.out.println(last_start_date.getTime());
 		boolean ret = cur_time.getTime() > last_start_date.getTime() + launch_period*1000;
-		//logger.debug("-- is_ready_to_start("+cur_time+") returns "+ret); 
+		logger.debug("-- is_ready_to_start("+cur_time+") returns "+ret); 
 		return ret;
 	}
 	
@@ -141,238 +164,25 @@ public abstract class TrailBase extends Versioned implements Runnable {
 				+ "]";
 	}
 	
-	
 	public void setLastStartDate(Date dt) throws Exception {
 		last_start_date = dt;
 	}
 	
-	
 	public abstract void run(); 
-	
-	public abstract void overwrite(Connection conn) throws Exception;
 
-	public void overwrite(Connection conn, String view_name) throws Exception {
-		/*
-		PreparedStatementHelper stmt = null;
-		PreparedStatement prepStmt = null;
-		String sql_str =  null;
-		try {
-			sql_str = "select count(*) cnt, max(ob_object_id) obid from "+view_name 
-					+ " where trail_key=?";
-			prepStmt = conn.prepareStatement(sql_str);
-			stmt = new PreparedStatementHelper(prepStmt);
+	/*
+	 * Запуск в персональном TrailManager
+	 */
+	public void launch_single() {
+		 try { 
+			TrailManager trailManager = null;
+			trailManager = new TrailManager();
 			
-			stmt.setString(1, trail_key);
-			ResultSet rs = stmt.executeQuery();
-			int cnt = 0;
-			int obid = 0;
-			while (rs.next()) {
-				cnt = rs.getInt("cnt");
-				obid = rs.getInt("obid");
-			}
-			rs.close();
-			stmt.close();
-			if (cnt == 1) {
-				ob_object_id = obid;
-			}
-			
-			sql_str = "delete from " + view_name
-					+ " where trail_key=?";
-			prepStmt = conn.prepareStatement(sql_str);
-			stmt = new PreparedStatementHelper(prepStmt);
-			
-			stmt.setString(1, trail_key);
-			stmt.execute();
-			stmt.close();
-			
-			sql_str = "insert into " + view_name 
-							+ " (run_agent, trail_key,trail_type,description,max_duration_in_sec"
-							+ ", launch_period_in_sec, control_time_delay_in_sec, status, out_msg, err_msg, ob_object_id"
-							+ ", last_start_date "
-							+ ") " + " values (?,?,?,?,?,?,?,?,?,?, ?, ?)";
-			prepStmt = conn.prepareStatement(sql_str);
-			stmt = new PreparedStatementHelper(prepStmt);
-			int i=1;
-			stmt.setString(i++, run_agent);
-			stmt.setString(i++, trail_key);
-			stmt.setString(i++, trail_type);
-			stmt.setString(i++, description);
-			stmt.setString(i++, max_duration_in_sec);
-			stmt.setString(i++, launch_period_in_sec);
-			stmt.setString(i++, control_time_delay_in_sec);
-			
-			stmt.setString(i++, status);
-
-			Clob myClob = conn.createClob();
-			myClob.setString(1, retOutStr);
-			stmt.setClob(i++, myClob);
-			//stmt.setString(i++, retOutStr);
-			Clob myClob2 = conn.createClob();
-			myClob2.setString(1, retErrStr);
-			stmt.setClob(i++, myClob2);
-			
-			//stmt.setString(i++, retErrStr);
-			stmt.setInt(i++, ob_object_id);
-			stmt.setDate(i++, last_start_date);
-			
-			cnt = stmt.executeUpdate();
-			if (cnt != 1) {
-				throw new Exception("Не удалось сделать запись в <"+view_name+">."
-						+ "\nОшибка в TrailBase.overwrite()");
-			}
-
-			stmt.close();
-		} catch (SQLException se) {
-			String str = "Ошибка " + se.getMessage()
-					+ "\n sql:" + stmt.to_string(sql_str)
-					+ "\nSQL исключение в TrailBase.overwrite()";
-			throw new Exception(str);
-		} catch (Exception e) {
-			String str = "Ошибка " + e.getMessage()
-					+ "\n sql: "+ stmt.to_string(sql_str)
-					+ "\nИсключение в TrailBase.overwrite()";
-			throw new Exception(str);
-		} finally {
-			try {if (stmt != null) stmt.close();} catch (SQLException se2) {}
-		}*/
-	}
-
-	public void add_observable_object(Connection conn, String scenario_name, int odi_session_id) throws Exception {
-		PreparedStatementHelper stmt = null;
-		PreparedStatement prepStmt = null;
-		String sql_str = "merge into D_OBSERVABLE_OBJECTS o  "
-					+ "using (select ? OB_SUBRO_NAME from dual) n on "
-					+ "(o.OB_SUBRO_NAME = n.OB_SUBRO_NAME) when matched then"
-					+ "  update set OB_HEARTBEAT_STAMP=sysdate"
-					+ ", OB_CONTROL_DATETIME= sysdate+?/(24*3600)+?/(24*3600)"
-					+ ", OB_ODI_SESSION=?"
-					+ ", OB_FORMAL_STATE=?"
-					+ ", OB_STATE_TEXT_INFO=?"
-					+ "    when not matched then"
-					+ "    insert (OB_SCENARIO_NAME, OB_SUBRO_NAME, OB_DESCRIPTION"
-					+ ", OB_HEARTBEAT_STAMP, OB_CONTROL_DATETIME "
-					+ ", OB_ODI_SESSION, OB_FORMAL_STATE, OB_STATE_TEXT_INFO) values ("
-					+ " ?, ?, ?"
-					+ ", sysdate, sysdate+?/(24*3600)+?/(24*3600)"
-					+ ", ?, ?, ?)";
-			try {
-				prepStmt = conn.prepareStatement(sql_str);
-				stmt = new PreparedStatementHelper(prepStmt);
-				
-				String str_text_info = "";
-				String str_formal_state = "RED";
-				
-				if(status.equals(Constants.ST_SUCCESS)) {
-					str_formal_state = "GREEN";
-					str_text_info = "Успешно выполнено. "+ retOutStr;
-				} else if(status.equals(Constants.ST_RUNNING)) {
-					str_formal_state = "GREEN";
-					str_text_info = "Выполняется. "+ retOutStr;
-				} else if(status.equals(Constants.ST_ERROR)) {
-					str_formal_state = "RED";
-					str_text_info = "Проверка закончилась с ошибкой. "+ retErrStr;
-				} else if(status.equals(Constants.ST_UNKNOWN)) {
-					str_formal_state = "RED";
-					str_text_info = "Статус операции проверки неизвестен. ";
-				}
-				str_text_info = str_text_info.substring(0, str_text_info.length() > 2000 ? 2000 : str_text_info.length());
-				int i = 1;
-				stmt.setString(i++, trail_key);
-				stmt.setInt(i++, launch_period); stmt.setInt(i++, control_time_delay);
-				stmt.setInt(i++, odi_session_id);
-				stmt.setString(i++, str_formal_state);
-				//stmt.setClob(i++, myClob);
-				stmt.setString(i++, str_text_info);
-				
-				stmt.setString(i++, scenario_name);
-				stmt.setString(i++, trail_key);
-				stmt.setString(i++, description);
-				stmt.setInt(i++, launch_period); stmt.setInt(i++, control_time_delay);
-				stmt.setInt(i++, odi_session_id);
-				stmt.setString(i++, str_formal_state);
-				//stmt.setClob(i++, myClob);
-				stmt.setString(i++, str_text_info);
-				
-				//cstmt.registerOutParameter(i, java.sql.Types.NUMERIC);
-				//System.out.println("-- DEBUG-- sql: "+ stmt.to_string(sql_str));
-				stmt.execute();
-				//ob_object_id = cstmt.getInt(i);
-				stmt.close();
-		} catch (SQLException se) {
-			String str = "Ошибка " + se.getMessage()
-					+ "\n sql: "+ stmt.to_string(sql_str)
-					+ "\nSQL исключение в TrailBase.add_observable_object()";
-			//System.out.println(str);
-			throw new Exception(str);
-		} catch (Exception e) {
-			String str = "Ошибка " + e.getMessage() 
-					+ "\n sql: "+ stmt.to_string(sql_str)
-					+ "\nИсключение в TrailBase.add_observable_object()";
-			//System.out.println(str);
-			throw new Exception(str);
-		} finally {
-			try {
-				if (stmt != null)
-					stmt.close();
-			} catch (SQLException se2) {
-			}
-		}
-
-	}
-
-	public void read(Connection conn) throws Exception {
-		PreparedStatementHelper stmt = null;
-		PreparedStatement prepStmt = null;
-		String sql_str = "select run_agent, trail_type, description, max_duration_in_sec "
-				+ ", status, out_msg, err_msg"
-				+ ", launch_period_in_sec, control_time_delay_in_sec, ob_object_id, last_start_date" 
-				+ " from d_trails"
-				+ " where trail_key=?";
-		try {
-			prepStmt = conn.prepareStatement(sql_str);
-			stmt = new PreparedStatementHelper(prepStmt);
-			stmt.setString(1, trail_key);
-			//System.out.println("-- DEBUG-- sql: "+ stmt.to_string(sql_str));
-			ResultSet rs = stmt.executeQuery();
-
-			while (rs.next()) {
-				// Retrieve by column name
-				run_agent = rs.getString("run_agent");
-				trail_type = rs.getString("trail_type");
-				// description = rs.getClob("description").toString();
-				description = rs.getString("description").toString();
-				max_duration_in_sec = rs.getString("max_duration_in_sec");
-				duration = getDuration(max_duration_in_sec);
-				launch_period_in_sec = rs.getString("launch_period_in_sec");
-				launch_period = getLaunchPeriod(launch_period_in_sec);
-				control_time_delay_in_sec = rs.getString("control_time_delay_in_sec");
-				control_time_delay= getControlTimeDelay(control_time_delay_in_sec);
-				last_start_date = rs.getDate("last_start_date");
-				
-				status = rs.getString("status");
-				retOutStr = rs.getString("out_msg");
-				retErrStr = rs.getString("err_msg");
-				ob_object_id = rs.getInt("ob_object_id");
-			}
-
-			rs.close();
-			stmt.close();
-		} catch (SQLException se) {
-			String str = "Ошибка " + se.getMessage() 
-					+ "\n sql: "+ stmt.to_string(sql_str)
-					+ "\nSQL исключение в TrailBase.read()";
-			throw new Exception(str);
-		} catch (Exception e) {
-			String str = "Ошибка " + e.getMessage() 
-					+ "\n sql: "+ stmt.to_string(sql_str)
-					+ "\nИсключение в TrailBase.read()";
-			throw new Exception(str);
-		} finally {
-			try {
-				if (stmt != null)
-					stmt.close();
-			} catch (SQLException se2) {
-			}
+			//trail.overwrite(trailSubroManager.getConnection());
+			//trailSubroManager.getConnection().commit();
+			trailManager.launch_trail_if_ready(this, "scenario_name", (int) (Math.random() * 1000.));
+		} catch (Exception ex) {
+			error("---" + ex.getMessage());
 		}
 	}
 
@@ -431,7 +241,6 @@ public abstract class TrailBase extends Versioned implements Runnable {
 		}
 		return ival;
 	}
-	
 	
 	protected int getPort(String sport) throws Exception {
 		int iport;

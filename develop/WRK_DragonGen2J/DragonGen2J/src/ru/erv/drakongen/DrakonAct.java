@@ -26,6 +26,10 @@ import japa.parser.JavaParser;
 public final static String DI_DG_LIFT_DOWN = "DG_LIFT_DOWN";
 public final static String DI_DG_LIFT_UP = "DG_LIFT_UP";
 public final static String DI_FILE = "FILE";
+public final static String DI_TRAIL_ACTION = "TRAIL_ACTION";
+public final static String DI_INPIT_J = "TRAIL_ACTION";
+public final static String DI_TRAIL_INPUT_J = "TRAIL_INPUT_J";
+
 	public static enum IcTypes {
 		DI_OS_ACTION, DI_DG_LIFT_UP, DI_DG_LIFT_DOWN, DI_FILE;
 	};
@@ -185,8 +189,9 @@ for (Vertex v : graph.getVertices()) {
 		String file_nm = "";
 String it = DrakonUtils.getIconType(node);
 DrakonGen2 dg = null;
-
- 
+Vertex out = null;
+String result = "";
+boolean out_to_file = false; 
 		//--dg-- -psi- n:
 		DrakonUtils.debug("-psi- n: "+DrakonUtils.getComment(node)); 
 		//--dg-- тип узла
@@ -197,8 +202,8 @@ DrakonGen2 dg = null;
 				DrakonUtils.error("Неизвестный тип активности  \"" + DrakonUtils.getIconType(node) + "\" узла  \"" + DrakonUtils.getComment(node) + " \".\n"); 
 				//--dg-- 
 				return; 
-			//--dg--  DI_OS_ACTION
-			case DI_OS_ACTION:
+			//--dg--  DI_SI_BEG
+			case DrakonUtils.DI_SI_BEG:
 				//--dg-- создаем новый DrakonGen
 				dg = new DrakonGen2();
  
@@ -229,7 +234,7 @@ in = DrakonUtils.getInNode(node,1);
 					return; 
 				}
 				//--dg-- получаем выход
-				Vertex out = DrakonUtils.getOutNode(node,0); 
+				out = DrakonUtils.getOutNode(node,0); 
 				//--dg-- на выходе икона ФАЙЛ?
 				if(DrakonUtils.isIconType(out,DI_FILE)) {
 				} else {
@@ -269,21 +274,6 @@ in = DrakonUtils.getInNode(node,1);
 	e.printStackTrace();
 	return;
 } 
- 
-				//--dg-- break
-				break; 
-			//--dg--  DI_SI_BEG
-			case DrakonUtils.DI_SI_BEG:
-				//--dg-- создаем новый DrakonGen
-				dg = new DrakonGen2();
- 
-				//--dg-- устанавливаем текущую реальность
-				dg.setCurRelease(CURRENT_RELEASE);	
- 
-				//--dg-- ---> Текущая реальность
-				DrakonUtils.message("--->Текущая реальность из Начало: " + CURRENT_RELEASE); 
-				//--dg-- Разбираем силуэт
-				dg.parseSiluet(node);
  
 				//--dg-- break
 				break; 
@@ -327,6 +317,78 @@ reader.read();
  
 				//--dg-- производим генерацию кода из кодограммы
 				dg.parse_drakon(graph);
+ 
+				//--dg-- catch
+				} catch(Exception e) {
+	System.err.println("Error on file: "+ file_nm + " " +e.getMessage());
+	e.printStackTrace();
+	return;
+} 
+ 
+				//--dg-- break
+				break; 
+			//--dg--  DI_TRAIL_ACTION
+			case DI_TRAIL_ACTION:
+				//--dg-- получаем вход который не НАЧАЛО
+				in = DrakonUtils.getInNode(node,0);
+if(DrakonUtils.isIconType(in,DrakonUtils.DI_DG_BEG)) {
+in = DrakonUtils.getInNode(node,1);
+}
+ 
+				//--dg-- на входе икона TRAIL_INPUT_J?
+				if(DrakonUtils.isIconType(in,DI_TRAIL_INPUT_J)) {
+				} else {
+					//--dg-- На входе TRAIL_ACTION должна быть икона TRAIL_INPUT_J
+					DrakonUtils.error("На входе TRAIL_ACTION \"" + DrakonUtils.getComment(in) + "\" должна быть икона типа TRAIL_INPUT_J  !"); 
+					//--dg-- 
+					return; 
+				}
+				//--dg-- получаем выход
+				out = DrakonUtils.getOutNode(node,0); 
+				//--dg-- на выходе икона ФАЙЛ?
+				if(DrakonUtils.isIconType(out,DI_FILE)) {
+					//--dg-- выаодить рез. в файл
+					out_to_file 
+					//--dg-- true
+					= true; 
+				} else {
+					//--dg-- выаодить рез. в файл
+					out_to_file 
+					//--dg-- false
+					= false; 
+				}
+				//--dg-- try
+				try { 
+				//--dg-- input_j =//--dg-- получаем входной json
+				String input_j = DrakonUtils.getCode(in); 
+				//--dg-- получаем имя выходного файла кодограммы
+				file_nm = DrakonUtils.getCode(out); 
+				//--dg-- считаем что имя файла относительно BASE_DIR
+				file_nm = Settings.getProperty("BASE_DIR") + file_nm; 
+				//--dg-- ВЫПОЛНЯЕМ
+				 try {
+	 cb.dfs.trail.TrailManager trail = new cb.dfs.trail.TrailManager();
+	result = trail.launchTrailFromJstring(input_j);
+	System.out.println(result);
+} catch (Exception ex) {
+	result = ex.getMessage();
+	System.err.println("---" + ex.getMessage());
+} 
+ 
+				//--dg-- выаодить результат в файл?
+				if(out_to_file) {
+					//--dg-- записываем текст в выходной файл кодограммы
+					FileUtils.fileWrite(file_nm, result);
+ 
+				} else {
+					//--dg-- РЕЗУЛЬТАТ ВЫПОЛНЕНИЯ..
+					System.out.println(" ---> Записали файл "+ file_nm);
+
+ 
+				}
+				//--dg-- ---> Записали файл ...
+				System.out.println(" ---> Записали файл "+ file_nm);
+
  
 				//--dg-- catch
 				} catch(Exception e) {

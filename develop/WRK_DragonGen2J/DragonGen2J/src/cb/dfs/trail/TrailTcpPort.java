@@ -3,10 +3,12 @@ package cb.dfs.trail;
 import java.io.DataOutputStream;
 import java.io.OutputStream;
 import java.net.Socket;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+//import java.sql.Connection;
+//import java.sql.PreparedStatement;
+//import java.sql.ResultSet;
+//import java.sql.SQLException;
+
+import org.json.simple.JSONObject;
 
 import cb.dfs.trail.common.Constants;
 
@@ -27,7 +29,21 @@ public class TrailTcpPort extends TrailBase {
 		iport = getPort(port);
 	}
 
-	
+	/*
+	 * Получение параметров из JSON
+	 * если в json не указан параметр то старый не переписыавется!
+	 */
+	@Override
+	public void updateParamsFromJ(JSONObject jo) throws Exception {
+		super.updateParamsFromJ(jo);
+		if(jo.get("host")!=null) {
+			host = (String)(jo.get("host")); 
+		}
+		if(jo.get("port")!=null) {
+			iport = getPort((String)(jo.get("port"))); 
+		}
+	}
+		
 	@Override
 	public void setParam(String param, String value) throws Exception {
 		switch(param.trim().toLowerCase()) {
@@ -64,7 +80,7 @@ public class TrailTcpPort extends TrailBase {
 			setStatusError();
 		}
 	}
-
+/*
 	@Override
 	public void overwrite(Connection conn) throws Exception {
 		
@@ -147,7 +163,7 @@ public class TrailTcpPort extends TrailBase {
 			}
 		}
 	}
-
+*/
 	
 	public void do_trail() throws Exception {
 		// try {

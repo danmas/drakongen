@@ -1,11 +1,13 @@
 package cb.dfs.trail;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+//import java.sql.Connection;
+//import java.sql.PreparedStatement;
+//import java.sql.ResultSet;
+//import java.sql.SQLException;
 
 import cb.dfs.trail.common.Constants;
+
+import org.json.simple.JSONObject;
 
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
@@ -36,6 +38,30 @@ public class TrailSshPwd extends TrailBase {
 	}
 	
 	
+	/*
+	 * Получение параметров из JSON
+	 * если в json не указан параметр то старый не переписыавется!
+	 */
+	@Override
+	public void updateParamsFromJ(JSONObject jo) throws Exception {
+		super.updateParamsFromJ(jo);
+		if(jo.get("host")!=null) {
+			host = (String)(jo.get("host")); 
+		}
+		if(jo.get("port")!=null) {
+			port = (String)(jo.get("port")); 
+		}
+		if(jo.get("user")!=null) {
+			user = (String)(jo.get("user")); 
+		}
+		if(jo.get("password")!=null) {
+			password = (String)(jo.get("password")); 
+		}
+		if(jo.get("script")!=null) {
+			script = (String)(jo.get("script")); 
+		}
+	}
+	
 	@Override
 	public void setParam(String param, String value) throws Exception {
 		switch(param.trim().toLowerCase()) {
@@ -54,7 +80,7 @@ public class TrailSshPwd extends TrailBase {
 		}
 	}
 	
-	
+	/*
 	@Override
 	public void overwrite(Connection conn) throws Exception {
 		super.overwrite(conn,"v_trails_ssh_pwd");
@@ -127,7 +153,7 @@ public class TrailSshPwd extends TrailBase {
 			try { if (stmt != null) stmt.close(); } catch (SQLException se2) {}
 		}
 	}
-	
+	*/
 	
 	@Override
 	public String toString() {

@@ -19,11 +19,11 @@ import java.net.MalformedURLException;
 import java.net.PasswordAuthentication;
 import java.net.URL;
 import java.net.URLConnection;
-import java.sql.Clob;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+//import java.sql.Clob;
+//import java.sql.Connection;
+//import java.sql.PreparedStatement;
+//import java.sql.ResultSet;
+//import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -34,14 +34,15 @@ import java.util.Map;
 //import java.net.CookieStore;
 //import java.net.HttpCookie;
 
-//import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
+import org.json.simple.JSONObject;
 
 import cb.dfs.trail.common.Constants;
 import cb.dfs.trail.utils.Strings;
 
 public class TrailHttp extends TrailBase {
 
-	//final static Logger logger = Logger.getLogger(TrailHttp.class);
+	final static Logger logger = Logger.getLogger(TrailHttp.class);
 
 	String url = null;
 	String url_auth = null;
@@ -95,6 +96,33 @@ public class TrailHttp extends TrailBase {
 		is_read_page = _is_read_page;
 	}
 
+	/*
+	 * Получение параметров из JSON
+	 * если в json не указан параметр то старый не переписыавется!
+	 */
+	@Override
+	public void updateParamsFromJ(JSONObject jo) throws Exception {
+		super.updateParamsFromJ(jo);
+		if(jo.get("url")!=null) {
+			url = (String)(jo.get("url")); 
+		}
+		if(jo.get("properties")!=null) {
+			properties = (String)(jo.get("properties")); 
+		}
+		if(jo.get("cookies")!=null) {
+			cookies = (String)(jo.get("cookies")); 
+		}
+		if(jo.get("url")!=null) {
+			url = (String)(jo.get("url")); 
+		}
+		if(jo.get("bad_strings")!=null) {
+			bad_strings = (String)(jo.get("bad_strings")); 
+		}
+		if(jo.get("login_strings")!=null) {
+			login_strings = (String)(jo.get("login_strings")); 
+		}
+	}
+
 	@Override
 	public void setParam(String param, String value) throws Exception {
 		switch (param.trim().toLowerCase()) {
@@ -136,6 +164,7 @@ public class TrailHttp extends TrailBase {
 				+ control_time_delay + "]";
 	}
 
+	/*
 	@Override
 	public void overwrite(Connection conn) throws Exception {
 
@@ -238,14 +267,14 @@ public class TrailHttp extends TrailBase {
 			}
 		}
 	}
-
+*/
 	
 	protected boolean has_bad_string() {
 		if (bad_strings != null && bad_strings.trim().length() > 0) {
 			List<String> bsm = new ArrayList<String>();
 			Strings.fillValueList(bad_strings, bsm, Constants.HTTP_BADSTRINGS_DELIMITER);
 			for (String val : bsm) {
-				//logger.debug("-- bad string val = " + val);
+				logger.debug("-- bad string val = " + val);
 				if (body.indexOf(val) != -1) {
 					return true;
 				}
@@ -259,7 +288,7 @@ public class TrailHttp extends TrailBase {
 			List<String> bsm = new ArrayList<String>();
 			Strings.fillValueList(login_strings, bsm, Constants.HTTP_LOGIN_STRINGS_DELIMITER);
 			for (String val : bsm) {
-				//logger.debug("-- login string val = " + val);
+				logger.debug("-- login string val = " + val);
 				if (body.indexOf(val) != -1) {
 					return true;
 				}
@@ -376,7 +405,7 @@ public class TrailHttp extends TrailBase {
 			} catch (Exception ex) {
 				String str = "Не удается получить куки. " + ex.getMessage()
 						+ "Инциндент в процедуре: cb.dfs.trail.TrailHttp.run()";
-				//logger.error("-- Не удается получить куки. " + ex.getMessage());
+				logger.error("-- Не удается получить куки. " + ex.getMessage());
 				addRetOutStr(str);
 				//throw new Exception(str);
 			}
@@ -439,7 +468,7 @@ public class TrailHttp extends TrailBase {
 	
 	public void read_0() {
 		int code = -1;
-		//logger.debug("-- читаем страницу с выставлением куков и свойств ---");
+		logger.debug("-- читаем страницу с выставлением куков и свойств ---");
 		try {
 			code = read(url, true);
 		} catch (Exception ex) {
@@ -449,7 +478,7 @@ public class TrailHttp extends TrailBase {
 		}
 		if( code==401 || code==-1 || has_login_string()) {
 			if(url_auth!=null) {
-				//logger.debug("-- пытаемся аутентифицироваться и сохранить куки ---");
+				logger.debug("-- пытаемся аутентифицироваться и сохранить куки ---");
 				try {
 					code = read(url_auth, false);
 				} catch (Exception ex) {
@@ -459,7 +488,7 @@ public class TrailHttp extends TrailBase {
 				}
 				if(code<400) {
 					try {
-						//logger.debug("-- перечитываем страницу ---"); 
+						logger.debug("-- перечитываем страницу ---"); 
 						code = read(url, true);
 					} catch (Exception ex) {
 						addRetErrStr0(ex.getMessage());
@@ -470,7 +499,7 @@ public class TrailHttp extends TrailBase {
 			}
 		}
 		if(code == -1 || code > 399) {
-			//logger.debug("-- code: "+ code +" body --\n"+body);
+			logger.debug("-- code: "+ code +" body --\n"+body);
 			addRetErrStr0("Код возврата:"+code+" Не удалось выполнить проверку страницы <" + url + ">.\n");
 			setStatusError();
 			return;
@@ -740,8 +769,9 @@ public class TrailHttp extends TrailBase {
 		// "http://vm-ocdm-demo.srv.rdtex.ru:9704/analytics/saw.dll?Dashboard&PortalPath=%2Fshared%2FOCDM%203.2%2FDemo%20%2FCustomer%20Churn%20Analysis&page=Building%20Network%20InfrastrucXXXture";
 
 		try {
-			TrailManagerSubro trailSubroManager = null;
-			trailSubroManager = new TrailManagerSubro(Constants.test_url, Constants.test_user, Constants.test_pwd);
+			TrailManager trailSubroManager = null;
+			//trailSubroManager = new TrailManagerSubro(Constants.test_url, Constants.test_user, Constants.test_pwd);
+			trailSubroManager = new TrailManager();
 
 			// TrailHttp trail = new TrailHttp("RDAgentVM3", "TEST_HTTP
 			// www.proza.ru", "Внутренний тест", urlString, null
@@ -756,13 +786,13 @@ public class TrailHttp extends TrailBase {
 			// , "192.168.11.2", "3128", req_props, null, null, null, bad_str,
 			// log_str, true, "60", "100", "0");
 
-			trail.overwrite(trailSubroManager.getConnection());
-			trailSubroManager.getConnection().commit();
+			//trail.overwrite(trailSubroManager.getConnection());
+			//trailSubroManager.getConnection().commit();
 
 			trailSubroManager.launch_trail_if_ready((TrailBase) trail, "scenario_name", (int) (Math.random() * 1000.));
 
-			trail.overwrite(trailSubroManager.getConnection());
-			trailSubroManager.getConnection().commit();
+			//trail.overwrite(trailSubroManager.getConnection());
+			//trailSubroManager.getConnection().commit();
 
 			System.out.println(trail.to_string() + " cookies: " + trail.cookies);
 			System.out.println(trail.getBody());

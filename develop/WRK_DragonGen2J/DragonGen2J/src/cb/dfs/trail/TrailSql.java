@@ -8,7 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-//import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
+import org.json.simple.JSONObject;
 
 import cb.dfs.trail.common.Constants;
 import oracle.jdbc.driver.OracleDriver;
@@ -18,19 +19,20 @@ public class TrailSql extends TrailBase {
 	protected String script;
 	protected String jdbc_url, jdbc_user, jdbc_auth;
 
-	//final static Logger logger = //logger.getLogger(TrailSql.class);
+	final static Logger logger = Logger.getLogger(TrailSql.class);
 	
 	public static void main(String[] args) {
 		try {
-			TrailManagerSubro trailSubroManager = null;
-			trailSubroManager = new TrailManagerSubro(Constants.test_url, Constants.test_user, Constants.test_pwd);
+			TrailManager trailSubroManager = null;
+			//trailSubroManager = new TrailManagerSubro(Constants.test_url, Constants.test_user, Constants.test_pwd);
+			trailSubroManager = new TrailManager();
 
 			TrailSql trail = new TrailSql("RDAgent", " SQL Test ", "Авто тест SQL Test"
 					, "select '1' from dual", Constants.test_url, Constants.test_user, Constants.test_pwd
 					, "5000", "10","0");
 			
-			trail.overwrite(trailSubroManager.getConnection());
-			trailSubroManager.getConnection().commit();
+			//trail.overwrite(trailSubroManager.getConnection());
+			//trailSubroManager.getConnection().commit();
 			trailSubroManager.launch_trail_if_ready((TrailBase) trail, "scenario_name", (int) (Math.random() * 1000.));
 
 		} catch (Exception ex) {
@@ -52,6 +54,28 @@ public class TrailSql extends TrailBase {
 		jdbc_url = _jdbc_url; jdbc_user = _jdbc_user; jdbc_auth = _jdbc_auth;
 	}
 
+	/*
+	 * Получение параметров из JSON
+	 * если в json не указан параметр то старый не переписыавется!
+	 */
+	@Override
+	public void updateParamsFromJ(JSONObject jo) throws Exception {
+		super.updateParamsFromJ(jo);
+		if(jo.get("script")!=null) {
+			script = (String)(jo.get("script")); 
+		}
+		if(jo.get("jdbc_url")!=null) {
+			jdbc_url = (String)(jo.get("jdbc_url")); 
+		}
+		if(jo.get("jdbc_user")!=null) {
+			jdbc_user = (String)(jo.get("jdbc_user")); 
+		}
+		if(jo.get("jdbc_auth")!=null) {
+			jdbc_auth = (String)(jo.get("jdbc_auth")); 
+		}
+	}
+	
+	
 	@Override
 	public void setParam(String param, String value) throws Exception {
 		switch (param.trim().toLowerCase()) {
@@ -77,6 +101,9 @@ public class TrailSql extends TrailBase {
 		}
 	}
 
+	
+	
+	/*
 	@Override
 	public void overwrite(Connection conn) throws Exception {
 		PreparedStatement stmt = null;
@@ -157,7 +184,7 @@ public class TrailSql extends TrailBase {
 			}
 		}
 	}
-
+*/
 	@Override
 	public String toString() {
 		return "TrailSql [script=" + script + ", jdbc_url=" + jdbc_url + ", jdbc_user=" + jdbc_user + ", jdbc_auth="
@@ -203,7 +230,7 @@ public class TrailSql extends TrailBase {
 
 	@Override
 	public void run() {
-		//logger.debug(" run() with param "+jdbc_url+","+jdbc_user+","+jdbc_auth);
+		logger.debug(" run() with param "+jdbc_url+","+jdbc_user+","+jdbc_auth);
 			Connection conn = null;
 			try {
 		        DriverManager.registerDriver(new OracleDriver());
@@ -213,7 +240,7 @@ public class TrailSql extends TrailBase {
 						+ "["+jdbc_url+"],["+jdbc_user+"],["+jdbc_auth+"]\n"
 						+ ex.getMessage()
 						+ "\nИнциндент в процедуре: cb.dfs.trail.TrailSql.run()";
-				//logger.error(str);
+				logger.error(str);
 				addRetErrStr(str);
 				setStatusError();
 				return;
@@ -235,7 +262,7 @@ public class TrailSql extends TrailBase {
 					str = "Ошибка при выполнении проверочного SQL скрипта: "+script
 							+"\nНе вернулось ни одной записи.";
 					addRetErrStr(str); 
-					//logger.error(str);
+					logger.error(str);
 					rs.close();
 					return;
 				}
@@ -247,14 +274,14 @@ public class TrailSql extends TrailBase {
 						+ "\n"
 						+ "Инциндент в процедуре: cb.dfs.trail.TrailSql.run()";
 				addRetErrStr(str);
-				//logger.error(str);
+				logger.error(str);
 				setStatusError();
 			} catch (Exception e) {
 				String str = "Ошибка при выполнении скрипта: "+script+"\n" + e.getMessage()
 						+ "\n"
 						+ "Инциндент в процедуре: cb.dfs.trail.TrailSql.run()";
 				addRetErrStr(str);
-				//logger.error(str);
+				logger.error(str);
 				setStatusError();
 			} finally {
 				try { if (stmt != null)

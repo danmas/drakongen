@@ -2347,10 +2347,9 @@
     </node>
     <node id="n95">
       <data key="d4"><![CDATA[DG_BEG]]></data>
-      <data key="d5"><![CDATA[Test2]]></data>
       <data key="d6">
         <y:SVGNode>
-          <y:Geometry height="65.0" width="55.0" x="1066.999914273201" y="851.3057288142704"/>
+          <y:Geometry height="65.0" width="55.0" x="1056.0522455278167" y="928.962668468366"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="90.42578125" x="-17.712890625" y="69.0">ВЫПОЛНЕНИЕ<y:LabelModel>
@@ -2371,11 +2370,11 @@
       <data key="d4"><![CDATA[TRAIL_INPUT_J,CODE_FROM_LABEL]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="111.39825727453444" width="340.89112997051905" x="1025.234074367278" y="698.9887092812976"/>
+          <y:Geometry height="111.39825727453444" width="340.89112997051905" x="1014.2864056218937" y="776.6456489353932"/>
           <y:Fill color="#FFFF000C" color2="#FFFF001E" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_size" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="111.39825727453444" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="340.89112997051905" x="0.0" y="0.0">{"type":"OS_SCRIPT"
-,"script":"ping -n 3 http-proxy.srv.rdtex.ru"
+          <y:NodeLabel alignment="left" autoSizePolicy="node_size" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="111.39825727453444" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="340.89112997051905" x="0.0" y="0.0">{"type":"TT_OS_SCRIPT"
+,"script":"ping -n 3 carlhost"
 ,"description":"Тест выполнения скрипта ОС"
 ,"max_duration_in_sec":"5"
 ,"launch_period_in_sec":"5"}<y:LabelModel>
@@ -2393,7 +2392,7 @@
       <data key="d4"><![CDATA[TRAIL_ACTION]]></data>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Gateway.withShadow">
-          <y:Geometry height="45.0" width="45.0" x="1173.1796393525376" y="865.6195944803603"/>
+          <y:Geometry height="45.0" width="45.0" x="1162.2319706071532" y="943.2765341344559"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#E38B00" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="49.0" y="-8.0">
@@ -2417,7 +2416,7 @@
       <data key="d4"/>
       <data key="d6">
         <y:UMLNoteNode>
-          <y:Geometry height="111.39825727453444" width="232.21916473838098" x="752.7484336532175" y="698.9887092812976"/>
+          <y:Geometry height="111.39825727453444" width="232.21916473838098" x="1068.6223882379627" y="647.6456489353932"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="106.625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="232.21916473838098" x="0.0" y="2.386628637267222">TRAIL_INPUT_J,CODE_FROM_LABEL
@@ -2436,7 +2435,7 @@
       <data key="d4"/>
       <data key="d6">
         <y:UMLNoteNode>
-          <y:Geometry height="71.11092867076081" width="232.21916473838098" x="1280.5522596321837" y="852.5641301449799"/>
+          <y:Geometry height="71.11092867076081" width="232.21916473838098" x="1269.6045908867993" y="930.2210697990754"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="66.375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="232.21916473838098" x="0.0" y="2.3679643353804067">TRAIL_ACTION
@@ -2452,13 +2451,13 @@
     </node>
     <node id="n100">
       <data key="d4"><![CDATA[FILE]]></data>
-      <data key="d5"><![CDATA[\src\ru\erv\drakongen\test\Test2.java]]></data>
+      <data key="d5"><![CDATA[test_result.txt]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.0" width="100.0" x="1145.6796393525376" y="952.7465201650081"/>
+          <y:Geometry height="122.0" width="100.0" x="1134.7319706071532" y="1030.4034598191035"/>
           <y:Fill color="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="122.701171875" horizontalTextPosition="center" iconData="6" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.0" x="9.5" y="-0.3505859375001137">test\result2.txt<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="122.701171875" horizontalTextPosition="center" iconData="6" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.0" x="9.5" y="-0.3505859375">test_result.txt<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
