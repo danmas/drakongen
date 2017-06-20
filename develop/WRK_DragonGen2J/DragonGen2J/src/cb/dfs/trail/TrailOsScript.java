@@ -64,9 +64,9 @@ public class TrailOsScript extends TrailBase {
 			Process proc = rt.exec(script);
 
 			BufferedReader out = new BufferedReader(new InputStreamReader(
-					proc.getInputStream())); // ,"UTF8"));
+					proc.getInputStream())); //,"Cp1251));
 			BufferedReader err = new BufferedReader(new InputStreamReader(
-					proc.getErrorStream())); // ,"UTF8"));
+					proc.getErrorStream())); // ,"UTF-8"));
 
 			int exitVal = proc.waitFor();
 

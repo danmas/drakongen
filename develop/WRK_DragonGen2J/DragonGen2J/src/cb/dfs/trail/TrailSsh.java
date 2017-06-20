@@ -36,7 +36,8 @@ public class TrailSsh {
 					int i = in.read(tmp, 0, 1024);
 					if (i < 0)
 						break;
-					trail.addRetOutStr(new String(tmp, 0, i));
+					String s = new String(tmp, 0, i,"UTF-8");
+					trail.addRetOutStr(s);
 				}
 				if (channel.isClosed()) {
 					break;

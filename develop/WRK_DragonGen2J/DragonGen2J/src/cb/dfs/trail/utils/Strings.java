@@ -26,6 +26,10 @@ public final class Strings {
     private static Map<String,String> m_context= new Hashtable<String,String>();
 
 
+    public static int getSubstSize() {
+    	return m_context.size();
+    }
+    
     /**
      *  Превращает строку в массив строк
      * @param s - входная строка с резделителями

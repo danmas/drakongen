@@ -2469,6 +2469,70 @@
         </y:ShapeNode>
       </data>
     </node>
+    <node id="n101">
+      <data key="d4"><![CDATA[START_ACTS]]></data>
+      <data key="d6">
+        <y:SVGNode>
+          <y:Geometry height="108.17981202122769" width="189.0429473498143" x="464.0302318713431" y="-289.435802960713"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.67578125" x="37.683583049907156" y="112.17981202122766">Запуск активностей<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="0.5" offsetX="0.0" offsetY="4.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:SVGNodeProperties usingVisualBounds="false"/>
+          <y:SVGModel svgBoundsPolicy="0">
+            <y:SVGContent refid="4"/>
+          </y:SVGModel>
+        </y:SVGNode>
+      </data>
+    </node>
+    <node id="n102">
+      <data key="d4"/>
+      <data key="d6">
+        <y:UMLNoteNode>
+          <y:Geometry height="136.36047985885625" width="278.47666090241296" x="656.9794895841503" y="-447.10642471048305"/>
+          <y:Fill color="#FFFF99" transparent="false"/>
+          <y:BorderStyle color="#C0C0C0" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="node_width" configuration="CroppingLabel" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="86.5" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="278.47666090241296" x="0.0" y="24.930239929428126">Подстановки 0-... 
+Заполняется карта подстановоки и применчяется для всех еодов и комментариев<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+        </y:UMLNoteNode>
+      </data>
+    </node>
+    <node id="n103">
+      <data key="d4"><![CDATA[SUBSTITUTES,CODE_FROM_LABEL]]></data>
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="127.17283947663543" width="260.7947340079022" x="223.6356528886128" y="-437.91878432826223"/>
+          <y:Fill color="#FFFF000C" color2="#FFFF001E" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_size" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="127.17283947663543" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="260.7947340079022" x="0.0" y="0.0">{"type":"SUBSTITUTES"
+,"description":"Настройки на сервере ДОМА"
+,"replacements":[
+{"what":"%CARL_SERVER%","to":"carlhost"}
+,{"what":"%DB_PATH%","to":"/home/share"}
+,{"what":"%SSH_USER%","to":"Dima"}
+,{"what":"%SSH_USER_PWD%","to":"1"}
+]}<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
     <edge id="e0" source="n40" target="n41">
       <data key="d10">
         <y:PolyLineEdge>
@@ -2610,7 +2674,6 @@
       </data>
     </edge>
     <edge id="e14" source="n95" target="n97">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="2.7340177585822403" sy="4.313865666089896" tx="0.0" ty="0.0"/>
@@ -2631,7 +2694,6 @@
       </data>
     </edge>
     <edge id="e16" source="n98" target="n96">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2642,7 +2704,6 @@
       </data>
     </edge>
     <edge id="e17" source="n99" target="n97">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2653,12 +2714,22 @@
       </data>
     </edge>
     <edge id="e18" source="n97" target="n100">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e19" source="n103" target="n101">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="11.875997968547836" sy="19.23763040332068" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="diamond"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>

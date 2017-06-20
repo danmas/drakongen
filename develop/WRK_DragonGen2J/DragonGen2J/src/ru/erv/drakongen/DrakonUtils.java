@@ -8,13 +8,25 @@
 //--dg-- package//--dg-- imports
 package ru.erv.drakongen;
 
+import org.apache.log4j.Logger;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+import org.json.simple.parser.ParseException;
+
 import com.tinkerpop.blueprints.pgm.Edge;
 import com.tinkerpop.blueprints.pgm.Graph;
 import com.tinkerpop.blueprints.pgm.Vertex;
+
+import cb.dfs.trail.TrailBase;
+import cb.dfs.trail.utils.Strings;
 import ru.erv.drakongen.utils.*;
 
 //--dg-- class DrakonUtils
 public class DrakonUtils {
+	
+	final static Logger logger = Logger.getLogger(DrakonUtils.class);
+	
 	// --dg-- константы
 	public static final String PREF_MARKER_CDATA = "<data key=\"d4\"><![CDATA[";
 	public static final String PREF_MARKER_DG2J = "<DG2J code_mark=\"";
@@ -55,7 +67,8 @@ public class DrakonUtils {
 	public final static String DI_OUTPUT = "OUTPUT";
 	public final static String DI_START_ACTS = "START_ACTS";
 	public final static String DI_NATIVE_CODE = "NATIVE_CODE";
-
+	public final static String DI_SUBSTITUTES = "SUBSTITUTES"; 
+	
 	public static final String REM_TRY = "DI_TRY";
 	public static final String REM_CATCH = "DI_CATCH";
 	public static final String REM_PROC_DOC = "DI_PROC_DOC";
@@ -65,11 +78,13 @@ public class DrakonUtils {
 	public final static String RELEASE_TYPE_CODE_AS = "CODE_AS";
 
 	public static enum IcTypes {
-		DI_EXT_NEXT, DI_DG_BEG, DI_SI_BEG, DI_SI_END, DI_CLASS_END, DI_COMPIL_BEG, DI_COMPIL_END, DI_SH_BEG, DI_SH_END, DI_PROC_BEG, DI_PROC_END, DI_WR_RES_FILE, DI_AC, DI_ACTION, DI_SUB_COMPIL, DI_IF, DI_RY, DI_DN, DI_EI, DI_UK, DI_FOR_BEG, FOR_EACH_BEG, DI_FOR_END, DI_REF, DI_BREAK,
+		DI_EXT_NEXT, DI_DG_BEG, DI_SI_BEG, DI_SI_END, DI_CLASS_END, DI_COMPIL_BEG
+		, DI_COMPIL_END, DI_SH_BEG, DI_SH_END, DI_PROC_BEG, DI_PROC_END, DI_WR_RES_FILE, DI_AC, DI_ACTION, DI_SUB_COMPIL, DI_IF, DI_RY, DI_DN, DI_EI, DI_UK, DI_FOR_BEG, FOR_EACH_BEG, DI_FOR_END, DI_REF, DI_BREAK
 
-		DI_CASE, DI_DEFAULT, DI_SW, DI_RETURN, DI_INSERT, DI_OUTPUT, DI_START_ACTS, DI_NATIVE_CODE,
+		,DI_CASE, DI_DEFAULT, DI_SW, DI_RETURN, DI_INSERT, DI_OUTPUT, DI_START_ACTS
+		, DI_NATIVE_CODE, DI_SUBSTITUTES
 
-		REM_TRY, REM_CATCH, REM_PROC_DOC, REM_CALL_PROC;
+		,REM_TRY, REM_CATCH, REM_PROC_DOC, REM_CALL_PROC;
 	};
 
 	// --dg-- переменные
@@ -116,19 +131,52 @@ public class DrakonUtils {
 	}
 	
 	
+	/**
+	 * Заполняем катпу подстановок Strings
+	 * @param node
+	 */
+	public static void fillSubst(Vertex node) {
+        logger.debug("-- Strings.fillSubst() "); 
+		String js = getCode(node);
+		if(!Strings.isStringEmpty(js)) {
+        try {
+            JSONObject genreJsonObject = (JSONObject) JSONValue.parseWithException(js);
+//            if(genreJsonObject.get("type")!="SUBST") {
+//            	return;
+//            }
+            JSONArray dataset = (JSONArray) genreJsonObject.get("replacements");
+            
+            for (Object o : dataset) {
+                JSONObject jo = (JSONObject) o;
+                Strings.setSubstValue((String)jo.get("what"),(String)jo.get("to"));
+                logger.debug("-- Strings.setSubstValue("+(String)jo.get("what")+","+(String)jo.get("to")+") "); 
+                //System.out.println(jo.get("what"));
+                //System.out.println(jo.get("to"));
+            }            
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+		}
+		
+	}
+	
 	// --dg-- Получение комента из узла
 	public static String getComment(Vertex node) {
 		// --dg-- получаем коментарий
 		if (node == null)
 			return "";
 		String ret = (String) node.getProperty("comment");
+		//-- выполняем подстановки
+		if(ret!=null && Strings.getSubstSize() > 0) {
+			ret = Strings.doAllPercSubst(ret);
+		} 
 		// --dg-- ком.
 		return ret;
 	}
 
 	// --dg-- Возвращает код из узла
 	public static String getCode(Vertex node) {
-		//System.out.println(" ------- getCode() :" );
+		
 		// --dg-- строим код
 		if (node == null)
 			return "";
@@ -138,21 +186,22 @@ public class DrakonUtils {
 			if(s == null) {
 				return "";
 			}
+			//-- выполняем подстановки
+			if(s!=null && Strings.getSubstSize() > 0) {
+				s = Strings.doAllPercSubst(s);
+			} 
+            //logger.debug("-- Strings.setSubstValue("+(String)jo.get("what")+","+(String)jo.get("to")+") "); 
 			return s;
 		}
 		String s = (String) node.getProperty("code");
+		//-- выполняем подстановки
+		if(s!=null && Strings.getSubstSize() > 0) {
+			s = Strings.doAllPercSubst(s);
+		} 
         if(s==null) {
         	s="";
         }
 		return s;
-	}
-
-	public static String getCodeFromLabel(Vertex node) {
-		// --dg-- строим код
-		if (node == null)
-			return "";
-		return (String) node.getProperty("comment");
-		// --dg-- //--dg--
 	}
 
 	// --dg-- message()
@@ -199,13 +248,9 @@ public class DrakonUtils {
 				i++;
 		}
 		return i;
-
-		// --dg-- //--dg--
 	}
 
-	// --dg-- getInNode()
 	public static Vertex getInNode(Vertex v, int num) {
-		// --dg-- строим код
 		if (v == null)
 			return null;
 		int i = 0;
@@ -217,12 +262,9 @@ public class DrakonUtils {
 			i++;
 		}
 		return null;
-		// --dg-- //--dg--
 	}
 
-	// --dg-- getOutNode()
 	public static Vertex getOutNode(Vertex v, int num) {
-		// --dg-- строим код
 		if (v == null)
 			return null;
 		int i = 0;
@@ -234,7 +276,6 @@ public class DrakonUtils {
 			i++;
 		}
 		return null;
-		// --dg-- //--dg--
 	}
 
 	// --dg-- getOutEdge()

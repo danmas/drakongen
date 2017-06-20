@@ -18,9 +18,11 @@ import com.tinkerpop.blueprints.pgm.impls.tg.TinkerGraph;
 import japa.parser.ast.CompilationUnit;
 import java.io.File;
 import japa.parser.JavaParser;
+import org.apache.log4j.Logger;
  
 	//--dg-- class DrakonAct
-	 public class DrakonAct { 
+	public class DrakonAct {
+	final static Logger logger = Logger.getLogger(DrakonAct.class); 
 	//--dg-- константы
 	public final static String DI_OS_ACTION = "OS_ACTION";
 public final static String DI_DG_LIFT_DOWN = "DG_LIFT_DOWN";
@@ -73,8 +75,9 @@ try {
 	//--dg-- Запускаем graph на выполнение
 	protected void activate_drakon(Graph graph) {
  
-		//--dg-- теперь текущий узел null
+		//--dg-- переменные
 		Vertex cur_node = null;
+Vertex node = null;
  
 		//--dg-- Проходим по всем узлам
 		for (Vertex v : graph.getVertices()) {
@@ -90,7 +93,20 @@ try {
 			}
 		//--dg-- нашли узел ЗАПУСКА?
 		if(cur_node != null) {
-			//--dg-- Проходим по всем узлам ЗАПУСКА
+			//--dg-- Проходим по всем входам ЗАПУСКА
+			for(int i=0;i<DrakonUtils.getInDegree(cur_node);i++) {
+				//--dg-- текущий узел
+				node = DrakonUtils.getInNode(cur_node,i);
+ 
+				//--dg-- узел ЗАМЕНЫ?
+				if(DrakonUtils.isIconType(node,DrakonUtils.DI_SUBSTITUTES)) {
+					//--dg-- заполняем карту подстановок
+					DrakonUtils.fillSubst(node);
+ 
+				} else {
+				}
+				}
+			//--dg-- Проходим по всем выходам ЗАПУСКА
 			while(DrakonUtils.getOutDegree(cur_node) == 1) {
 				//--dg-- теперь текущий узел тот на который указывает выход
 				cur_node = DrakonUtils.getOutNode(cur_node,0);
@@ -369,7 +385,6 @@ in = DrakonUtils.getInNode(node,1);
 				 try {
 	 cb.dfs.trail.TrailManager trail = new cb.dfs.trail.TrailManager();
 	result = trail.launchTrailFromJstring(input_j);
-	System.out.println(result);
 } catch (Exception ex) {
 	result = ex.getMessage();
 	System.err.println("---" + ex.getMessage());
