@@ -1,9 +1,7 @@
 package cb.dfs.trail;
 
-import java.sql.Clob;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -28,13 +26,13 @@ public class TrailSql extends TrailBase {
 			trailSubroManager = new TrailManager();
 
 			TrailSql trail = new TrailSql("RDAgent", " SQL Test ", "Авто тест SQL Test"
-					, "select '1' from dual", Constants.test_url, Constants.test_user, Constants.test_pwd
-					, "5000", "10","0");
+					, "select '1'", "jdbc:postgresql://carlhost:5432/carlinkng", "carl", "1"
+					, "50", "10","0");
 			
 			//trail.overwrite(trailSubroManager.getConnection());
 			//trailSubroManager.getConnection().commit();
 			trailSubroManager.launch_trail_if_ready((TrailBase) trail, "scenario_name", (int) (Math.random() * 1000.));
-
+			System.out.println(" Ответ: "+trail.getRetOutStr());
 		} catch (Exception ex) {
 			System.err.println(ex.getMessage());
 		}
@@ -102,7 +100,98 @@ public class TrailSql extends TrailBase {
 	}
 
 	
-	
+	@Override
+	public String toString() {
+		return "TrailSql [script=" + script + ", jdbc_url=" + jdbc_url + ", jdbc_user=" + jdbc_user + ", jdbc_auth="
+				+ jdbc_auth + ", retOutStr=" + retOutStr + ", retErrStr=" + retErrStr + ", status=" + status
+				+ ", ob_object_id=" + ob_object_id + ", run_agent=" + run_agent + ", trail_key=" + trail_key
+				+ ", trail_type=" + trail_type + ", description=" + description + ", max_duration_in_sec="
+				+ max_duration_in_sec + ", launch_period_in_sec=" + launch_period_in_sec
+				+ ", control_time_delay_in_sec=" + control_time_delay_in_sec + ", last_start_date=" + last_start_date
+				+ ", duration=" + duration + ", launch_period=" + launch_period + ", control_time_delay="
+				+ control_time_delay + "]";
+	}
+
+	public String getScript() {
+		return script;
+	}
+
+	public void setScript(String script) {
+		this.script = script;
+	}
+
+
+	@Override
+	public void run() {
+		logger.debug(" run() with param "+jdbc_url+","+jdbc_user+","+jdbc_auth);
+			Connection conn = null;
+			try {
+				if(jdbc_url.indexOf("postgresql")>0) {
+					// jdbc:postgresql://host:port/database
+					//Class.forName("org.postgresql.Driver");
+					DriverManager.registerDriver(new org.postgresql.Driver());
+				} else { // Oracle
+					DriverManager.registerDriver(new OracleDriver());
+				}
+				conn = DriverManager.getConnection(jdbc_url, jdbc_user, jdbc_auth);
+			} catch (Exception ex) {
+				String str = "Ошибка при создании коннекции для выполнении SQL скрипта.\n"
+						+ "["+jdbc_url+"],["+jdbc_user+"],[jdbc_auth]\n"
+						+ ex.getMessage()
+						+ "\nИнциндент в процедуре: cb.dfs.trail.TrailSql.run()";
+				logger.error(str);
+				addRetErrStr(str);
+				setStatusError();
+				return;
+			}
+
+			Statement stmt = null;
+			try {
+				stmt = conn.createStatement();
+				ResultSet rs = stmt.executeQuery(script);
+				int cnt = 0;
+				setStatusSuccess();
+				String str = "";
+				while(rs.next()) {
+					cnt++;
+					str += rs.getString(1) + "\n";
+				}
+				if(cnt == 0) {
+					setStatusError();
+					str = "Ошибка при выполнении проверочного SQL скрипта: "+script
+							+"\nНе вернулось ни одной записи.";
+					addRetErrStr(str); 
+					logger.error(str);
+					rs.close();
+					return;
+				}
+				addRetOutStr(str);
+				rs.close();
+				return;
+			} catch (SQLException se) {
+				String str = "Ошибка при выполнении скрипта: "+script+"\n" + se.getMessage()
+						+ "\n"
+						+ "Инциндент в процедуре: cb.dfs.trail.TrailSql.run()";
+				addRetErrStr(str);
+				logger.error(str);
+				setStatusError();
+			} catch (Exception e) {
+				String str = "Ошибка при выполнении скрипта: "+script+"\n" + e.getMessage()
+						+ "\n"
+						+ "Инциндент в процедуре: cb.dfs.trail.TrailSql.run()";
+				addRetErrStr(str);
+				logger.error(str);
+				setStatusError();
+			} finally {
+				try { if (stmt != null)
+						stmt.close();
+				} catch (SQLException se2) {}
+				try { if (conn != null)
+						conn.close();
+				} catch (SQLException se) {se.printStackTrace();}
+			}
+	}
+
 	/*
 	@Override
 	public void overwrite(Connection conn) throws Exception {
@@ -185,113 +274,5 @@ public class TrailSql extends TrailBase {
 		}
 	}
 */
-	@Override
-	public String toString() {
-		return "TrailSql [script=" + script + ", jdbc_url=" + jdbc_url + ", jdbc_user=" + jdbc_user + ", jdbc_auth="
-				+ jdbc_auth + ", retOutStr=" + retOutStr + ", retErrStr=" + retErrStr + ", status=" + status
-				+ ", ob_object_id=" + ob_object_id + ", run_agent=" + run_agent + ", trail_key=" + trail_key
-				+ ", trail_type=" + trail_type + ", description=" + description + ", max_duration_in_sec="
-				+ max_duration_in_sec + ", launch_period_in_sec=" + launch_period_in_sec
-				+ ", control_time_delay_in_sec=" + control_time_delay_in_sec + ", last_start_date=" + last_start_date
-				+ ", duration=" + duration + ", launch_period=" + launch_period + ", control_time_delay="
-				+ control_time_delay + "]";
-	}
-
-	public String getScript() {
-		return script;
-	}
-
-	public void setScript(String script) {
-		this.script = script;
-	}
-
-	// public static void main(String[] args) throws java.io.IOException,
-	// java.lang.InterruptedException {
-	// // exec_script("cmd /c dir");
-	// // exec_script("cmd /c dir");
-	// Trail trail = new Trail();
-	// TrailOsScript trailOsScript = new TrailOsScript(trail, "cmd /c dir");
-	//
-	// Thread thread = new Thread(trailOsScript);
-	// thread.start();
-	// try {
-	// Thread.sleep(200); // Приостанавливает поток на 1 секунду
-	// if (thread.isAlive()) {
-	// System.err.println(" Случился таймаут!");
-	// thread.interrupt();
-	// }
-	// } catch (InterruptedException e) {
-	// System.err
-	// .println(" Возникло исключение 'Прерывание исполнения' в главном
-	// потоке.");
-	// }
-	// System.out.println(" Из главного потока. " + trail.to_string());
-	// }
-
-	@Override
-	public void run() {
-		logger.debug(" run() with param "+jdbc_url+","+jdbc_user+","+jdbc_auth);
-			Connection conn = null;
-			try {
-		        DriverManager.registerDriver(new OracleDriver());
-		        conn = DriverManager.getConnection(jdbc_url, jdbc_user, jdbc_auth);
-			} catch (Exception ex) {
-				String str = "Ошибка при создании коннекции для выполнении SQL скрипта.\n"
-						+ "["+jdbc_url+"],["+jdbc_user+"],["+jdbc_auth+"]\n"
-						+ ex.getMessage()
-						+ "\nИнциндент в процедуре: cb.dfs.trail.TrailSql.run()";
-				logger.error(str);
-				addRetErrStr(str);
-				setStatusError();
-				return;
-			}
-
-			Statement stmt = null;
-			try {
-				stmt = conn.createStatement();
-				ResultSet rs = stmt.executeQuery(script);
-				int cnt = 0;
-				setStatusSuccess();
-				String str = "";
-				while(rs.next()) {
-					cnt++;
-					str += rs.getString(1) + "\n";
-				}
-				if(cnt == 0) {
-					setStatusError();
-					str = "Ошибка при выполнении проверочного SQL скрипта: "+script
-							+"\nНе вернулось ни одной записи.";
-					addRetErrStr(str); 
-					logger.error(str);
-					rs.close();
-					return;
-				}
-				addRetOutStr(str);
-				rs.close();
-				return;
-			} catch (SQLException se) {
-				String str = "Ошибка при выполнении скрипта: "+script+"\n" + se.getMessage()
-						+ "\n"
-						+ "Инциндент в процедуре: cb.dfs.trail.TrailSql.run()";
-				addRetErrStr(str);
-				logger.error(str);
-				setStatusError();
-			} catch (Exception e) {
-				String str = "Ошибка при выполнении скрипта: "+script+"\n" + e.getMessage()
-						+ "\n"
-						+ "Инциндент в процедуре: cb.dfs.trail.TrailSql.run()";
-				addRetErrStr(str);
-				logger.error(str);
-				setStatusError();
-			} finally {
-				try { if (stmt != null)
-						stmt.close();
-				} catch (SQLException se2) {}
-				try { if (conn != null)
-						conn.close();
-				} catch (SQLException se) {se.printStackTrace();}
-			}
-	}
-
 
 }

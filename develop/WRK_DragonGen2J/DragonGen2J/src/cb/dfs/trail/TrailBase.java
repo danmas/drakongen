@@ -122,7 +122,7 @@ public abstract class TrailBase extends Versioned implements Runnable {
 	}
 	
 	boolean is_ready_to_start(Date cur_time) {
-		logger.debug("-- is_ready_to_start("+cur_time+") "); 
+		//logger.debug("-- is_ready_to_start("+cur_time+") "); 
 		if(last_start_date==null)
 			return true;
 		if(launch_period==0) {
@@ -130,7 +130,7 @@ public abstract class TrailBase extends Versioned implements Runnable {
 		}
 		//System.out.println(last_start_date.getTime());
 		boolean ret = cur_time.getTime() > last_start_date.getTime() + launch_period*1000;
-		logger.debug("-- is_ready_to_start("+cur_time+") returns "+ret); 
+		//logger.debug("-- is_ready_to_start("+cur_time+") returns "+ret); 
 		return ret;
 	}
 	

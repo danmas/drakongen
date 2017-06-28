@@ -1,4 +1,599 @@
-2017-06-20 08:07:45 DEBUG DrakonAct:98 - -- 1 --
-2017-06-20 08:07:45 DEBUG DrakonAct:102 - -- 2 -- входов: 0
-2017-06-20 08:09:50 DEBUG DrakonAct:98 - -- 1 --
-2017-06-20 08:09:50 DEBUG DrakonAct:102 - -- 2 -- входов: 0
+2017-06-23 06:34:00 DEBUG DrakonUtils:139 - -- Strings.fillSubst() 
+2017-06-23 06:34:00 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_SERVER%,carlhost) 
+2017-06-23 06:34:00 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 06:34:00 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 06:34:00 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 06:34:00 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 06:34:00 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 06:34:00 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 06:34:00 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 06:34:00 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 06:34:00 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:00 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:00 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 06:34:00 MSK 2017) 
+2017-06-23 06:34:00 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 06:34:02 DEBUG TrailOsScript:81 - -- Скрипт вернул 0. Out:
+ЋЎ¬Ґ­ Ї ЄҐв ¬Ё б carlhost [192.168.1.56] б 32 Ў ©в ¬Ё ¤ ­­ле:
+ЋвўҐв ®в 192.168.1.56: зЁб«® Ў ©в=32 ўаҐ¬п<1¬б TTL=64
+ЋвўҐв ®в 192.168.1.56: зЁб«® Ў ©в=32 ўаҐ¬п<1¬б TTL=64
+ЋвўҐв ®в 192.168.1.56: зЁб«® Ў ©в=32 ўаҐ¬п<1¬б TTL=64
+
+‘в вЁбвЁЄ  Ping ¤«п 192.168.1.56:
+    Џ ЄҐв®ў: ®вЇа ў«Ґ­® = 3, Ї®«гзҐ­® = 3, Ї®вҐап­® = 0
+    (0% Ї®вҐам)
+ЏаЁЎ«Ё§ЁвҐ«м­®Ґ ўаҐ¬п ЇаЁҐ¬ -ЇҐаҐ¤ зЁ ў ¬б:
+    ЊЁ­Ё¬ «м­®Ґ = 0¬бҐЄ, Њ ЄбЁ¬ «м­®Ґ = 0 ¬бҐЄ, ‘аҐ¤­ҐҐ = 0 ¬бҐЄ
+
+2017-06-23 06:34:02 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 06:34:02 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:02 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:02 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 06:34:02 MSK 2017) 
+2017-06-23 06:34:02 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 06:34:04 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 06:34:04 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:04 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:04 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 06:34:04 MSK 2017) 
+2017-06-23 06:34:04 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 06:34:04 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 06:34:04 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:04 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:04 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 06:34:04 MSK 2017) 
+2017-06-23 06:34:04 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 06:34:06 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: java.net.UnknownHostException: %SSH_SERVER%
+
+2017-06-23 06:34:06 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:06 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:06 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 06:34:06 MSK 2017) 
+2017-06-23 06:34:06 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 06:34:06 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: java.net.UnknownHostException: %SSH_SERVER%
+
+2017-06-23 06:34:06 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:06 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 06:34:06 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 06:34:06 MSK 2017) 
+2017-06-23 06:34:06 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 06:34:06 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: java.net.UnknownHostException: %SSH_SERVER%
+
+2017-06-23 07:02:13 DEBUG DrakonUtils:139 - -- Strings.fillSubst() 
+2017-06-23 07:02:13 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 07:02:13 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 07:02:13 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 07:02:13 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 07:02:13 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 07:02:13 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 07:02:13 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 07:02:13 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 07:02:13 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 07:04:30 DEBUG DrakonUtils:139 - -- Strings.fillSubst() 
+2017-06-23 07:04:30 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 07:04:30 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 07:04:30 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 07:04:30 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 07:04:30 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 07:04:30 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 07:04:30 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 07:04:30 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 07:04:30 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 07:04:30 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:04:30 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:04:30 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 07:04:30 MSK 2017) 
+2017-06-23 07:04:30 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 07:04:30 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 07:04:30 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:04:30 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:04:30 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 07:04:30 MSK 2017) 
+2017-06-23 07:04:30 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 07:04:31 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 07:04:31 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:04:31 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:04:31 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 07:04:31 MSK 2017) 
+2017-06-23 07:04:31 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 07:04:31 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 07:06:45 DEBUG DrakonUtils:139 - -- Strings.fillSubst() 
+2017-06-23 07:06:45 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 07:06:45 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 07:06:45 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 07:06:45 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 07:06:45 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 07:06:45 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 07:06:45 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 07:06:45 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 07:06:45 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 07:06:45 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:06:45 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:06:45 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 07:06:45 MSK 2017) 
+2017-06-23 07:06:45 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 07:06:45 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 07:06:45 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:06:45 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:06:45 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 07:06:45 MSK 2017) 
+2017-06-23 07:06:45 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 07:06:46 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 07:06:46 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:06:46 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:06:46 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 07:06:46 MSK 2017) 
+2017-06-23 07:06:46 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 07:06:46 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 07:09:48 DEBUG DrakonUtils:139 - -- Strings.fillSubst() 
+2017-06-23 07:09:48 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 07:09:48 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 07:09:48 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 07:09:48 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 07:09:48 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 07:09:48 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 07:09:48 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 07:09:48 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 07:09:48 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 07:09:48 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:09:48 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:09:48 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 07:09:48 MSK 2017) 
+2017-06-23 07:09:48 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 07:09:49 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 07:09:49 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:09:49 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:09:49 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 07:09:49 MSK 2017) 
+2017-06-23 07:09:49 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 07:09:49 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 07:09:49 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:09:49 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 07:09:49 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 07:09:49 MSK 2017) 
+2017-06-23 07:09:49 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 07:09:49 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 08:04:08 DEBUG DrakonUtils:139 - -- Strings.fillSubst() 
+2017-06-23 08:04:08 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 08:04:08 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 08:04:08 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 08:04:08 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 08:04:08 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 08:04:08 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 08:04:08 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 08:04:08 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 08:04:08 DEBUG DrakonUtils:152 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 08:04:08 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 08:04:08 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 08:04:08 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 08:04:08 MSK 2017) 
+2017-06-23 08:04:08 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 08:04:10 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 08:04:10 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 08:04:10 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 08:04:10 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 08:04:10 MSK 2017) 
+2017-06-23 08:04:10 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 08:04:10 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 08:04:10 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 08:04:10 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 08:04:10 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 08:04:10 MSK 2017) 
+2017-06-23 08:04:10 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 08:04:10 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:26:57 DEBUG DrakonUtils:138 - -- Strings.fillSubst() 
+2017-06-23 09:26:57 DEBUG DrakonUtils:148 - -- Strings.fillSubst() 
+2017-06-23 09:26:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 09:26:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 09:26:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 09:26:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 09:26:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 09:26:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 09:26:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 09:26:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 09:26:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 09:26:57 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:26:57 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:26:57 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:26:57 MSK 2017) 
+2017-06-23 09:26:57 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:26:58 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:26:58 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:26:58 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:26:58 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:26:58 MSK 2017) 
+2017-06-23 09:26:58 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:26:59 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:26:59 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:26:59 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:26:59 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:26:59 MSK 2017) 
+2017-06-23 09:26:59 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:26:59 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:37:48 DEBUG DrakonUtils:138 - -- Strings.fillSubst() 
+2017-06-23 09:37:48 DEBUG DrakonUtils:148 - -- Strings.fillSubst() 
+2017-06-23 09:37:48 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 09:37:48 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 09:37:48 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 09:37:48 DEBUG DrakonUtils:138 - -- Strings.fillSubst() 
+2017-06-23 09:37:48 DEBUG DrakonUtils:148 - -- Strings.fillSubst() 
+2017-06-23 09:37:48 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 09:37:48 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 09:37:48 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 09:37:48 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 09:37:48 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 09:37:48 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:48 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:37:48 MSK 2017) 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:48 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:37:48 MSK 2017) 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:48 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:37:48 MSK 2017) 
+2017-06-23 09:37:48 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:37:49 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:37:57 DEBUG DrakonUtils:138 - -- Strings.fillSubst() 
+2017-06-23 09:37:57 DEBUG DrakonUtils:148 - -- Strings.fillSubst() 
+2017-06-23 09:37:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 09:37:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 09:37:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 09:37:57 DEBUG DrakonUtils:138 - -- Strings.fillSubst() 
+2017-06-23 09:37:57 DEBUG DrakonUtils:148 - -- Strings.fillSubst() 
+2017-06-23 09:37:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 09:37:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 09:37:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 09:37:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 09:37:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 09:37:57 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 09:37:57 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:57 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:57 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:37:57 MSK 2017) 
+2017-06-23 09:37:57 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:37:58 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:37:58 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:58 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:58 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:37:58 MSK 2017) 
+2017-06-23 09:37:58 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:37:58 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:37:58 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:58 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:37:58 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:37:58 MSK 2017) 
+2017-06-23 09:37:58 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:37:59 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:47:01 DEBUG DrakonUtils:138 - -- Strings.fillSubst() 
+2017-06-23 09:47:01 DEBUG DrakonUtils:148 - -- Strings.fillSubst() 
+2017-06-23 09:47:01 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 09:47:01 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 09:47:01 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 09:47:01 DEBUG DrakonUtils:138 - -- Strings.fillSubst() 
+2017-06-23 09:47:01 DEBUG DrakonUtils:148 - -- Strings.fillSubst() 
+2017-06-23 09:47:01 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 09:47:01 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 09:47:01 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 09:47:01 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 09:47:01 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 09:47:01 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:47:01 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:47:01 MSK 2017) 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:47:01 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:47:01 MSK 2017) 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:47:01 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:47:01 MSK 2017) 
+2017-06-23 09:47:01 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:47:02 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:51:19 DEBUG DrakonUtils:138 - -- Strings.fillSubst() 
+2017-06-23 09:51:19 DEBUG DrakonUtils:148 - -- Strings.fillSubst() 
+2017-06-23 09:51:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 09:51:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 09:51:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 09:51:19 DEBUG DrakonUtils:138 - -- Strings.fillSubst() 
+2017-06-23 09:51:19 DEBUG DrakonUtils:148 - -- Strings.fillSubst() 
+2017-06-23 09:51:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 09:51:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 09:51:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 09:51:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 09:51:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 09:51:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 09:51:19 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:51:19 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:51:19 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:51:19 MSK 2017) 
+2017-06-23 09:51:19 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:51:20 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:51:20 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:51:20 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:51:20 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:51:20 MSK 2017) 
+2017-06-23 09:51:20 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:51:20 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:51:20 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:51:20 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:51:20 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:51:20 MSK 2017) 
+2017-06-23 09:51:20 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:51:20 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:53:37 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 09:53:37 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 09:53:37 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 09:53:37 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 09:53:37 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 09:53:37 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 09:53:37 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 09:53:37 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 09:53:37 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 09:53:37 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:53:37 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:53:37 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:53:37 MSK 2017) 
+2017-06-23 09:53:37 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:53:38 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:53:38 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:53:38 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:53:38 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:53:38 MSK 2017) 
+2017-06-23 09:53:38 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:53:38 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:53:38 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:53:38 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:53:38 DEBUG TrailBase:125 - -- is_ready_to_start(Fri Jun 23 09:53:38 MSK 2017) 
+2017-06-23 09:53:38 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:53:38 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:57:30 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 09:57:30 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 09:57:30 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 09:57:30 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 09:57:30 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 09:57:30 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 09:57:30 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 09:57:30 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 09:57:30 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 09:57:30 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:57:30 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:57:30 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:57:31 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:57:31 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:57:31 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:57:31 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:57:31 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:57:31 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:57:31 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:57:31 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:57:31 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:58:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 09:58:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 09:58:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 09:58:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 09:58:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 09:58:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 09:58:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 09:58:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 09:58:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 09:58:16 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:58:16 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:58:16 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:58:16 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:58:16 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:58:16 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:58:16 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:58:17 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:58:17 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:58:17 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:58:17 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:58:17 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:59:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 09:59:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 09:59:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 09:59:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 09:59:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 09:59:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 09:59:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 09:59:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 09:59:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 09:59:16 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 09:59:17 DEBUG TrailManagerBase:59 - -- after do_trail_subro(). 
+2017-06-23 10:05:00 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 10:05:00 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 10:05:00 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 10:05:00 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:05:00 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:05:00 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:05:03 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:05:03 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:05:03 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:05:03 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:05:05 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:05:05 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:05:05 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:05:05 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:05:08 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:06:09 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 10:06:09 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 10:06:09 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 10:06:09 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:06:09 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:06:09 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:06:11 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:06:11 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:06:11 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:06:11 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:06:12 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:06:12 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:06:12 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:06:12 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:06:15 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:14:12 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 10:14:12 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 10:14:12 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 10:14:12 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:14:12 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:14:12 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:14:15 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:14:15 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:14:15 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:14:15 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:14:17 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:14:17 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:14:17 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:14:17 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:14:19 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:18:02 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 10:18:02 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 10:18:02 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 10:18:02 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:18:02 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:18:02 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:18:05 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:18:05 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:18:05 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:18:05 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:18:06 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:18:06 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:18:06 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:18:06 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:18:09 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:19:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 10:19:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 10:19:19 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 10:19:19 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:19:19 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:19:19 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:19:22 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:19:22 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:19:22 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:19:22 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:19:23 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:19:23 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:19:23 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:19:23 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:19:25 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:27:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 10:27:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 10:27:16 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 10:27:16 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:27:16 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:27:16 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:27:18 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:27:18 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:27:18 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:27:18 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:27:20 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:27:20 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:27:20 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:27:20 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:27:22 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:29:55 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 10:29:55 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 10:29:55 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 10:29:55 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:29:55 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:29:55 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:29:57 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:29:57 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:29:57 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:29:57 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:29:59 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:29:59 DEBUG TrailManagerBase:38 - -- before getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:29:59 DEBUG TrailManagerBase:46 - -- after  getSydateFromMaster() in launch_trail_if_ready() 
+2017-06-23 10:29:59 DEBUG TrailManagerBase:56 - -- before do_trail_subro(). 
+2017-06-23 10:30:01 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:32:44 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 10:32:44 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 10:32:44 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 10:32:47 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:32:49 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:32:51 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:33:36 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 10:33:36 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 10:33:36 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 10:33:39 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:33:40 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 10:33:42 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:30:03 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 11:30:03 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 11:30:03 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 11:30:07 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:30:10 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:30:12 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:49:49 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 11:49:49 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 11:49:49 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 11:49:52 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:49:53 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:49:55 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:52:38 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 11:52:38 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 11:52:38 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 11:52:40 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:52:43 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:52:45 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-23 11:52:56 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-23 11:52:56 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-23 11:52:56 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-23 11:52:56 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-23 11:52:56 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-23 11:52:56 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-23 11:52:56 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-23 11:52:56 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-23 11:52:56 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-25 08:34:40 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-25 08:34:40 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-25 08:34:40 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-25 08:34:43 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-25 08:34:45 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-25 08:34:48 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) При выполнении ssh сценария произошла ошибка: Auth fail
+
+2017-06-25 08:35:33 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_SERVER%,carlhost) 
+2017-06-25 08:35:33 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_MOUNT_CMD%,mount -t cifs -o username=Dima,password=1 //192.168.1.151/carlinks2 /home/share/carlink;) 
+2017-06-25 08:35:33 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%CARL_DB_PATH%,/home/share/carlink/CarlinkNG/db) 
+2017-06-25 08:35:33 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_USER%,postgres) 
+2017-06-25 08:35:33 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%POSTGRES_PWD%,1) 
+2017-06-25 08:35:33 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER%,Dima) 
+2017-06-25 08:35:33 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_USER_PWD%,1) 
+2017-06-25 08:35:33 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT%,root) 
+2017-06-25 08:35:33 DEBUG DrakonUtils:160 - -- Strings.setSubstValue(%SSH_ROOT_PWD%,Roman_mx5) 
+2017-06-26 11:21:16 DEBUG TrailSql:128 -  run() with param jdbc:postgresql://carlhost:5432/carlinkng,carl,1
+2017-06-26 11:21:16 ERROR TrailSql:143 - Ошибка при создании коннекции для выполнении SQL скрипта.
+[jdbc:postgresql://carlhost:5432/carlinkng],[carl],[1]
+org.postgresql.Driver
+Инциндент в процедуре: cb.dfs.trail.TrailSql.run()
+2017-06-26 11:21:16 ERROR TrailManagerBase:66 - -- Ошибка в launch_trail_if_ready() trail.is_ready_to_start(dt) Ошибка при создании коннекции для выполнении SQL скрипта.
+[jdbc:postgresql://carlhost:5432/carlinkng],[carl],[1]
+org.postgresql.Driver
+Инциндент в процедуре: cb.dfs.trail.TrailSql.run()
+
+2017-06-26 11:25:38 DEBUG TrailSql:126 -  run() with param jdbc:postgresql://carlhost:5432/carlinkng,carl,1

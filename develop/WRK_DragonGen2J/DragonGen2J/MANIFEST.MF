@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Rsrc-Class-Path: ./ blueprints-core-1.2.jar log4j-1.2.8.jar json-simple-1.1.jar jsch-0.1.53.jar
+Rsrc-Class-Path: ./ blueprints-core-1.2.jar log4j-1.2.8.jar json-simple-1.1.jar jsch-0.1.53.jar postgresql-9.4.1212.jre6.jar
 Class-Path: .
 Rsrc-Main-Class: ru.erv.drakongen.MainLiftDown
 Main-Class: org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader

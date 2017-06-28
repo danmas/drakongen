@@ -30,8 +30,8 @@ public class MainLiftDown {
 			
 			//base_dir = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/";  
 			//xml_file = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/some_SQL.graphml"; 
-			base_dir = "C:/YandexDisk/WORKS/pg_and_ora_transactions/";  
-			xml_file = "C:/YandexDisk/WORKS/pg_and_ora_transactions/some_SQL.graphml"; 
+			base_dir = "D:/YandexDisk/YandexDisk/WORKS/drakongen/schemes/";  
+			xml_file = "D:/YandexDisk/YandexDisk/WORKS/drakongen/schemes/test.graphml"; 
 			
 //			return;
 		}
@@ -47,14 +47,14 @@ public class MainLiftDown {
 
 		try {
 			reader.read();
-			System.out.println(" <--- Was read:" + xml_file);
+			System.out.println(" <--- was read:" + xml_file);
 			
-		for (Vertex v : graph.getVertices()) {
-		String str = "node code:"+ v.getProperty("code")+" com:"+v.getProperty("comment")
-				+" type:"+v.getProperty("type");
-		
-		System.out.println(str); 
-	}
+//		for (Vertex v : graph.getVertices()) {
+//		String str = "node code:"+ v.getProperty("code")+" com:"+v.getProperty("comment")
+//				+" type:"+v.getProperty("type");
+//		
+//		System.out.println(str); 
+//	}
 			
 		} catch (Exception e) {
 			System.err.println(" err " + e.getMessage());

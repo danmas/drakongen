@@ -130,14 +130,22 @@ public class DrakonUtils {
 		return type.contains(istype);
 	}
 	
-	
 	/**
 	 * Заполняем катпу подстановок Strings
 	 * @param node
 	 */
 	public static void fillSubst(Vertex node) {
-        logger.debug("-- Strings.fillSubst() "); 
-		String js = getCode(node);
+        //logger.debug("-- Strings.fillSubst() "); 
+        fillSubst( getCode(node));
+	}
+	
+	
+	/**
+	 * Заполняем катпу подстановок Strings
+	 * @param node
+	 */
+	public static void fillSubst(String js) {
+        //logger.debug("-- Strings.fillSubst() "); 
 		if(!Strings.isStringEmpty(js)) {
         try {
             JSONObject genreJsonObject = (JSONObject) JSONValue.parseWithException(js);
@@ -149,7 +157,7 @@ public class DrakonUtils {
             for (Object o : dataset) {
                 JSONObject jo = (JSONObject) o;
                 Strings.setSubstValue((String)jo.get("what"),(String)jo.get("to"));
-                logger.debug("-- Strings.setSubstValue("+(String)jo.get("what")+","+(String)jo.get("to")+") "); 
+                //ogger.debug("-- Strings.setSubstValue("+(String)jo.get("what")+","+(String)jo.get("to")+") "); 
                 //System.out.println(jo.get("what"));
                 //System.out.println(jo.get("to"));
             }            
@@ -157,7 +165,11 @@ public class DrakonUtils {
             e.printStackTrace();
         }
 		}
-		
+	}
+
+	public static void  fillSubstFromNode(String file_nm) {
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ :"+file_nm);
+		fillSubst(FileUtils.fileRead(file_nm,"UTF-8"));
 	}
 	
 	// --dg-- Получение комента из узла

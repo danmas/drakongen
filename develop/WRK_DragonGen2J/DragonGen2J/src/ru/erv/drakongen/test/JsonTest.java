@@ -55,7 +55,7 @@ public class JsonTest {
             
             for (Object o : dataset) {
                 JSONObject jo = (JSONObject) o;
-                System.out.println(jo.get("what"));
+                System.out.println(jo.get ("key"));
                 System.out.println(jo.get("to"));
             }            
         } catch (ParseException e) {

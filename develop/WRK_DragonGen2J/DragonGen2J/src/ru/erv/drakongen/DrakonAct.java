@@ -42,7 +42,7 @@ public final static String DI_TRAIL_INPUT_J = "TRAIL_INPUT_J";
 //private static final String BASE_DIR = "..\\..\\..\\WRK\\DG2J\\DragonGen2J\\";
 private static final String MAIN_DG_FILE = "../../../WRK/DG2J/Schemes/Main.graphml";
 Vertex in;
-
+String acts_result = "";
  
 	//--dg-- Конструктор
 	public DrakonAct() { 
@@ -100,13 +100,12 @@ Vertex node = null;
  
 				//--dg-- узел ЗАМЕНЫ?
 				if(DrakonUtils.isIconType(node,DrakonUtils.DI_SUBSTITUTES)) {
-					//--dg-- заполняем карту подстановок
-					DrakonUtils.fillSubst(node);
- 
+					//--dg-- Формируем подстановки
+					make_substitutions(node); 
 				} else {
 				}
 				}
-			//--dg-- Проходим по всем выходам ЗАПУСКА
+			//--dg-- ПО ОДНОМУ! выходам ЗАПУСКА
 			while(DrakonUtils.getOutDegree(cur_node) == 1) {
 				//--dg-- теперь текущий узел тот на который указывает выход
 				cur_node = DrakonUtils.getOutNode(cur_node,0);
@@ -147,6 +146,44 @@ for (Vertex v : graph.getVertices()) {
 			//--dg-- Запускаем graph на //--dg-- выполнение по одному
 			activate_drakon_single(graph);  
 		}
+		//--dg-- 
+		}
+	//--dg-- Формируем подстановки
+	protected void make_substitutions(Vertex node) {
+ 
+		//--dg-- переменные
+		Vertex cur_node = null;
+String file_nm;
+ 
+		//--dg-- заполняем карту подстановок
+		DrakonUtils.fillSubst(node);
+ 
+		//--dg-- Проходим по всем входам узла
+		for(int i=0;i<DrakonUtils.getInDegree(node);i++) {
+			//--dg-- текущий узел
+			cur_node = DrakonUtils.getInNode(node,i);
+ 
+			//--dg-- узел ЗАМЕНЫ?
+			if(DrakonUtils.isIconType(cur_node,DrakonUtils.DI_SUBSTITUTES)) {
+				//--dg-- заполняем карту подстановок
+				DrakonUtils.fillSubst(cur_node);
+ 
+			} else {
+				//--dg-- узел ФАЙЛ?
+				if(DrakonUtils.isIconType(cur_node,DI_FILE)) {
+					//--dg-- получаем имя входного файла со схемой
+					file_nm = DrakonUtils.getCode(cur_node); 
+					//--dg-- считаем что имя файла относительно BASE_DIR
+					file_nm = Settings.getProperty("BASE_DIR") + file_nm; 
+					//--dg-- заполняем карту подстановок из файла
+					DrakonUtils.fillSubstFromNode(file_nm);
+ 
+				} else {
+					//--dg-- узел не может быть входящим для ПОДСТАНОВКИ
+					DrakonUtils.error("Предупреждение: узел не может быть входящим для ПОДСТАНОВКИ \"" + DrakonUtils.getIconType(cur_node) + "\"   \"" + DrakonUtils.getComment(cur_node) + " \".\n"); 
+				}
+			}
+			}
 		//--dg-- 
 		}
 	//--dg-- Запускаем graph на выполнение по одному
@@ -208,33 +245,57 @@ DrakonGen2 dg = null;
 Vertex out = null;
 String result = "";
 boolean out_to_file = false; 
-		//--dg-- -psi- n:
-		DrakonUtils.debug("-psi- n: "+DrakonUtils.getComment(node)); 
-		//--dg-- тип узла
-		switch(it) {
-			//--dg-- неизвестный тип
-			default:
-				//--dg-- Неизвестный тип активности ...
-				DrakonUtils.error("Неизвестный тип активности  \"" + DrakonUtils.getIconType(node) + "\" узла  \"" + DrakonUtils.getComment(node) + " \".\n"); 
+		//--dg-- узел DG_LIFT_DOWN?
+		if(DrakonUtils.isIconType(node,DI_DG_LIFT_DOWN)) {
+			//--dg-- получаем вход который не НАЧАЛО
+			in = DrakonUtils.getInNode(node,0);
+if(DrakonUtils.isIconType(in,DrakonUtils.DI_DG_BEG)) {
+in = DrakonUtils.getInNode(node,1);
+}
+ 
+			//--dg-- на входе икона ФАЙЛ?
+			if(DrakonUtils.isIconType(in,DI_FILE)) {
+			} else {
+				//--dg-- На входе DG_LIFT_DOWN должна быть икона FILE
+				DrakonUtils.error("На входе DG_LIFT_DOWN \"" + DrakonUtils.getComment(in) + "\" должна быть икона типа FILE  !"); 
 				//--dg-- 
 				return; 
-			//--dg--  DI_SI_BEG
-			case DrakonUtils.DI_SI_BEG:
-				//--dg-- создаем новый DrakonGen
-				dg = new DrakonGen2();
+			}
+			//--dg-- try
+			try { 
+			//--dg-- получаем имя входного файла со схемой
+			file_nm = DrakonUtils.getCode(in); 
+			//--dg-- считаем что имя файла относительно BASE_DIR
+			file_nm = Settings.getProperty("BASE_DIR") + file_nm; 
+			//--dg-- читаем файл GML ридером
+			Graph graph = new TinkerGraph();
+GraphMLReader reader = new GraphMLReader(file_nm, graph);
+reader.read();
+	
  
-				//--dg-- устанавливаем текущую реальность
-				dg.setCurRelease(CURRENT_RELEASE);	
+			//--dg-- ---> Прочитали файл ...
+			System.out.println(" ---> Прочитали файл "+ file_nm);
+
  
-				//--dg-- ---> Текущая реальность
-				DrakonUtils.message("--->Текущая реальность из Начало: " + CURRENT_RELEASE); 
-				//--dg-- Разбираем силуэт
-				dg.parseSiluet(node);
+			//--dg-- создаем новый DrakonGen
+			dg = new DrakonGen2();
  
-				//--dg-- break
-				break; 
-			//--dg--  DG_LIFT_UP
-			case DI_DG_LIFT_UP:
+			//--dg-- устанавливаем текущую реальность
+			dg.setCurRelease(CURRENT_RELEASE);	
+ 
+			//--dg-- производим генерацию кода из кодограммы
+			dg.parse_drakon(graph);
+ 
+			//--dg-- catch
+			} catch(Exception e) {
+	System.err.println("Error on file: "+ file_nm + " " +e.getMessage());
+	e.printStackTrace();
+	return;
+} 
+ 
+		} else {
+			//--dg-- узел DG_LIFT_UP?
+			if(DrakonUtils.isIconType(node,DI_DG_LIFT_UP)) {
 				//--dg-- получаем вход который не НАЧАЛО
 				in = DrakonUtils.getInNode(node,0);
 if(DrakonUtils.isIconType(in,DrakonUtils.DI_DG_BEG)) {
@@ -291,98 +352,47 @@ in = DrakonUtils.getInNode(node,1);
 	return;
 } 
  
-				//--dg-- break
-				break; 
-			//--dg--  DG_LIFT_DOWN
-			case DI_DG_LIFT_DOWN:
-				//--dg-- получаем вход который не НАЧАЛО
-				in = DrakonUtils.getInNode(node,0);
+			} else {
+				//--dg-- узел DI_TRAIL_ACTION?
+				if(DrakonUtils.isIconType(node,DI_TRAIL_ACTION)) {
+					//--dg-- получаем вход который не НАЧАЛО
+					in = DrakonUtils.getInNode(node,0);
 if(DrakonUtils.isIconType(in,DrakonUtils.DI_DG_BEG)) {
 in = DrakonUtils.getInNode(node,1);
 }
  
-				//--dg-- на входе икона ФАЙЛ?
-				if(DrakonUtils.isIconType(in,DI_FILE)) {
-				} else {
-					//--dg-- На входе DG_LIFT_DOWN должна быть икона FILE
-					DrakonUtils.error("На входе DG_LIFT_DOWN \"" + DrakonUtils.getComment(in) + "\" должна быть икона типа FILE  !"); 
-					//--dg-- 
-					return; 
-				}
-				//--dg-- try
-				try { 
-				//--dg-- получаем имя входного файла со схемой
-				file_nm = DrakonUtils.getCode(in); 
-				//--dg-- считаем что имя файла относительно BASE_DIR
-				file_nm = Settings.getProperty("BASE_DIR") + file_nm; 
-				//--dg-- читаем файл GML ридером
-				Graph graph = new TinkerGraph();
-GraphMLReader reader = new GraphMLReader(file_nm, graph);
-reader.read();
-	
- 
-				//--dg-- ---> Прочитали файл ...
-				System.out.println(" ---> Прочитали файл "+ file_nm);
-
- 
-				//--dg-- создаем новый DrakonGen
-				dg = new DrakonGen2();
- 
-				//--dg-- устанавливаем текущую реальность
-				dg.setCurRelease(CURRENT_RELEASE);	
- 
-				//--dg-- производим генерацию кода из кодограммы
-				dg.parse_drakon(graph);
- 
-				//--dg-- catch
-				} catch(Exception e) {
-	System.err.println("Error on file: "+ file_nm + " " +e.getMessage());
-	e.printStackTrace();
-	return;
-} 
- 
-				//--dg-- break
-				break; 
-			//--dg--  DI_TRAIL_ACTION
-			case DI_TRAIL_ACTION:
-				//--dg-- получаем вход который не НАЧАЛО
-				in = DrakonUtils.getInNode(node,0);
-if(DrakonUtils.isIconType(in,DrakonUtils.DI_DG_BEG)) {
-in = DrakonUtils.getInNode(node,1);
-}
- 
-				//--dg-- на входе икона TRAIL_INPUT_J?
-				if(DrakonUtils.isIconType(in,DI_TRAIL_INPUT_J)) {
-				} else {
-					//--dg-- На входе TRAIL_ACTION должна быть икона TRAIL_INPUT_J
-					DrakonUtils.error("На входе TRAIL_ACTION \"" + DrakonUtils.getComment(in) + "\" должна быть икона типа TRAIL_INPUT_J  !"); 
-					//--dg-- 
-					return; 
-				}
-				//--dg-- получаем выход
-				out = DrakonUtils.getOutNode(node,0); 
-				//--dg-- на выходе икона ФАЙЛ?
-				if(DrakonUtils.isIconType(out,DI_FILE)) {
-					//--dg-- выаодить рез. в файл
-					out_to_file 
-					//--dg-- true
-					= true; 
-				} else {
-					//--dg-- выаодить рез. в файл
-					out_to_file 
-					//--dg-- false
-					= false; 
-				}
-				//--dg-- try
-				try { 
-				//--dg-- input_j =//--dg-- получаем входной json
-				String input_j = DrakonUtils.getCode(in); 
-				//--dg-- получаем имя выходного файла кодограммы
-				file_nm = DrakonUtils.getCode(out); 
-				//--dg-- считаем что имя файла относительно BASE_DIR
-				file_nm = Settings.getProperty("BASE_DIR") + file_nm; 
-				//--dg-- ВЫПОЛНЯЕМ
-				 try {
+					//--dg-- на входе икона TRAIL_INPUT_J?
+					if(DrakonUtils.isIconType(in,DI_TRAIL_INPUT_J)) {
+					} else {
+						//--dg-- На входе TRAIL_ACTION должна быть икона TRAIL_INPUT_J
+						DrakonUtils.error("На входе TRAIL_ACTION \"" + DrakonUtils.getComment(in) + "\" должна быть икона типа TRAIL_INPUT_J  !"); 
+						//--dg-- 
+						return; 
+					}
+					//--dg-- получаем выход
+					out = DrakonUtils.getOutNode(node,0); 
+					//--dg-- на выходе икона ФАЙЛ?
+					if(DrakonUtils.isIconType(out,DI_FILE)) {
+						//--dg-- выаодить рез. в файл
+						out_to_file 
+						//--dg-- true
+						= true; 
+						//--dg-- получаем имя выходного файла кодограммы
+						file_nm = DrakonUtils.getCode(out); 
+						//--dg-- считаем что имя файла относительно BASE_DIR
+						file_nm = Settings.getProperty("BASE_DIR") + file_nm; 
+					} else {
+						//--dg-- выаодить рез. в файл
+						out_to_file 
+						//--dg-- false
+						= false; 
+					}
+					//--dg-- try
+					try { 
+					//--dg-- input_j =//--dg-- получаем входной json
+					String input_j = DrakonUtils.getCode(in); 
+					//--dg-- ВЫПОЛНЯЕМ
+					 try {
 	 cb.dfs.trail.TrailManager trail = new cb.dfs.trail.TrailManager();
 	result = trail.launchTrailFromJstring(input_j);
 } catch (Exception ex) {
@@ -390,30 +400,56 @@ in = DrakonUtils.getInNode(node,1);
 	System.err.println("---" + ex.getMessage());
 } 
  
-				//--dg-- выаодить результат в файл?
-				if(out_to_file) {
-					//--dg-- записываем текст в выходной файл кодограммы
-					FileUtils.fileWrite(file_nm, result);
+					//--dg-- выводить результат в файл?
+					if(out_to_file) {
+						//--dg-- записываем текст в выходной файл кодограммы
+						FileUtils.fileWrite(file_nm, result);
  
-				} else {
-					//--dg-- РЕЗУЛЬТАТ ВЫПОЛНЕНИЯ..
-					System.out.println(" ---> Записали файл "+ file_nm);
-
+					} else {
+						//--dg-- добавляем текст в общий результирующий текст
+						acts_result += result;
  
-				}
-				//--dg-- ---> Записали файл ...
-				System.out.println(" ---> Записали файл "+ file_nm);
-
- 
-				//--dg-- catch
-				} catch(Exception e) {
+					}
+					//--dg-- catch
+					} catch(Exception e) {
 	System.err.println("Error on file: "+ file_nm + " " +e.getMessage());
 	e.printStackTrace();
 	return;
 } 
  
-				//--dg-- break
-				break; 
+				} else {
+					//--dg-- узел DI_FILE?
+					if(DrakonUtils.isIconType(node,DI_FILE)) {
+						//--dg-- получаем имя выходного файла кодограммы
+						file_nm = DrakonUtils.getCode(node); 
+						//--dg-- считаем что имя файла относительно BASE_DIR
+						file_nm = Settings.getProperty("BASE_DIR") + file_nm; 
+						//--dg-- записываем суммарный результирующий текст в выходной файл кодограммы
+						FileUtils.fileWrite(file_nm, acts_result);
+ 
+					} else {
+						//--dg-- узел DI_SI_BEG?
+						if(DrakonUtils.isIconType(node,DrakonUtils.DI_SI_BEG)) {
+							//--dg-- создаем новый DrakonGen
+							dg = new DrakonGen2();
+ 
+							//--dg-- устанавливаем текущую реальность
+							dg.setCurRelease(CURRENT_RELEASE);	
+ 
+							//--dg-- ---> Текущая реальность
+							DrakonUtils.message("--->Текущая реальность из Начало: " + CURRENT_RELEASE); 
+							//--dg-- Разбираем силуэт
+							dg.parseSiluet(node);
+ 
+						} else {
+							//--dg-- Неизвестный тип активности ...
+							DrakonUtils.error("Неизвестный тип активности  \"" + DrakonUtils.getIconType(node) + "\" узла  \"" + DrakonUtils.getComment(node) + " \".\n"); 
+							//--dg-- 
+							return; 
+						}
+					}
+				}
+			}
 		}
 		//--dg-- 
 		}

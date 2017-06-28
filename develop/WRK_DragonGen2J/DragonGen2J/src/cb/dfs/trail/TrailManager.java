@@ -35,7 +35,7 @@ public class TrailManager extends TrailManagerBase {
 	 */
 	protected boolean launch_trail_if_ready(TrailBase trail, String scenario_name,
 			int odi_session_id) throws Exception {
-		logger.debug("-- before getSydateFromMaster() in launch_trail_if_ready() ");
+		//logger.debug("-- before getSydateFromMaster() in launch_trail_if_ready() ");
 		trail.debug(getDebugInfo()+"-- before getSydateFromMaster() in launch_trail_if_ready() ");
 		Date dt = getSydateFromMaster(trail);
 		if(dt==null) {
@@ -43,7 +43,7 @@ public class TrailManager extends TrailManagerBase {
 			trail.error(getDebugInfo()+"Ошибка! getSydateFromMaster вернул null.");
 			return false;
 		}	
-		logger.debug("-- after  getSydateFromMaster() in launch_trail_if_ready() ");
+		//logger.debug("-- after  getSydateFromMaster() in launch_trail_if_ready() ");
 		trail.debug(getDebugInfo()+"-- after  getSydateFromMaster() in launch_trail_if_ready() ");
 		//System.out.println("-- DEBUG -- Check ready to start in launch_trail_if_ready() ");
 		if(trail==null) {
@@ -53,10 +53,10 @@ public class TrailManager extends TrailManagerBase {
 		}
 		try {	
 			if(trail.is_ready_to_start(dt)) {
-				logger.debug("-- before do_trail_subro(). ");
+				//logger.debug("-- before do_trail_subro(). ");
 				trail.debug(getDebugInfo()+"-- before do_trail_subro(). ");
 				do_trail_subro(trail, scenario_name, odi_session_id);
-				logger.debug("-- after do_trail_subro(). ");
+				//logger.debug("-- after do_trail_subro(). ");
 				trail.debug(getDebugInfo()+"-- after do_trail_subro(). ");
 				return true;
 			} else {
@@ -81,13 +81,13 @@ public class TrailManager extends TrailManagerBase {
 	
 	public void launch_trail_if_ready(String trail_key, String scenario_name,
 			int odi_session_id, boolean debug) throws Exception {
-			logger.debug("-- before read(trail_key) --");
+			//logger.debug("-- before read(trail_key) --");
 			TrailBase trail = read(trail_key);
 			trail.clearRetStrs();
 			if(debug) {
 				trail.setDebugOn();
 			}
-			logger.debug("-- after read(trail_key) --");
+			//logger.debug("-- after read(trail_key) --");
 			trail.debug(getDebugInfo()+"-- after read(trail_key) --");
 			launch_trail_if_ready(trail, scenario_name, odi_session_id);
 	}
@@ -107,38 +107,38 @@ public class TrailManager extends TrailManagerBase {
 	 */
 	public void do_trail_subro(TrailBase trail, String scenario_name,
 			int odi_session_id) throws Exception {
-		//logger.debug("-- do_trail_subro 1 -- ");
+		////logger.debug("-- do_trail_subro 1 -- ");
 		trail.debug(getDebugInfo()+"-- do_trail_subro 1 -- ");
 		trail.setStatusRunning();
-		//logger.debug("-- do_trail_subro 2 -- ");
+		////logger.debug("-- do_trail_subro 2 -- ");
 		trail.debug(getDebugInfo()+"-- do_trail_subro 2 -- ");
 		//!!! Убрал в launch_trail_if_ready чтобы не чистились строки отладки. 
 		//trail.clearRetStrs();
-		//logger.debug("-- do_trail_subro 3 -- ");
+		////logger.debug("-- do_trail_subro 3 -- ");
 		trail.debug(getDebugInfo()+"-- do_trail_subro 3 -- ");
 		//trail.add_observable_object(getConnection(), scenario_name, odi_session_id);
-		//logger.debug("-- do_trail_subro 4 -- ");
+		////logger.debug("-- do_trail_subro 4 -- ");
 		trail.debug(getDebugInfo()+"-- do_trail_subro 4 -- ");
 		//trail.overwrite(getConnection());
-		//logger.debug("-- do_trail_subro 5 -- ");
+		////logger.debug("-- do_trail_subro 5 -- ");
 		trail.debug(getDebugInfo()+"-- do_trail_subro 5 -- ");
 		//getConnection().commit();
 		try {
-			//logger.debug("-- do_trail_subro 6 -- ");
+			////logger.debug("-- do_trail_subro 6 -- ");
 			trail.debug(getDebugInfo()+"-- do_trail_subro 6 -- ");
 			do_trail(trail);
-			//logger.debug("-- do_trail_subro 7 -- ");
+			////logger.debug("-- do_trail_subro 7 -- ");
 			trail.debug(getDebugInfo()+"-- do_trail_subro 7 -- ");
 		} catch(Exception ex) {
 			throw new Exception(ex.getMessage());
 		} finally {
-			//logger.debug("-- do_trail_subro 8 -- ");
+			////logger.debug("-- do_trail_subro 8 -- ");
 			trail.debug(getDebugInfo()+"-- do_trail_subro 8 -- ");
 			//trail.overwrite(getConnection());
-			//logger.debug("-- do_trail_subro 9 -- ");
+			////logger.debug("-- do_trail_subro 9 -- ");
 			trail.debug(getDebugInfo()+"-- do_trail_subro 9 -- ");
 			//trail.add_observable_object(getConnection(), scenario_name, odi_session_id);
-			//logger.debug("-- do_trail_subro 10 -- ");
+			////logger.debug("-- do_trail_subro 10 -- ");
 			trail.debug(getDebugInfo()+"-- do_trail_subro 10 -- ");
 			//getConnection().commit();
 		}
@@ -153,9 +153,9 @@ public class TrailManager extends TrailManagerBase {
             
             TrailBase trail = read((String)(jo.get("type")));
             trail.updateParamsFromJ(jo);
-			System.out.println("------------- before  launch_trail_if_ready() ");
+			//System.out.println("------------- before  launch_trail_if_ready() ");
 			launch_trail_if_ready(trail, "scenario_name", (int) (Math.random() * 1000.));
-			System.out.println("------------- after  launch_trail_if_ready() ");
+			//System.out.println("------------- after  launch_trail_if_ready() ");
 			return trail.getRetOutStr();
         } catch (Exception e) {
             e.printStackTrace();
@@ -182,7 +182,7 @@ public class TrailManager extends TrailManagerBase {
 		try {
 			//tm = new TrailManagerSubro(args[1], args[2], args[3]);
 			tm = new TrailManager();
-			logger.debug("-- tm -- :"+tm);
+			//logger.debug("-- tm -- :"+tm);
 		} catch(Exception e) {
 			System.err.println("Error:"+e.getMessage());
 			return;
@@ -209,12 +209,6 @@ public class TrailManager extends TrailManagerBase {
 		System.out.println(" Status: "+tb.getStatus()); 
 		System.out.println(" Out msg: "+tb.getRetOutStr()); 
 		System.out.println(" Err msg: "+tb.getRetErrStr()); 
-//		try {
-//			tm.getConnection().close();
-//		} catch(Exception e) {
-//			System.err.println("Error:"+e.getMessage());
-//			return;
-//		}
 	}
 	
 	

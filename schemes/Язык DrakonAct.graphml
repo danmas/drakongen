@@ -2533,6 +2533,29 @@
         </y:ShapeNode>
       </data>
     </node>
+    <node id="n104">
+      <data key="d4"><![CDATA[SUBSTITUTES,CODE_FROM_LABEL]]></data>
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="127.17283947663543" width="260.7947340079022" x="101.1179038149615" y="-298.93231668841685"/>
+          <y:Fill color="#FFFF000C" color2="#FFFF001E" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_size" configuration="CroppingLabel" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="127.17283947663543" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="260.7947340079022" x="0.0" y="0.0">{"type":"SUBSTITUTES"
+,"description":"Настройки на сервере ДОМА"
+,"replacements":"%CARL_SERVER%":"carlhost","%DB_PATH%":"/home/share
+&lt;;&gt;%SSH_USER%&lt;=&gt;Dima
+&lt;;&gt;"%SSH_USER_PWD%","1"}
+]}<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
     <edge id="e0" source="n40" target="n41">
       <data key="d10">
         <y:PolyLineEdge>

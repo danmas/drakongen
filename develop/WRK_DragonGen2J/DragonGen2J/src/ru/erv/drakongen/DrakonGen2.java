@@ -370,32 +370,6 @@ if(comment != null)
 		}
 		//--dg-- тип узла
 		switch(di_type) {
-			//--dg--  КОНЕЦ СБОРКИ
-			case DI_COMPIL_END:
-				//--dg--  КОНЕЦ СИЛУЭТА(SI_END)
-				case DI_SI_END:
-					//--dg-- добавляем комент и код в результат
-					if (comment != null)
-	res_str += spaces +commentPrefix + comment + "\n";
-if (code != null)
-res_str += spaces +code + "\n"; 
-					//--dg-- тек. узел
-					return cur_node; 
-			//--dg-- неизвестный тип
-			default:
-				//--dg-- Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ В НАЧАЛЬНОЙ ГРУППЕ
-				str = "Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ \"" + comment + "\" ("+ di_type + ") В НАЧАЛЬНОЙ ГРУППЕ. !n";
-DrakonUtils.error(str); 
-				//--dg-- break
-				break; 
-			//--dg--  НАЧАЛО ПРОЦЕДУРЫ
-			case DI_PROC_BEG:
-				//--dg--  НАЧАЛО ШАМПУРА(SH_BEG)
-				case DI_SH_BEG:
-					//--dg--  ЧАСТЬ СБОРКИ
-					case DI_SUB_COMPIL:
-						//--dg-- тек. узел
-						return cur_node; 
 			//--dg--  ДЕСТВИЕ(ACTION)
 			case DI_ACTION:
 				//--dg--  ДЕСТВИЕ(AC)
@@ -437,6 +411,32 @@ if(code != null)
 						DrakonUtils.error(str); 
 						//--dg-- тек. узел
 						return cur_node; 
+			//--dg--  КОНЕЦ СБОРКИ
+			case DI_COMPIL_END:
+				//--dg--  КОНЕЦ СИЛУЭТА(SI_END)
+				case DI_SI_END:
+					//--dg-- добавляем комент и код в результат
+					if (comment != null)
+	res_str += spaces +commentPrefix + comment + "\n";
+if (code != null)
+res_str += spaces +code + "\n"; 
+					//--dg-- тек. узел
+					return cur_node; 
+			//--dg--  НАЧАЛО ПРОЦЕДУРЫ
+			case DI_PROC_BEG:
+				//--dg--  НАЧАЛО ШАМПУРА(SH_BEG)
+				case DI_SH_BEG:
+					//--dg--  ЧАСТЬ СБОРКИ
+					case DI_SUB_COMPIL:
+						//--dg-- тек. узел
+						return cur_node; 
+			//--dg-- неизвестный тип
+			default:
+				//--dg-- Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ В НАЧАЛЬНОЙ ГРУППЕ
+				str = "Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ \"" + comment + "\" ("+ di_type + ") В НАЧАЛЬНОЙ ГРУППЕ. !n";
+DrakonUtils.error(str); 
+				//--dg-- break
+				break; 
 		}
 		//--dg-- null
 		return null;
@@ -815,11 +815,11 @@ di_type = DrakonUtils.getIconType(cur_node_d);
 					//--dg-- терминатор
 					return term_yes; 
 				}
-			//--dg--  DEFAULT
-			case DI_DEFAULT:
-				//--dg-- записываем default выражение в результат
-				res_str += spaces +commentPrefix + comment + "\n";
-res_str += spaces +"default:\n"; 
+			//--dg--  CASE
+			case DI_CASE:
+				//--dg-- записываем case выражение в результат
+				res_str += spaces +commentPrefix+" " + comment + "\n";
+res_str += spaces +"case " + code + ":\n"; 
 				//--dg-- делаем текущим выход.узел
 				cur_node = DrakonUtils.getOutNode(cur_node,0);  
 				//--dg-- term_yes
@@ -828,40 +828,6 @@ res_str += spaces +"default:\n";
 				= parceNext(cur_node, _level + 1); 
 				//--dg-- терминатор
 				return term_yes; 
-			//--dg--  КОНЕЦ ЦИКЛА(FOR_END)
-			case DI_FOR_END:
-				//--dg-- код есть?
-				if(code != null && !code.equals("")) {
-					//--dg-- добавляем комент и код в результат
-					if (comment != null)
-	res_str += spaces + commentPrefix + comment + "\n";
-if (code != null)
-res_str += spaces +code + "\n"; 
-				} else {
-					//--dg-- добавляем "}"
-					res_str += spaces + "}" + "\n"; 
-				}
-				//--dg-- тек. узел
-				return cur_node; 
-			//--dg--  КОНЕЦ СБОРКИ
-			case DI_COMPIL_END:
-				//--dg--  КОНЕЦ СИЛУЭТА(SI_END)
-				case DI_SI_END:
-					//--dg-- добавляем комент и код в результат
-					if (comment != null)
-	res_str += spaces + commentPrefix + comment + "\n";
-if (code != null)
-res_str += spaces +code + "\n"; 
-					//--dg-- тек. узел
-					return cur_node; 
-			//--dg-- неизвестный тип
-			default:
-				//--dg-- формируем сообщение о ошибке
-				str = "Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ \"" + comment + "\" ("+ di_type + ")!n"; 
-				//--dg-- Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ ...
-				DrakonUtils.error(str); 
-				//--dg-- break
-				break; 
 			//--dg--  УСЛОВИЕ(IF)
 			case DI_IF:
 				//--dg-- переменные
@@ -996,17 +962,6 @@ term_yes = term_no;
 					//--dg-- терминатор
 					return term_yes; 
 				}
-			//--dg--  КОНЕЦ ПРОЦЕДУРЫ
-			case DI_PROC_END:
-				//--dg--  КОНЕЦ ШАМПУРА(SH_END)
-				case DI_SH_END:
-					//--dg-- добавляем комент и код в результат
-					if (comment != null)
-	res_str += spaces + commentPrefix + comment + "\n";
-if (code != null)
-res_str += spaces +code + "\n"; 
-					//--dg-- тек. узел
-					return cur_node; 
 			//--dg--  НАЧАЛО ЦИКЛА(FOR_BEG)
 			case DI_FOR_BEG:
 				//--dg-- записываем комментарии  и код в результат
@@ -1065,12 +1020,6 @@ res_str += spaces + code +"\n";
 				 = parceNext(cur_node, _level); 
 				//--dg-- node
 				return node; 
-			//--dg--  НАЧАЛО ПРОЦЕДУРЫ
-			case DI_PROC_BEG:
-				//--dg--  НАЧАЛО ШАМПУРА(SH_BEG)
-				case DI_SH_BEG:
-					//--dg-- тек. узел
-					return cur_node; 
 			//--dg--  ДЕСТВИЕ(ACTION)
 			case DI_ACTION:
 				//--dg--  ДЕСТВИЕ(AC)
@@ -1120,11 +1069,37 @@ if(code != null)
 										DrakonUtils.error(str); 
 										//--dg-- тек. узел
 										return cur_node; 
-			//--dg--  CASE
-			case DI_CASE:
-				//--dg-- записываем case выражение в результат
-				res_str += spaces +commentPrefix+" " + comment + "\n";
-res_str += spaces +"case " + code + ":\n"; 
+			//--dg--  КОНЕЦ ЦИКЛА(FOR_END)
+			case DI_FOR_END:
+				//--dg-- код есть?
+				if(code != null && !code.equals("")) {
+					//--dg-- добавляем комент и код в результат
+					if (comment != null)
+	res_str += spaces + commentPrefix + comment + "\n";
+if (code != null)
+res_str += spaces +code + "\n"; 
+				} else {
+					//--dg-- добавляем "}"
+					res_str += spaces + "}" + "\n"; 
+				}
+				//--dg-- тек. узел
+				return cur_node; 
+			//--dg--  КОНЕЦ СБОРКИ
+			case DI_COMPIL_END:
+				//--dg--  КОНЕЦ СИЛУЭТА(SI_END)
+				case DI_SI_END:
+					//--dg-- добавляем комент и код в результат
+					if (comment != null)
+	res_str += spaces + commentPrefix + comment + "\n";
+if (code != null)
+res_str += spaces +code + "\n"; 
+					//--dg-- тек. узел
+					return cur_node; 
+			//--dg--  DEFAULT
+			case DI_DEFAULT:
+				//--dg-- записываем default выражение в результат
+				res_str += spaces +commentPrefix + comment + "\n";
+res_str += spaces +"default:\n"; 
 				//--dg-- делаем текущим выход.узел
 				cur_node = DrakonUtils.getOutNode(cur_node,0);  
 				//--dg-- term_yes
@@ -1133,10 +1108,35 @@ res_str += spaces +"case " + code + ":\n";
 				= parceNext(cur_node, _level + 1); 
 				//--dg-- терминатор
 				return term_yes; 
+			//--dg-- неизвестный тип
+			default:
+				//--dg-- формируем сообщение о ошибке
+				str = "Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ \"" + comment + "\" ("+ di_type + ")!n"; 
+				//--dg-- Ошибка! НЕИЗВЕСТНЫЙ ТИП ИКОНЫ ...
+				DrakonUtils.error(str); 
+				//--dg-- break
+				break; 
+			//--dg--  КОНЕЦ ПРОЦЕДУРЫ
+			case DI_PROC_END:
+				//--dg--  КОНЕЦ ШАМПУРА(SH_END)
+				case DI_SH_END:
+					//--dg-- добавляем комент и код в результат
+					if (comment != null)
+	res_str += spaces + commentPrefix + comment + "\n";
+if (code != null)
+res_str += spaces +code + "\n"; 
+					//--dg-- тек. узел
+					return cur_node; 
 			//--dg--  КОНЕЦ УСЛОВИЯ(EI)
 			case DI_EI:
 				//--dg-- тек. узел
 				return cur_node; 
+			//--dg--  НАЧАЛО ПРОЦЕДУРЫ
+			case DI_PROC_BEG:
+				//--dg--  НАЧАЛО ШАМПУРА(SH_BEG)
+				case DI_SH_BEG:
+					//--dg-- тек. узел
+					return cur_node; 
 		}
 		//--dg-- null
 		return null;
@@ -1390,6 +1390,10 @@ DrakonUtils.error(str);
 			} else {
 				//--dg-- тип узла
 				switch(di_type) {
+					//--dg-- другой тип
+					default:
+						//--dg-- break
+						break; 
 					//--dg--  ЧАСТЬ СБОРКИ
 					case DI_SUB_COMPIL:
 						//--dg-- выходных узлов 2?
@@ -1432,10 +1436,6 @@ DrakonUtils.error(str);
 							//--dg-- фальшь
 							return false; 
 						}
-						//--dg-- break
-						break; 
-					//--dg-- другой тип
-					default:
 						//--dg-- break
 						break; 
 					//--dg--  НАЧАЛО СИЛУЭТА

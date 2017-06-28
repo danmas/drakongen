@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="C:\ERV\eclipse\eclipse\jre" version="1.8.0_91">
+<bootpath>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\resources.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\rt.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\sunrsasign.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\jsse.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\jce.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\charsets.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\jfr.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\ext"/>
+<entry path="C:\windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\ERV\eclipse\eclipse" version="1.8.0_91">
+<bootpath>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\resources.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\rt.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\sunrsasign.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\jsse.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\jce.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\charsets.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\jfr.jar"/>
+<entry path="C:\ERV\eclipse\eclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\ext"/>
+<entry path="C:\windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\ERV\eclipse\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="C:\Program Files\Java\jre1.8.0_91" version="1.8.0_91">
 <bootpath>
 <entry path="C:\Program Files\Java\jre1.8.0_91\lib\resources.jar"/>
@@ -38,7 +76,7 @@
 <entry path="C:\ERV\eclipse\luna-graph\eclipse\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="E:\ERV\eclipse\Working\luna-graf\eclipse\jre" version="1.7.0_25">
+<libraryInfo home="E:\ERV\eclipse\Working\luna-graf\eclipse" version="1.7.0_25">
 <bootpath>
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\resources.jar"/>
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\rt.jar"/>
@@ -57,7 +95,7 @@
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="E:\ERV\eclipse\Working\luna-graf\eclipse" version="1.7.0_25">
+<libraryInfo home="E:\ERV\eclipse\Working\luna-graf\eclipse\jre" version="1.7.0_25">
 <bootpath>
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\resources.jar"/>
 <entry path="E:\ERV\eclipse\Working\luna-graf\eclipse\jre\lib\rt.jar"/>
