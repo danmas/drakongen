@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 
 import cb.dfs.trail.common.Constants;
+import cb.dfs.trail.utils.Rs2Json;
 import oracle.jdbc.driver.OracleDriver;
 
 public class TrailSql extends TrailBase {
@@ -26,7 +27,9 @@ public class TrailSql extends TrailBase {
 			trailSubroManager = new TrailManager();
 
 			TrailSql trail = new TrailSql("RDAgent", " SQL Test ", "Авто тест SQL Test"
-					, "select '1'", "jdbc:postgresql://carlhost:5432/carlinkng", "carl", "1"
+					//, "select '1'"
+					, "select count(*) from users"
+					, "jdbc:postgresql://carlhost:5432/carlinkng", "carl", "1"
 					, "50", "10","0");
 			
 			//trail.overwrite(trailSubroManager.getConnection());
@@ -120,9 +123,64 @@ public class TrailSql extends TrailBase {
 		this.script = script;
 	}
 
-
+	
 	@Override
 	public void run() {
+		logger.debug(" run() with param "+jdbc_url+","+jdbc_user+","+jdbc_auth);
+			Connection conn = null;
+			try {
+				if(jdbc_url.indexOf("postgresql")>0) {
+					// jdbc:postgresql://host:port/database
+					//Class.forName("org.postgresql.Driver");
+					DriverManager.registerDriver(new org.postgresql.Driver());
+				} else { // Oracle
+					DriverManager.registerDriver(new OracleDriver());
+				}
+				conn = DriverManager.getConnection(jdbc_url, jdbc_user, jdbc_auth);
+			} catch (Exception ex) {
+				String str = "Ошибка при создании коннекции для выполнении SQL скрипта.\n"
+						+ "["+jdbc_url+"],["+jdbc_user+"],[jdbc_auth]\n"
+						+ ex.getMessage()
+						+ "\nИнциндент в процедуре: cb.dfs.trail.TrailSql.run()";
+				logger.error(str);
+				addRetErrStr(str);
+				setStatusError();
+				return;
+			}
+			
+			//Statement stmt = null;
+			try {
+				String str = Rs2Json.select2json(conn, script);
+
+				addRetOutStr(str);
+				return;
+			} catch (SQLException se) {
+				String str = "Ошибка при выполнении скрипта: "+script+"\n" + se.getMessage()
+						+ "\n"
+						+ "Инциндент в процедуре: cb.dfs.trail.TrailSql.run()";
+				addRetErrStr(str);
+				logger.error(str);
+				setStatusError();
+			} catch (Exception e) {
+				String str = "Ошибка при выполнении скрипта: "+script+"\n" + e.getMessage()
+						+ "\n"
+						+ "Инциндент в процедуре: cb.dfs.trail.TrailSql.run()";
+				addRetErrStr(str);
+				logger.error(str);
+				setStatusError();
+			} finally {
+//				try { if (stmt != null)
+//						stmt.close();
+//				} catch (SQLException se2) {}
+				try { if (conn != null)
+						conn.close();
+				} catch (SQLException se) {se.printStackTrace();}
+			}
+	}
+	
+
+	//@Override
+	public void run2() {
 		logger.debug(" run() with param "+jdbc_url+","+jdbc_user+","+jdbc_auth);
 			Connection conn = null;
 			try {

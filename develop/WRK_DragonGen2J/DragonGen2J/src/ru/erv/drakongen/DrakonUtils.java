@@ -105,7 +105,7 @@ public class DrakonUtils {
 		return type;
 	}
 
-	// --dg-- Получение типа иконы узла
+	// --dg-- Получение типа иконы узла теперь за ваычетом CODE_FROM_LABEL и запятых
 	public static String getIconType(Vertex node) {
 		// --dg-- получаем иконый тип
 		if (node == null)
@@ -114,7 +114,8 @@ public class DrakonUtils {
 		if (type == null)
 			type = "";
 		// --dg-- тип
-		return type;
+		return type.replaceAll("CODE_FROM_LABEL","").replaceAll(",","") ; //-- ERV!!!
+		//	return type;
 	}
 
 	// --dg-- Получение типа иконы узла

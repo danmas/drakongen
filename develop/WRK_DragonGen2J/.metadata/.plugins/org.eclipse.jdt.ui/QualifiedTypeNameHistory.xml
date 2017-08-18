@@ -23,4 +23,5 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="cb.dfs.trail.utils.Strings"/>
 <fullyQualifiedTypeName name="ru.erv.drakongen.utils.FileUtils"/>
+<fullyQualifiedTypeName name="cb.dfs.trail.utils.Rs2Json"/>
 </qualifiedTypeNameHistroy>

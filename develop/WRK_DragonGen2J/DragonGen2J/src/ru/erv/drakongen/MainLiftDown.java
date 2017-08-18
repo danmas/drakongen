@@ -9,6 +9,8 @@ import com.tinkerpop.blueprints.pgm.Graph;
 import com.tinkerpop.blueprints.pgm.Vertex;
 import com.tinkerpop.blueprints.pgm.impls.tg.TinkerGraph;
 
+import cb.dfs.trail.utils.Strings;
+
 public class MainLiftDown {
 
 	/**
@@ -24,38 +26,38 @@ public class MainLiftDown {
 			xml_file = args[1];
 			
 		} else {
-//			System.err.println("Должно быть два аргумента! Базовый каталог и файл со схемой.");
+			System.err.println("Должно быть два аргумента! Базовый каталог и файл со схемой.");
 //			System.err.println("Error. Must be two arguments!");
-//			System.err.println("java -jar drakongen.jar <base dir> <schema file>");
+			System.err.println("java -jar drakongen.jar <base dir> <schema file>");
+			return;
 			
 			//base_dir = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/";  
 			//xml_file = "D:/YandexDisk/YandexDisk/WORKS/pg_and_ora_transactions/some_SQL.graphml"; 
-			base_dir = "D:/YandexDisk/YandexDisk/WORKS/drakongen/schemes/";  
-			xml_file = "D:/YandexDisk/YandexDisk/WORKS/drakongen/schemes/test.graphml"; 
-			
-//			return;
+			//base_dir = "D:/YandexDisk/YandexDisk/WORKS/drakongen/schemes/";  
+			//xml_file = "D:/YandexDisk/YandexDisk/WORKS/drakongen/schemes/test.graphml"; 
 		}
 		System.out.println("Базовый каталог:"+base_dir+" Файл со схемой:"+xml_file);
-		  
+		
 		DrakonAct da = new DrakonAct();
 		Graph graph = new TinkerGraph();
 
 		Settings.setDebug(false);
 		Settings.setProperty("BASE_DIR", base_dir); //BASE_DIR);
 		
+		//-- устанавливаем базовую директорию в подстановки 
+        Strings.setSubstValue("%BASE_DIR%",base_dir);
+
 		GraphMLReader reader = new GraphMLReader(xml_file, graph);
 
 		try {
 			reader.read();
 			System.out.println(" <--- was read:" + xml_file);
 			
-//		for (Vertex v : graph.getVertices()) {
-//		String str = "node code:"+ v.getProperty("code")+" com:"+v.getProperty("comment")
-//				+" type:"+v.getProperty("type");
-//		
-//		System.out.println(str); 
-//	}
-			
+			//for (Vertex v : graph.getVertices()) {
+			//		String str = "node code:"+ v.getProperty("code")+" com:"+v.getProperty("comment")
+			//				+" type:"+v.getProperty("type");
+			//		System.out.println(str); 
+			//	}
 		} catch (Exception e) {
 			System.err.println(" err " + e.getMessage());
 			e.printStackTrace();

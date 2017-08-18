@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Oracle" key="selection"/>
+		<item value="getCode" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="getCode"/>
+			<item value="getIconType"/>
+			<item value="isIconType"/>
+			<item value="TrailOsScript"/>
+			<item value="sub"/>
 			<item value="oracle"/>
 			<item value="logger.debug"/>
 			<item value="-- before getSydateFromMaster() in launch_trail_if_ready()"/>
-			<item value="fill"/>
-			<item value="DG_LIFT_DOWN"/>
-			<item value="isIcon"/>
-			<item value="getOut"/>
-			<item value="getIndeg"/>
 		</list>
 		<list key="replacehistory">
 			<item value="//logger.debug"/>
@@ -24,9 +24,9 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="305" key="DIALOG_WIDTH"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="442" key="DIALOG_HEIGHT"/>
+		<item value="336" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="452" key="DIALOG_HEIGHT"/>
 		<item value="352" key="DIALOG_Y_ORIGIN"/>
 		<item value="953" key="DIALOG_X_ORIGIN"/>
 	</section>
